@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../../../../../../../../layout/custom_preview.xml" value="0.10071942446043165" />
         <entry key="app/src/main/res/drawable/calendar.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/chart_bar.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1" />
@@ -10,9 +11,12 @@
         <entry key="app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/message_bulleted.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35833333333333334" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.22327898550724637" />
         <entry key="app/src/main/res/layout/fragment_analysis.xml" value="0.23505434782608695" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.23505434782608695" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.23505434782608695" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/fragment_item.xml" value="0.23550724637681159" />
+        <entry key="app/src/main/res/layout/fragment_item_list.xml" value="0.23550724637681159" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.23505434782608695" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.2786458333333333" />
       </map>
