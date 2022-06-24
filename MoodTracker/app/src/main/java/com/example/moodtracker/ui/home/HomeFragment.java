@@ -27,15 +27,16 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        int[] imageId = {R.drawable.emoticon_sad_outline,R.drawable.emoticon_sad_outline,R.drawable.emoticon_sad_outline,R.drawable.emoticon_sad_outline,R.drawable.emoticon_sad_outline,
-                R.drawable.emoticon_sad_outline,R.drawable.emoticon_sad_outline,R.drawable.emoticon_sad_outline,R.drawable.emoticon_sad_outline};
+        int[] imageId = {R.drawable.emoticon_sad_outline,R.drawable.emoticon_happy_outline
+                ,R.drawable.emoticon_cry_outline,R.drawable.emoticon_outline,
+                R.drawable.emoticon_neutral_outline};
 
 
-        String[] feeling_description = {"Feeling sad","Feeling happy", "Feeling happy", "Feeling sad", "Feeling happy", "Feeling depressed","Feeling depressed","Feeling depressed","Feeling depressed"};
+        String[] feeling_description = {"Feeling sad","Feeling happy", "Feeling depressed", "Feeling great", "Feeling okay"};
 
-        String[] feeling_reason = {"had problems with my family","Supp","Let's Catchup","Dinner tonight?","Gotta go", "i'm in meeting","Gotcha","Let's Go","any Weekend Plans?"};
+        String[] feeling_reason = {"had problems with my family","Supp","Let's Catchup","Dinner tonight?","Gotta go"};
 
-        String[] entry_time = {"8:45 pm","9:00 am","7:34 pm","6:32 am","5:76 am", "5:00 am","7:34 pm","2:32 am","7:76 am"};
+        String[] entry_time = {"8:45 pm","9:00 am","7:34 pm","6:32 am","5:76 am"};
 
         ArrayList<Entry> entryArrayList = new ArrayList<>();
 

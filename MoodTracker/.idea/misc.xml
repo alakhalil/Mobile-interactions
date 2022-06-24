@@ -7,6 +7,10 @@
         <entry key="app/src/main/res/drawable/calendar.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/chart_bar.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/dots_horizontal.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/emoticon_cry_outline.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/emoticon_happy_outline.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/emoticon_neutral_outline.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/emoticon_outline.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/emoticon_sad_outline.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.1" />
