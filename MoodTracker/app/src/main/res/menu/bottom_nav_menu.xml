@@ -16,4 +16,9 @@
         android:icon="@drawable/calendar"
         android:title="@string/title_calendar" />
 
+    <item
+        android:id="@+id/navigation_more"
+        android:icon="@drawable/dots_horizontal"
+        android:title="@string/title_more" />
+
 </menu>
