@@ -20,10 +20,7 @@
                 android:id="@+id/feeling_emoji"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_marginStart="20dp"
-                android:src="@drawable/emoticon_sad_outline"
-                app:civ_border_color="@color/Primary" />
-
+                android:layout_marginStart="20dp"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -35,7 +32,6 @@
                     android:id="@+id/feeling_description"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Christopher"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold"/>
@@ -44,9 +40,14 @@
                     android:id="@+id/feeling_reason"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="Hi, How Are you"/>
+                    android:layout_marginTop="5dp"/>
 
+                <ImageView
+                    android:id="@+id/attached_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/attached_image" />
             </LinearLayout>
 
 
@@ -57,10 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:padding="15dp"
-            android:text="8:35 pm" />
-
-
+            android:padding="15dp" />
 
     </RelativeLayout>
 

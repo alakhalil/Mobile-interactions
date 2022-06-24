@@ -38,12 +38,17 @@ public class ListAdapter extends ArrayAdapter<Entry> {
         TextView feeling_description = convertView.findViewById(R.id.feeling_description);
         TextView feeling_reason = convertView.findViewById(R.id.feeling_reason);
         TextView entry_time = convertView.findViewById(R.id.entry_time);
+        ImageView attached_image = convertView.findViewById(R.id.attached_image);
 
-        feeling_emoji.setImageResource(entry.attached_image_id);
+        feeling_emoji.setImageResource(entry.feeling_emoji_id);
         feeling_description.setText(entry.feeling_description);
         feeling_reason.setText(entry.feeling_reason);
         entry_time.setText(entry.entry_time);
-
+        if(entry.attached_image_id!=0){
+            attached_image.setImageResource(entry.attached_image_id);
+        }
+        else
+            attached_image.setVisibility(attached_image.GONE);
 
         return convertView;
     }
