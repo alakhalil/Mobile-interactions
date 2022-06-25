@@ -1,12 +1,10 @@
 package com.example.moodtracker.ui.home;
 
-import static java.sql.Types.NULL;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -14,6 +12,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.moodtracker.R;
 import com.example.moodtracker.databinding.FragmentHomeBinding;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import java.util.ArrayList;
 
@@ -23,38 +22,38 @@ public class HomeFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        HomeViewModel homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
-
+        HomeViewModel homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+
+        binding.fab.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                showBottomSheetDialog();
+
+            }
+        });
+
+
+        //TODO clean up
 
         int[] imageId = {R.drawable.emoticon_sad_outline,R.drawable.emoticon_happy_outline
                 ,R.drawable.emoticon_cry_outline,R.drawable.emoticon_outline,
                 R.drawable.emoticon_neutral_outline};
-
         int[] attachedImageId = {0,R.drawable.img,0,0,0};
-
-
         String[] feeling_description = {"Feeling sad","Feeling happy", "Feeling depressed", "Feeling great", "Feeling okay"};
-
         String[] feeling_reason = {"had problems with my family","happy with my grades","Stressed","Will travel tonight","Nothing special"};
-
         String[] entry_time = {"8:45 pm","9:00 am","7:34 pm","6:32 am","5:76 am"};
-
         ArrayList<Entry> entryArrayList = new ArrayList<>();
-
         for(int i = 0;i< imageId.length;i++){
-
             Entry entry = new Entry(feeling_description[i],feeling_reason[i],entry_time[i],attachedImageId[i], imageId[i]);
             entryArrayList.add(entry);
-
         }
-
-
         ListAdapter listAdapter = new ListAdapter(getActivity(), entryArrayList);
-
         binding.entries.setAdapter(listAdapter);
+
+
+
         return root;
     }
 
@@ -62,5 +61,12 @@ public class HomeFragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;
+    }
+
+    public void showBottomSheetDialog(){
+        BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(getActivity());
+        bottomSheetDialog.setContentView(R.layout.select_feeling_dialog);
+        bottomSheetDialog.getBehavior().setPeekHeight(1000);
+        bottomSheetDialog.show();
     }
 }
