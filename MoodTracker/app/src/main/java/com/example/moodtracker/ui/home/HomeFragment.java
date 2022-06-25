@@ -36,7 +36,7 @@ public class HomeFragment extends Fragment {
         View root = binding.getRoot();
 
         // To open the dialog
-        binding.fab.setOnClickListener(new View.OnClickListener(){
+        binding.fab.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.N)
             @Override
             public void onClick(View view) {
@@ -45,25 +45,22 @@ public class HomeFragment extends Fragment {
         });
 
 
-
-
         //TODO clean up
 
-        int[] imageId = {R.drawable.emoticon_sad_outline,R.drawable.emoticon_happy_outline
-                ,R.drawable.emoticon_cry_outline,R.drawable.emoticon_outline,
+        int[] imageId = {R.drawable.emoticon_sad_outline, R.drawable.emoticon_happy_outline
+                , R.drawable.emoticon_cry_outline, R.drawable.emoticon_outline,
                 R.drawable.emoticon_neutral_outline};
-        int[] attachedImageId = {0,R.drawable.img,0,0,0};
-        String[] feeling_description = {"Feeling sad","Feeling happy", "Feeling depressed", "Feeling great", "Feeling okay"};
-        String[] feeling_reason = {"had problems with my family","happy with my grades","Stressed","Will travel tonight","Nothing special"};
-        String[] entry_time = {"8:45 pm","9:00 am","7:34 pm","6:32 am","5:76 am"};
+        int[] attachedImageId = {0, R.drawable.img, 0, 0, 0};
+        String[] feeling_description = {"Feeling sad", "Feeling happy", "Feeling depressed", "Feeling great", "Feeling okay"};
+        String[] feeling_reason = {"had problems with my family", "happy with my grades", "Stressed", "Will travel tonight", "Nothing special"};
+        String[] entry_time = {"8:45 pm", "9:00 am", "7:34 pm", "6:32 am", "5:76 am"};
         ArrayList<Entry> entryArrayList = new ArrayList<>();
-        for(int i = 0;i< imageId.length;i++){
-            Entry entry = new Entry(feeling_description[i],feeling_reason[i],entry_time[i],attachedImageId[i], imageId[i]);
+        for (int i = 0; i < imageId.length; i++) {
+            Entry entry = new Entry(feeling_description[i], feeling_reason[i], entry_time[i], attachedImageId[i], imageId[i]);
             entryArrayList.add(entry);
         }
         ListAdapter listAdapter = new ListAdapter(getActivity(), entryArrayList);
         binding.entries.setAdapter(listAdapter);
-
 
 
         return root;
@@ -76,7 +73,7 @@ public class HomeFragment extends Fragment {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.N)
-    public void showBottomSheetDialog(){
+    public void showBottomSheetDialog() {
         BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(getActivity());
         bottomSheetDialog.setContentView(R.layout.select_feeling_dialog);
         bottomSheetDialog.getBehavior().setPeekHeight(1000);
@@ -90,12 +87,11 @@ public class HomeFragment extends Fragment {
         feelingQuestion.setText("How do you feel?");
         bottomSheetDialog.show();
 
-        final ImageButton greatBtn = bottomSheetDialog.findViewById(R.id.great_btn);
-        greatBtn.setOnClickListener(new View.OnClickListener() {
+        final ImageButton dperessedBtn = bottomSheetDialog.findViewById(R.id.cry_btn);
+        dperessedBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "great btn has been clicked!",
-                        Toast.LENGTH_SHORT).show();
+                showBottomSheetDialogStrongFeelings();
             }
         });
 
@@ -103,11 +99,19 @@ public class HomeFragment extends Fragment {
 
         dialogButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
+            public void onClick(View v) {
                 bottomSheetDialog.dismiss();
             }
         });
 
     }
+
+    public void showBottomSheetDialogStrongFeelings() {
+        BottomSheetDialog bottomSheetStrongFeelings = new BottomSheetDialog(getActivity());
+        bottomSheetStrongFeelings.setContentView(R.layout.strong_feelings_input);
+        bottomSheetStrongFeelings.getBehavior().setPeekHeight(1000);
+        bottomSheetStrongFeelings.show();
+
+    }
+
 }
