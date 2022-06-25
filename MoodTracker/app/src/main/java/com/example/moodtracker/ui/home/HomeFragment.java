@@ -92,6 +92,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 showBottomSheetDialogStrongFeelings();
+                bottomSheetDialog.dismiss();
             }
         });
 
@@ -100,6 +101,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 showBottomSheetDialogNormalFeelings();
+                bottomSheetDialog.dismiss();
             }
         });
 
