@@ -8,8 +8,8 @@
 
     <ImageButton
         android:id="@+id/btnClose"
-        android:layout_width="13dp"
-        android:layout_height="29dp"
+        android:layout_width="34dp"
+        android:layout_height="30dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:background="@null"
@@ -60,56 +60,149 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="243dp"
-        android:layout_height="57dp"
+        android:layout_width="328dp"
+        android:layout_height="98dp"
         android:layout_marginTop="200dp"
         android:background="?android:attr/selectableItemBackground"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+
+            <ImageButton
+                android:id="@+id/cry_btn"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@null"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/emoticon_cry_btn"
+                />
+
+            <TextView
+                android:id="@+id/cry_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:text="Depressed"
+                android:textColor="@color/Primary"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/sad_btn"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@null"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/emoticon_sad_btn" />
+
+            <TextView
+                android:id="@+id/sad_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Sad"
+                android:textColor="#FF6400"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
 
         <ImageButton
-            android:id="@+id/cry_btn"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:background="@null"
-            android:contentDescription="@string/todo"
-            android:src="@drawable/emoticon_cry_btn" />
+                android:id="@+id/neutral_btn"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@null"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/emoticon_neutral_btn" />
+
+
+            <TextView
+                android:id="@+id/neutral_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:text="Neutral"
+                android:textColor="#F0E11D"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
 
         <ImageButton
-            android:id="@+id/sad_btn"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:background="@null"
-            android:contentDescription="@string/todo"
-            android:src="@drawable/emoticon_sad_btn" />
+                android:id="@+id/happy_btn"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@null"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/emoticon_happy_btn" />
+
+            <TextView
+                android:id="@+id/happy_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:text="Happy"
+                android:textColor="#469C76"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
 
         <ImageButton
-            android:id="@+id/neutral_btn"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:background="@null"
-            android:contentDescription="@string/todo"
-            android:src="@drawable/emoticon_neutral_btn" />
+                android:id="@+id/great_btn"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@null"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/emoticon_great_btn" />
 
-        <ImageButton
-            android:id="@+id/happy_btn"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:background="@null"
-            android:contentDescription="@string/todo"
-            android:src="@drawable/emoticon_happy_btn" />
 
-        <ImageButton
-            android:id="@+id/great_btn"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:background="@null"
-            android:contentDescription="@string/todo"
-            android:src="@drawable/emoticon_great_btn" />
-
+            <TextView
+                android:id="@+id/great_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:text="Great"
+                android:textColor="#A810E0"
+                android:textSize="12sp" />
+        </LinearLayout>
 
     </LinearLayout>
 
