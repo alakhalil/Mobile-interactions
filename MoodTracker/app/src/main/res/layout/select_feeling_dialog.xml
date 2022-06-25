@@ -60,33 +60,31 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="328dp"
-        android:layout_height="98dp"
+        android:layout_width="287dp"
+        android:layout_height="92dp"
         android:layout_marginTop="200dp"
         android:background="?android:attr/selectableItemBackground"
+        android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:gravity="center"
-        >
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_horizontal">
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
 
             <ImageButton
                 android:id="@+id/cry_btn"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:background="@null"
                 android:contentDescription="@string/todo"
-                android:src="@drawable/emoticon_cry_btn"
-                />
+                android:src="@drawable/emoticon_cry_btn" />
 
             <TextView
                 android:id="@+id/cry_text"
@@ -102,13 +100,13 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_horizontal">
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
             <ImageButton
                 android:id="@+id/sad_btn"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:background="@null"
                 android:contentDescription="@string/todo"
                 android:src="@drawable/emoticon_sad_btn" />
@@ -127,14 +125,14 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_horizontal">
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
 
-        <ImageButton
+            <ImageButton
                 android:id="@+id/neutral_btn"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:background="@null"
                 android:contentDescription="@string/todo"
                 android:src="@drawable/emoticon_neutral_btn" />
@@ -154,14 +152,14 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_horizontal">
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
 
-        <ImageButton
+            <ImageButton
                 android:id="@+id/happy_btn"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:background="@null"
                 android:contentDescription="@string/todo"
                 android:src="@drawable/emoticon_happy_btn" />
@@ -180,14 +178,14 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_horizontal">
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
 
-        <ImageButton
+            <ImageButton
                 android:id="@+id/great_btn"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:background="@null"
                 android:contentDescription="@string/todo"
                 android:src="@drawable/emoticon_great_btn" />
