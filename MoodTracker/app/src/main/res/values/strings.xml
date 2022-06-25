@@ -6,4 +6,8 @@
     <string name="title_more">More</string>
     <string name="add_entry">add entry</string>
     <string name="attached_image">attached_image</string>
+    <string name="todo">TODO</string>
+    <string name="sad_btn">sad_btn</string>
+
+
 </resources>

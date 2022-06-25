@@ -1,12 +1,18 @@
 package com.example.moodtracker.ui.home;
 
 
+import android.icu.text.SimpleDateFormat;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
@@ -14,7 +20,10 @@ import com.example.moodtracker.R;
 import com.example.moodtracker.databinding.FragmentHomeBinding;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.Locale;
 
 public class HomeFragment extends Fragment {
 
@@ -26,13 +35,16 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
+        // To open the dialog
         binding.fab.setOnClickListener(new View.OnClickListener(){
+            @RequiresApi(api = Build.VERSION_CODES.N)
             @Override
             public void onClick(View view) {
                 showBottomSheetDialog();
-
             }
         });
+
+
 
 
         //TODO clean up
@@ -63,10 +75,39 @@ public class HomeFragment extends Fragment {
         binding = null;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     public void showBottomSheetDialog(){
         BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(getActivity());
         bottomSheetDialog.setContentView(R.layout.select_feeling_dialog);
         bottomSheetDialog.getBehavior().setPeekHeight(1000);
+
+        final TextView todayDate = bottomSheetDialog.findViewById(R.id.todayDate);
+        final TextView feelingQuestion = bottomSheetDialog.findViewById(R.id.howDoYouFeel);
+        Date now = new Date();
+        String date = new SimpleDateFormat("EEE, d MMM HH:mm", Locale.ENGLISH).format(now);
+
+        todayDate.setText(date);
+        feelingQuestion.setText("How do you feel?");
         bottomSheetDialog.show();
+
+        final ImageButton greatBtn = bottomSheetDialog.findViewById(R.id.great_btn);
+        greatBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getActivity(), "great btn has been clicked!",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        ImageButton dialogButton = (ImageButton) bottomSheetDialog.findViewById(R.id.btnClose);
+
+        dialogButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                bottomSheetDialog.dismiss();
+            }
+        });
+
     }
 }
