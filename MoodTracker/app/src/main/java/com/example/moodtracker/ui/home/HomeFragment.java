@@ -95,6 +95,14 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        final ImageButton HappyBtn = bottomSheetDialog.findViewById(R.id.happy_btn);
+        HappyBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showBottomSheetDialogNormalFeelings();
+            }
+        });
+
         ImageButton dialogButton = (ImageButton) bottomSheetDialog.findViewById(R.id.btnClose);
 
         dialogButton.setOnClickListener(new View.OnClickListener() {
@@ -111,7 +119,13 @@ public class HomeFragment extends Fragment {
         bottomSheetStrongFeelings.setContentView(R.layout.strong_feelings_input);
         bottomSheetStrongFeelings.getBehavior().setPeekHeight(1000);
         bottomSheetStrongFeelings.show();
+    }
 
+    public void showBottomSheetDialogNormalFeelings() {
+        BottomSheetDialog bottomSheetNormalFeelings = new BottomSheetDialog(getActivity());
+        bottomSheetNormalFeelings.setContentView(R.layout.normal_feelings);
+        bottomSheetNormalFeelings.getBehavior().setPeekHeight(1000);
+        bottomSheetNormalFeelings.show();
     }
 
 }
