@@ -1,9 +1,8 @@
-package com.example.moodtracker.ui.home;
+package com.example.moodtracker.models;
 
 public class Entry {
-    String feeling_description, feeling_reason, entry_time;
-    int attached_image_id;
-    int feeling_emoji_id;
+    public String feeling_description, feeling_reason, entry_time;
+    public  int attached_image_id, feeling_emoji_id;
 
 
     public Entry(String feeling_description, String feeling_reason, String entry_time, int attached_image_id, int feeling_emoji_id) {

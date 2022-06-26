@@ -1,4 +1,4 @@
-package com.example.moodtracker.ui.more;
+package com.example.moodtracker.views;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.moodtracker.databinding.FragmentMoreBinding;
+import com.example.moodtracker.viewmodels.MoreViewModel;
 
 public class MoreFragment extends Fragment {
 

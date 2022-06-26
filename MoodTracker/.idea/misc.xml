@@ -32,6 +32,7 @@
         <entry key="app/src/main/res/drawable/my_border.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35833333333333334" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.22327898550724637" />
+        <entry key="app/src/main/res/layout/entries_recycler_views.xml" value="0.22552083333333334" />
         <entry key="app/src/main/res/layout/entry_item.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_analysis.xml" value="0.23505434782608695" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.23505434782608695" />

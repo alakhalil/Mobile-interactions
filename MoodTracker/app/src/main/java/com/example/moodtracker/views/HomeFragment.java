@@ -1,37 +1,51 @@
-package com.example.moodtracker.ui.home;
+package com.example.moodtracker.views;
 
 
 import android.icu.text.SimpleDateFormat;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.moodtracker.R;
+import com.example.moodtracker.adapters.ListAdapter;
 import com.example.moodtracker.databinding.FragmentHomeBinding;
+import com.example.moodtracker.models.Entry;
+import com.example.moodtracker.viewmodels.HomeViewModel;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
 
 public class HomeFragment extends Fragment {
 
+    private ListAdapter listAdapter;
     private FragmentHomeBinding binding;
-
+    private HomeViewModel homeViewModel ;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        HomeViewModel homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
+        homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
+        homeViewModel.init();
+        homeViewModel.getEntries().observe(getActivity(), new Observer<ArrayList<Entry>>() {
+            @Override
+            public void onChanged(ArrayList<Entry> entries) {
+                listAdapter.notifyDataSetChanged();
+            }
+        });
+        initListView();
+
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
@@ -44,26 +58,13 @@ public class HomeFragment extends Fragment {
             }
         });
 
-
-        //TODO clean up
-
-        int[] imageId = {R.drawable.emoticon_sad_outline, R.drawable.emoticon_happy_outline
-                , R.drawable.emoticon_cry_outline, R.drawable.emoticon_outline,
-                R.drawable.emoticon_neutral_outline};
-        int[] attachedImageId = {0, R.drawable.img, 0, 0, 0};
-        String[] feeling_description = {"Feeling sad", "Feeling happy", "Feeling depressed", "Feeling great", "Feeling okay"};
-        String[] feeling_reason = {"had problems with my family", "happy with my grades", "Stressed", "Will travel tonight", "Nothing special"};
-        String[] entry_time = {"8:45 pm", "9:00 am", "7:34 pm", "6:32 am", "5:76 am"};
-        ArrayList<Entry> entryArrayList = new ArrayList<>();
-        for (int i = 0; i < imageId.length; i++) {
-            Entry entry = new Entry(feeling_description[i], feeling_reason[i], entry_time[i], attachedImageId[i], imageId[i]);
-            entryArrayList.add(entry);
-        }
-        ListAdapter listAdapter = new ListAdapter(getActivity(), entryArrayList);
-        binding.entries.setAdapter(listAdapter);
-
-
         return root;
+    }
+
+    private void initListView() {
+        listAdapter = new ListAdapter(getActivity(), homeViewModel.getEntries().getValue());
+        Log.d("TEST", String.valueOf(listAdapter.getCount()));
+        binding.entries.setAdapter(listAdapter);
     }
 
     @Override

@@ -1,4 +1,4 @@
-package com.example.moodtracker.ui.home;
+package com.example.moodtracker.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,26 +12,23 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.example.moodtracker.R;
+import com.example.moodtracker.models.Entry;
 
 import java.util.ArrayList;
 
 public class ListAdapter extends ArrayAdapter<Entry> {
 
-    public ListAdapter(Context context, ArrayList<Entry> userArrayList){
+    public ListAdapter(Context context, ArrayList<Entry> userArrayList) {
 
-        super(context, R.layout.entry_item,userArrayList);
+        super(context, R.layout.entry_item, userArrayList);
 
     }
 
     @NonNull
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-
         Entry entry = getItem(position);
-
-        if (convertView == null){
-
-            convertView = LayoutInflater.from(getContext()).inflate(R.layout.entry_item,parent,false);
-
+        if (convertView == null) {
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.entry_item, parent, false);
         }
 
         ImageView feeling_emoji = convertView.findViewById(R.id.feeling_emoji);
@@ -44,10 +41,9 @@ public class ListAdapter extends ArrayAdapter<Entry> {
         feeling_description.setText(entry.feeling_description);
         feeling_reason.setText(entry.feeling_reason);
         entry_time.setText(entry.entry_time);
-        if(entry.attached_image_id!=0){
+        if (entry.attached_image_id != 0) {
             attached_image.setImageResource(entry.attached_image_id);
-        }
-        else
+        } else
             attached_image.setVisibility(attached_image.GONE);
 
         return convertView;

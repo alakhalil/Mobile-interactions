@@ -1,4 +1,4 @@
-package com.example.moodtracker.ui.analysis;
+package com.example.moodtracker.views;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.moodtracker.databinding.FragmentAnalysisBinding;
+import com.example.moodtracker.viewmodels.AnalysisViewModel;
 
 public class AnalysisFragment extends Fragment {
 
