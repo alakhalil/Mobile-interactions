@@ -4,23 +4,52 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../../../../../../../../layout/custom_preview.xml" value="0.10071942446043165" />
+        <entry key="app/src/main/res/drawable-v24/account_group.xml" value="0.111" />
+        <entry key="app/src/main/res/drawable-v24/account_group_outline.xml" value="0.109" />
+        <entry key="app/src/main/res/drawable-v24/chevron_right.xml" value="0.111" />
+        <entry key="app/src/main/res/drawable-v24/forum.xml" value="0.111" />
+        <entry key="app/src/main/res/drawable-v24/handshake.xml" value="0.109" />
+        <entry key="app/src/main/res/drawable-v24/help_circle.xml" value="0.111" />
+        <entry key="app/src/main/res/drawable-v24/home_city_outline.xml" value="0.109" />
+        <entry key="app/src/main/res/drawable-v24/home_outline.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.111" />
+        <entry key="app/src/main/res/drawable-v24/medical_bag.xml" value="0.111" />
+        <entry key="app/src/main/res/drawable-v24/palette.xml" value="0.111" />
+        <entry key="app/src/main/res/drawable-v24/pencil.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable-v24/transit_connection_variant.xml" value="0.111" />
         <entry key="app/src/main/res/drawable/calendar.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/chart_bar.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/dots_horizontal.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.111" />
         <entry key="app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_right_arrow_background.xml" value="0.111" />
+        <entry key="app/src/main/res/drawable/message.xml" value="0.111" />
         <entry key="app/src/main/res/drawable/message_bulleted.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35833333333333334" />
+        <entry key="app/src/main/res/layout/contact.xml" value="0.31240997314453123" />
+        <entry key="app/src/main/res/layout/contact_detail.xml" value="0.1239013671875" />
+        <entry key="app/src/main/res/layout/contact_detail_pic.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/contact_detail_text.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/contact_details.xml" value="0.17255434782608695" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.22327898550724637" />
+        <entry key="app/src/main/res/layout/fjj.xml" value="0.17255434782608695" />
         <entry key="app/src/main/res/layout/fragment_analysis.xml" value="0.23505434782608695" />
+        <entry key="app/src/main/res/layout/fragment_calendar.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.23505434782608695" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.18" />
         <entry key="app/src/main/res/layout/fragment_item.xml" value="0.23550724637681159" />
         <entry key="app/src/main/res/layout/fragment_item_list.xml" value="0.23550724637681159" />
-        <entry key="app/src/main/res/layout/fragment_more.xml" value="0.23550724637681159" />
+        <entry key="app/src/main/res/layout/fragment_more.xml" value="0.18038177490234386" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.23505434782608695" />
+        <entry key="app/src/main/res/layout/list_item.xml" value="0.15402984619140614" />
+        <entry key="app/src/main/res/layout/page6.xml" value="0.15461730957031247" />
+        <entry key="app/src/main/res/layout/page6_contact_detail.xml" value="0.40825688073394495" />
+        <entry key="app/src/main/res/layout/page7.xml" value="0.1728958129882813" />
+        <entry key="app/src/main/res/layout/page8.xml" value="0.4759094238281251" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.2786458333333333" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_right_arrow.xml" value="0.1" />
       </map>
     </option>
   </component>

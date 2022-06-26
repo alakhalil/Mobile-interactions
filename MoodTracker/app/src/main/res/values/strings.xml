@@ -4,4 +4,23 @@
     <string name="title_calendar">Calendar</string>
     <string name="title_analysis">Analysis</string>
     <string name="title_more">More</string>
+    <string name="_318_entries">318 entries</string>
+    <string name="john_doe">John Doe</string>
+    <string name="notifications">Notifications</string>
+    <string name="change_colors">Change colors</string>
+    <string name="edit_reasons">Edit reasons</string>
+    <string name="groups">Groups</string>
+    <string name="members">Members</string>
+    <string name="family">Family</string>
+    <string name="doctor">Doctor</string>
+    <string name="close_friends">Close friends</string>
+    <string name="friends">Friends</string>
+    <string name="other">Other</string>
+    <string name="dark_mode">Dark mode</string>
+    <string name="connections">Connections</string>
+    <string name="ava_n">Ava N.</string>
+    <string name="camilo_o">Camilo O.</string>
+    <string name="derek_m">Derek M.</string>
+    <string name="jack_u">Jack U.</string>
+    <string name="_24_more">+24 More</string>
 </resources>
