@@ -44,10 +44,10 @@ public class HomeFragment extends Fragment {
                 listAdapter.notifyDataSetChanged();
             }
         });
-        initListView();
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+        initListView();
 
         // To open the dialog
         binding.fab.setOnClickListener(new View.OnClickListener() {
@@ -63,7 +63,6 @@ public class HomeFragment extends Fragment {
 
     private void initListView() {
         listAdapter = new ListAdapter(getActivity(), homeViewModel.getEntries().getValue());
-        Log.d("TEST", String.valueOf(listAdapter.getCount()));
         binding.entries.setAdapter(listAdapter);
     }
 
