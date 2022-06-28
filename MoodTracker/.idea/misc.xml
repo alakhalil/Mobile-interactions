@@ -17,6 +17,7 @@
         <entry key="app/src/main/res/drawable-v24/palette.xml" value="0.111" />
         <entry key="app/src/main/res/drawable-v24/pencil.xml" value="0.12" />
         <entry key="app/src/main/res/drawable-v24/transit_connection_variant.xml" value="0.111" />
+        <entry key="app/src/main/res/drawable-v24/window_close.xml" value="0.1135" />
         <entry key="app/src/main/res/drawable/black_white_gradient.xml" value="0.1135" />
         <entry key="app/src/main/res/drawable/calendar.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/chart_bar.xml" value="0.1" />
@@ -54,6 +55,7 @@
         <entry key="app/src/main/res/layout/page6_contact_detail.xml" value="0.40825688073394495" />
         <entry key="app/src/main/res/layout/page7.xml" value="0.1" />
         <entry key="app/src/main/res/layout/page8.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/page9.xml" value="0.18471591957295946" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.2786458333333333" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_right_arrow.xml" value="0.1" />
       </map>
