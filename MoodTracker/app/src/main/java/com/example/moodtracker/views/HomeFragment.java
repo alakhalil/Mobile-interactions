@@ -36,6 +36,10 @@ public class HomeFragment extends Fragment {
     private HomeViewModel homeViewModel ;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+
+        binding = FragmentHomeBinding.inflate(inflater, container, false);
+        View root = binding.getRoot();
+
         homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
         homeViewModel.init();
         homeViewModel.getEntries().observe(getActivity(), new Observer<ArrayList<Entry>>() {
@@ -44,9 +48,20 @@ public class HomeFragment extends Fragment {
                 listAdapter.notifyDataSetChanged();
             }
         });
+        homeViewModel.getIsUpdating().observe(getActivity(), new Observer<Boolean>() {
+            @Override
+            public void onChanged(Boolean aBoolean) {
+                if(aBoolean){
+                    showProgressBar();
+                }
+                else{
+                    hideProgressBar();
+                    binding.entries.smoothScrollToPosition(homeViewModel.getEntries().getValue().size()-1);
+                }
+            }
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
+        });
+
         initListView();
 
         // To open the dialog
@@ -55,6 +70,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 showBottomSheetDialog();
+                homeViewModel.addNewValue(new Entry("feeling sad", "No idea what I am doing", "10:30", 0, R.drawable.emoticon_sad_outline));
             }
         });
 
@@ -130,4 +146,11 @@ public class HomeFragment extends Fragment {
         bottomSheetNormalFeelings.show();
     }
 
+    public void showProgressBar(){
+        binding.progressBar.setVisibility(View.VISIBLE);
+    }
+
+    private void hideProgressBar() {
+        binding.progressBar.setVisibility(View.GONE);
+    }
 }

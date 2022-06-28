@@ -36,7 +36,7 @@
         <entry key="app/src/main/res/layout/entry_item.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_analysis.xml" value="0.23505434782608695" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.23505434782608695" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.16" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.18" />
         <entry key="app/src/main/res/layout/fragment_item.xml" value="0.23550724637681159" />
         <entry key="app/src/main/res/layout/fragment_item_list.xml" value="0.23550724637681159" />
         <entry key="app/src/main/res/layout/fragment_more.xml" value="0.23550724637681159" />
@@ -45,6 +45,7 @@
         <entry key="app/src/main/res/layout/select_feeling_dialog.xml" value="0.5" />
         <entry key="app/src/main/res/layout/strong_feelings_input.xml" value="0.22" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.2786458333333333" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
       </map>
     </option>
   </component>
