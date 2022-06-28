@@ -23,4 +23,17 @@
     <string name="derek_m">Derek M.</string>
     <string name="jack_u">Jack U.</string>
     <string name="_24_more">+24 More</string>
+    <string name="average_daily_mood_calendar">Average daily mood (calendar)</string>
+    <string name="diary_moods_calendar">Diary moods (calendar)</string>
+    <string name="mood_reports">Mood reports</string>
+    <string name="issues_reports">Issues reports</string>
+    <string name="sharing_time_interval">Sharing time interval</string>
+    <string name="june_1_2022_june_30_2022">June 1, 2022 - June 30, 2022</string>
+    <string name="derek_mac">Derek Mac</string>
+    <string name="san_francisco_ca">San Francisco, CA</string>
+    <string name="_123_456_789_234">+123 456 789 234</string>
+    <string name="derek_mac_gmail_com">derek.mac@gmail.com</string>
+    <string name="mobile">Mobile</string>
+    <string name="home">Home</string>
+    <string name="adobe_xd_message">Adobe XD Message</string>
 </resources>
