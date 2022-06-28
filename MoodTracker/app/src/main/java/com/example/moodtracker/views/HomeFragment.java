@@ -4,7 +4,6 @@ package com.example.moodtracker.views;
 import android.icu.text.SimpleDateFormat;
 import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,7 +25,6 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 import java.util.Locale;
 
 public class HomeFragment extends Fragment {
@@ -59,7 +57,6 @@ public class HomeFragment extends Fragment {
                     binding.entries.smoothScrollToPosition(homeViewModel.getEntries().getValue().size()-1);
                 }
             }
-
         });
 
         initListView();
@@ -70,6 +67,8 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 showBottomSheetDialog();
+
+                //TODO: move this function to the viewModel of feelingsFragment
                 homeViewModel.addNewValue(new Entry("feeling sad", "No idea what I am doing", "10:30", 0, R.drawable.emoticon_sad_outline));
             }
         });
@@ -88,63 +87,13 @@ public class HomeFragment extends Fragment {
         binding = null;
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.N)
     public void showBottomSheetDialog() {
-        BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(getActivity());
-        bottomSheetDialog.setContentView(R.layout.select_feeling_dialog);
-        bottomSheetDialog.getBehavior().setPeekHeight(1000);
-
-        final TextView todayDate = bottomSheetDialog.findViewById(R.id.todayDate);
-        final TextView feelingQuestion = bottomSheetDialog.findViewById(R.id.howDoYouFeel);
-        Date now = new Date();
-        String date = new SimpleDateFormat("EEE, d MMM HH:mm", Locale.ENGLISH).format(now);
-
-        todayDate.setText(date);
-        feelingQuestion.setText("How do you feel?");
-        bottomSheetDialog.show();
-
-        final ImageButton dperessedBtn = bottomSheetDialog.findViewById(R.id.cry_btn);
-        dperessedBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showBottomSheetDialogStrongFeelings();
-                bottomSheetDialog.dismiss();
-            }
-        });
-
-        final ImageButton HappyBtn = bottomSheetDialog.findViewById(R.id.happy_btn);
-        HappyBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showBottomSheetDialogNormalFeelings();
-                bottomSheetDialog.dismiss();
-            }
-        });
-
-        ImageButton dialogButton = (ImageButton) bottomSheetDialog.findViewById(R.id.btnClose);
-
-        dialogButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                bottomSheetDialog.dismiss();
-            }
-        });
+        FeelingsFragment feelingsBottomSheetDialog = new FeelingsFragment();
+        feelingsBottomSheetDialog.show(getFragmentManager(),"tag");
 
     }
 
-    public void showBottomSheetDialogStrongFeelings() {
-        BottomSheetDialog bottomSheetStrongFeelings = new BottomSheetDialog(getActivity());
-        bottomSheetStrongFeelings.setContentView(R.layout.strong_feelings_input);
-        bottomSheetStrongFeelings.getBehavior().setPeekHeight(1000);
-        bottomSheetStrongFeelings.show();
-    }
 
-    public void showBottomSheetDialogNormalFeelings() {
-        BottomSheetDialog bottomSheetNormalFeelings = new BottomSheetDialog(getActivity());
-        bottomSheetNormalFeelings.setContentView(R.layout.normal_feelings);
-        bottomSheetNormalFeelings.getBehavior().setPeekHeight(1000);
-        bottomSheetNormalFeelings.show();
-    }
 
     public void showProgressBar(){
         binding.progressBar.setVisibility(View.VISIBLE);
