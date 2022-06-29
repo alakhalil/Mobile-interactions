@@ -1,4 +1,4 @@
-package com.example.moodtracker.ui.home;
+package com.example.moodtracker.views;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,19 +10,23 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.moodtracker.databinding.FragmentHomeBinding;
+import com.example.moodtracker.databinding.FragmentMoreBinding;
+import com.example.moodtracker.viewmodels.MoreViewModel;
 
-public class HomeFragment extends Fragment {
+public class MoreFragment extends Fragment {
 
-    private FragmentHomeBinding binding;
+    private FragmentMoreBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        HomeViewModel homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+        MoreViewModel moreViewModel =
+                new ViewModelProvider(this).get(MoreViewModel.class);
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
+        binding = FragmentMoreBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+
+        final TextView textView = binding.textMore;
+        moreViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
