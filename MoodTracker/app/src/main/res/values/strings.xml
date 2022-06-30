@@ -49,4 +49,12 @@
     <string name="blair_florian">Blair Florian</string>
     <string name="bruce_spears">Bruce Spears</string>
     <string name="braxton_oliver">Braxton Oliver</string>
+    <string name="add_entry">add entry</string>
+    <string name="attached_image">attached_image</string>
+    <string name="todo">TODO</string>
+    <string name="sad_btn">sad_btn</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>
