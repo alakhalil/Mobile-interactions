@@ -1,12 +1,14 @@
 package com.example.moodtracker.views;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
 
-import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +18,6 @@ import android.widget.TextView;
 import com.example.moodtracker.R;
 import com.example.moodtracker.databinding.FragmentFeelingsBinding;
 import com.example.moodtracker.viewmodels.HomeViewModel;
-import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
@@ -31,6 +32,7 @@ import java.util.Locale;
 public class FeelingsFragment extends BottomSheetDialogFragment {
 
     private FragmentFeelingsBinding binding;
+    private ReasonsFragment reasonsFragment;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -84,10 +86,15 @@ public class FeelingsFragment extends BottomSheetDialogFragment {
     }
 
     public void showBottomSheetDialogNormalFeelings() {
-        BottomSheetDialog bottomSheetNormalFeelings = new BottomSheetDialog(getActivity());
+/*        BottomSheetDialog bottomSheetNormalFeelings = new BottomSheetDialog(getActivity());
         bottomSheetNormalFeelings.setContentView(R.layout.normal_feelings);
         bottomSheetNormalFeelings.getBehavior().setPeekHeight(1000);
-        bottomSheetNormalFeelings.show();
+        bottomSheetNormalFeelings.show();*/
+        FragmentManager manager = getFragmentManager();
+        FragmentTransaction transaction = manager.beginTransaction();
+        transaction.add(R.id.container, reasonsFragment);
+        transaction.commit();
+
     }
 
 }
