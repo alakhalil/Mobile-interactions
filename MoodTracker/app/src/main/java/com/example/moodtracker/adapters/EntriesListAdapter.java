@@ -16,12 +16,10 @@ import com.example.moodtracker.models.Entry;
 
 import java.util.ArrayList;
 
-public class ListAdapter extends ArrayAdapter<Entry> {
+public class EntriesListAdapter extends ArrayAdapter<Entry> {
 
-    public ListAdapter(Context context, ArrayList<Entry> userArrayList) {
-
-        super(context, R.layout.entry_item, userArrayList);
-
+    public EntriesListAdapter(Context context, ArrayList<Entry> reasonArrayList) {
+        super(context, R.layout.entry_item, reasonArrayList);
     }
 
     @NonNull
