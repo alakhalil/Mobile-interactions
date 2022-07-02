@@ -1,16 +1,16 @@
-package com.example.moodtracker.viewmodels;
+package com.example.moodtracker.ui.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class AnalysisViewModel extends ViewModel {
+public class HomeViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public AnalysisViewModel() {
+    public HomeViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is analysis fragment");
+        mText.setValue("This is home fragment");
     }
 
     public LiveData<String> getText() {

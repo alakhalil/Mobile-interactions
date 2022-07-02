@@ -1,4 +1,4 @@
-package com.example.moodtracker.viewmodels;
+package com.example.moodtracker.ui.calendar;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
