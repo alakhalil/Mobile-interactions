@@ -17,9 +17,5 @@ public class Contact_details extends AppCompatActivity {
         TextView textView2 = findViewById(R.id.textView15);
         textView.setText(name);
         textView2.setText(name+"@gmail.com");
-
-
-
-
     }
 }

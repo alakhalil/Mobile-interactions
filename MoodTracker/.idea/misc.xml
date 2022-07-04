@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../../../../../../layout/custom_preview.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/account_group.xml" value="0.1015" />
+        <entry key="app/src/main/res/drawable-v24/account_group_outline.xml" value="0.1015" />
+        <entry key="app/src/main/res/drawable-v24/chevron_right.xml" value="0.1225" />
         <entry key="app/src/main/res/drawable/chevron_left.xml" value="0.1015" />
         <entry key="app/src/main/res/drawable/chevron_right.xml" value="0.1015" />
         <entry key="app/src/main/res/drawable/message.xml" value="0.1015" />
@@ -11,7 +14,13 @@
         <entry key="app/src/main/res/layout/activity_connections.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_contact_details.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_more.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_more.xml" value="0.655303955078125" />
+        <entry key="app/src/main/res/layout/page10.xml" value="0.1699249267578125" />
+        <entry key="app/src/main/res/layout/page12.xml" value="0.23174285888671878" />
+        <entry key="app/src/main/res/layout/page13.xml" value="0.29775695800781254" />
+        <entry key="app/src/main/res/layout/page7.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/page8.xml" value="0.44490644490644493" />
+        <entry key="app/src/main/res/layout/page9.xml" value="0.1710387585209865" />
         <entry key="app/src/main/res/layout/rv_model.xml" value="0.1" />
       </map>
     </option>
@@ -21,5 +30,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2217573221757322" />
+      </ProjectState>
+    </option>
   </component>
 </project>

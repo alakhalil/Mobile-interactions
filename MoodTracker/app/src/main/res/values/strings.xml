@@ -55,5 +55,13 @@
     <string name="braxton_oliver">Braxton Oliver</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+ <string name="received">received</string>
+ <string name="sent">sent</string>
+ <string name="robert_thomas">Robert Thomas</string>
+ <string name="nicholas_dallas">Nicholas Dallas</string>
+ <string name="andrew_kaiden">Andrew Kaiden</string>
+ <string name="brandon_elias">Brandon Elias</string>
+    <string name="emma_qing">Emma Qing</string>
+ <string name="grace_hudson">Grace Hudson</string>
 
 </resources>

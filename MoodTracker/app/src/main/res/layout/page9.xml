@@ -24,14 +24,15 @@
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
-            <ImageView
+            <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/imageView1"
                 android:layout_width="70dp"
                 android:layout_height="65dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="20dp"
+                app:shapeAppearanceOverlay="@style/Circular"
                 android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars" />
+                tools:srcCompat="@drawable/avatar1" />
 
             <TextView
                 android:id="@+id/textView1"
@@ -59,14 +60,15 @@
             android:layout_height="81dp"
             android:orientation="horizontal">
 
-            <ImageView
+            <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/imageView3"
                 android:layout_width="70dp"
                 android:layout_height="65dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="20dp"
+                app:shapeAppearanceOverlay="@style/Circular"
                 android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars[5]" />
+                tools:srcCompat="@drawable/avatar2" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -94,14 +96,15 @@
             android:layout_height="81dp"
             android:orientation="horizontal">
 
-            <ImageView
+            <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/imageView5"
                 android:layout_width="70dp"
                 android:layout_height="65dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="20dp"
+                app:shapeAppearanceOverlay="@style/Circular"
                 android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars" />
+                tools:srcCompat="@drawable/avatar3" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -129,14 +132,15 @@
             android:layout_height="81dp"
             android:orientation="horizontal">
 
-            <ImageView
+            <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/imageView7"
                 android:layout_width="70dp"
                 android:layout_height="65dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="20dp"
+                app:shapeAppearanceOverlay="@style/Circular"
                 android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars" />
+                tools:srcCompat="@drawable/avatar4" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -163,14 +167,15 @@
             android:layout_height="81dp"
             android:orientation="horizontal">
 
-            <ImageView
+            <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/imageView9"
                 android:layout_width="70dp"
                 android:layout_height="65dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="20dp"
+                app:shapeAppearanceOverlay="@style/Circular"
                 android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars" />
+                tools:srcCompat="@drawable/avatar5" />
 
             <TextView
                 android:id="@+id/textView5"
@@ -198,14 +203,15 @@
             android:layout_height="81dp"
             android:orientation="horizontal">
 
-            <ImageView
+            <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/imageView11"
                 android:layout_width="70dp"
                 android:layout_height="65dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
+                app:shapeAppearanceOverlay="@style/Circular"
                 android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars[6]" />
+                tools:srcCompat="@drawable/avatar6" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -233,14 +239,15 @@
             android:layout_height="81dp"
             android:orientation="horizontal">
 
-            <ImageView
+            <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/imageView13"
                 android:layout_width="70dp"
                 android:layout_height="65dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
+                app:shapeAppearanceOverlay="@style/Circular"
                 android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars[10]" />
+                tools:srcCompat="@drawable/avatar7" />
 
             <TextView
                 android:id="@+id/textView7"
@@ -268,21 +275,22 @@
             android:layout_height="81dp"
             android:orientation="horizontal">
 
-            <ImageView
+            <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/imageView15"
                 android:layout_width="70dp"
                 android:layout_height="65dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
+                app:shapeAppearanceOverlay="@style/Circular"
                 android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars[11]" />
+                tools:srcCompat="@drawable/avatar8" />
 
             <TextView
                 android:id="@+id/textView8"
                 android:layout_width="242dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
                 android:layout_weight="1"
                 android:text="@string/liah_kaylee"
                 android:textColor="@color/black"
