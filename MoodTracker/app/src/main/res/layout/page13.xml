@@ -6,8 +6,8 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="654dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
@@ -18,35 +18,37 @@
 
         <LinearLayout
             android:layout_width="412dp"
-            android:layout_height="75dp"
+            android:layout_height="60dp"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button2"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="205dp"
                 android:layout_height="match_parent"
-                android:backgroundTint="@color/surface_calendar"
-                android:gravity="start|center_vertical"
+                android:background="@color/white"
                 android:text="@string/sent"
+                android:textAlignment="center"
                 android:textAllCaps="false"
+                android:textSize="16sp"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button1"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="205dp"
-                android:layout_height="75dp"
-                android:backgroundTint="@color/surface_calendar"
-                android:gravity="start|center_vertical"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
                 android:text="@string/received"
+                android:background="@color/surface_calendar"
                 android:textAllCaps="false"
+                android:textSize="16sp"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -56,18 +58,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="81dp"
-            android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
-            <com.google.android.material.imageview.ShapeableImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/imageView1"
                 android:layout_width="31dp"
                 android:layout_height="63dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                app:shapeAppearanceOverlay="@style/Circular"
-                tools:srcCompat="@drawable/avatar15" />
+                android:src="@drawable/avatar15"
+                 />
 
             <TextView
                 android:id="@+id/textView1"
@@ -89,15 +90,15 @@
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
-            <com.google.android.material.imageview.ShapeableImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/imageView3"
                 android:layout_width="31dp"
                 android:layout_height="63dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                app:shapeAppearanceOverlay="@style/Circular"
-                tools:srcCompat="@drawable/avatar18" />
+
+                android:src="@drawable/avatar18" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -119,15 +120,14 @@
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
-            <com.google.android.material.imageview.ShapeableImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/imageView5"
                 android:layout_width="31dp"
                 android:layout_height="63dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                app:shapeAppearanceOverlay="@style/Circular"
-                tools:srcCompat="@drawable/avatar16" />
+                android:src="@drawable/avatar16" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -149,15 +149,14 @@
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
-            <com.google.android.material.imageview.ShapeableImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/imageView7"
                 android:layout_width="31dp"
                 android:layout_height="63dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                app:shapeAppearanceOverlay="@style/Circular"
-                tools:srcCompat="@drawable/avatar17" />
+                android:src="@drawable/avatar17" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -179,15 +178,14 @@
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
-            <com.google.android.material.imageview.ShapeableImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/imageView9"
                 android:layout_width="31dp"
                 android:layout_height="63dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                app:shapeAppearanceOverlay="@style/Circular"
-                tools:srcCompat="@drawable/avatar19" />
+                android:src="@drawable/avatar19" />
 
             <TextView
                 android:id="@+id/textView5"
@@ -209,15 +207,14 @@
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
-            <com.google.android.material.imageview.ShapeableImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/imageView11"
                 android:layout_width="31dp"
                 android:layout_height="63dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                app:shapeAppearanceOverlay="@style/Circular"
-                tools:srcCompat="@drawable/avatar20" />
+                android:src="@drawable/avatar20" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -228,6 +225,37 @@
                 android:layout_marginRight="30dp"
                 android:layout_weight="1"
                 android:text="@string/robert_thomas"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView13"
+                android:layout_width="31dp"
+                android:layout_height="63dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/avatar5" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="242dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:text="@string/yosef_trevor"
                 android:textColor="@color/black"
                 android:textSize="14sp" />
 

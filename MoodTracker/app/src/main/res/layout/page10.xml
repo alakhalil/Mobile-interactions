@@ -21,21 +21,22 @@
         app:layout_constraintTop_toTopOf="parent">
 
 
-        <com.google.android.material.imageview.ShapeableImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imageView2"
-            android:layout_width="128dp"
-            android:layout_height="128dp"
-            android:layout_marginTop="80dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
             android:layout_marginBottom="10dp"
             android:layout_gravity="center_horizontal"
             app:shapeAppearanceOverlay="@style/Circular"
-            tools:srcCompat="@drawable/avatar4" />
+            android:src="@drawable/avatar4" />
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/derek_mac"
+            android:layout_marginTop="10dp"
             android:textColor="@color/black"
             android:gravity="center"
             android:textSize="16sp"

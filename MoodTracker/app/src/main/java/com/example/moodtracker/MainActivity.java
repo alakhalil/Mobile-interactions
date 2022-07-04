@@ -4,8 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.moodtracker.views.Connections;
-import com.example.moodtracker.views.Groups;
+import com.example.moodtracker.views.page12;
+import com.example.moodtracker.views.page7;
 import com.example.moodtracker.views.MoreFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -18,7 +18,7 @@ import androidx.navigation.ui.NavigationUI;
 import com.example.moodtracker.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
-    Groups groups = new Groups();
+    page7 groups = new page7();
     MoreFragment moreFragment = new MoreFragment();
     private ActivityMainBinding binding;
 
@@ -41,12 +41,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void groups(View view) {
-        Intent intent = new Intent(MainActivity.this, Groups.class);
+        Intent intent = new Intent(MainActivity.this, page7.class);
         startActivity(intent);
     }
 
     public void connections(View view) {
-        Intent i = new Intent(MainActivity.this, Connections.class);
+        Intent i = new Intent(MainActivity.this, page12.class);
         startActivity(i);
     }
 }

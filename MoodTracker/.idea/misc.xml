@@ -11,17 +11,29 @@
         <entry key="app/src/main/res/drawable/chevron_right.xml" value="0.1015" />
         <entry key="app/src/main/res/drawable/message.xml" value="0.1015" />
         <entry key="app/src/main/res/drawable/message_reply.xml" value="0.1015" />
-        <entry key="app/src/main/res/layout/activity_connections.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_connections.xml" value="0.25072631835937503" />
         <entry key="app/src/main/res/layout/activity_contact_details.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_edit_groups.xml" value="0.1141438802083333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_more.xml" value="0.655303955078125" />
+        <entry key="app/src/main/res/layout/activity_more24.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_pending.xml" value="0.13012847900390623" />
+        <entry key="app/src/main/res/layout/activity_test.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/entry_item.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_analysis.xml" value="0.11145833333333334" />
+        <entry key="app/src/main/res/layout/fragment_calendar.xml" value="0.11145833333333334" />
+        <entry key="app/src/main/res/layout/fragment_feelings.xml" value="0.11145833333333334" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.11145833333333334" />
+        <entry key="app/src/main/res/layout/fragment_more.xml" value="0.24231719970703128" />
+        <entry key="app/src/main/res/layout/normal_feelings.xml" value="0.11145833333333334" />
         <entry key="app/src/main/res/layout/page10.xml" value="0.1699249267578125" />
-        <entry key="app/src/main/res/layout/page12.xml" value="0.23174285888671878" />
-        <entry key="app/src/main/res/layout/page13.xml" value="0.29775695800781254" />
-        <entry key="app/src/main/res/layout/page7.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/page8.xml" value="0.44490644490644493" />
+        <entry key="app/src/main/res/layout/page12.xml" value="0.29871645274212366" />
+        <entry key="app/src/main/res/layout/page13.xml" value="0.5149572649572649" />
+        <entry key="app/src/main/res/layout/page7.xml" value="0.22387084960937503" />
+        <entry key="app/src/main/res/layout/page8.xml" value="0.29586029052734375" />
         <entry key="app/src/main/res/layout/page9.xml" value="0.1710387585209865" />
         <entry key="app/src/main/res/layout/rv_model.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.12777777777777777" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.15" />
       </map>
     </option>
   </component>

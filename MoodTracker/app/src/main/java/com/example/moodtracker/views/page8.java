@@ -12,12 +12,12 @@ import com.example.moodtracker.R;
 import com.google.android.material.datepicker.MaterialDatePicker;
 import com.google.android.material.datepicker.MaterialPickerOnPositiveButtonClickListener;
 
-public class edit_groups extends AppCompatActivity {
+public class page8 extends AppCompatActivity {
 Button button ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_groups);
+        setContentView(R.layout.page8);
         setTitle(getIntent().getStringExtra("name"));
         button = findViewById(R.id.button1);
     }
@@ -40,7 +40,7 @@ Button button ;
     }
 
     public void more_24(View view) {
-        Intent i = new Intent(edit_groups.this,more24.class);
+        Intent i = new Intent(page8.this, page9.class);
         startActivity(i);
     }
 }

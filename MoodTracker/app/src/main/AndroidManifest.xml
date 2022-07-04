@@ -14,25 +14,27 @@
         android:theme="@style/Theme.MoodTracker"
         tools:targetApi="31">
         <activity
-            android:name=".views.Contact_details"
-            android:exported="true" />
-        <activity
-            android:name=".views.more24"
-            android:exported="true" />
-        <activity
-            android:name=".views.Pending"
+            android:name=".views.page10"
             android:exported="true"
-            android:parentActivityName=".views.Connections" />
+            android:parentActivityName=".views.page9"/>
         <activity
-            android:name=".views.Connections"
+            android:name=".views.page9"
+            android:exported="true"
+            android:parentActivityName=".views.page8"/>
+        <activity
+            android:name=".views.page13"
+            android:exported="true"
+            android:parentActivityName=".views.page12" />
+        <activity
+            android:name=".views.page12"
             android:exported="true"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".views.edit_groups"
+            android:name=".views.page8"
             android:exported="true"
-            android:parentActivityName=".views.Groups" />
+            android:parentActivityName=".views.page7" />
         <activity
-            android:name=".views.Groups"
+            android:name=".views.page7"
             android:exported="true"
             android:parentActivityName=".MainActivity" />
         <activity

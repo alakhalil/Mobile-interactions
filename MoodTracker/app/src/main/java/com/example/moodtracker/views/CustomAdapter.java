@@ -6,6 +6,7 @@ import com.example.moodtracker.R;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -38,11 +39,14 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
             holder.textView.setText(rv.get(position).getName());
+            holder.imageView.setImageResource(rv.get(position).getPhoto());
             holder.cardView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent i = new Intent(view.getContext(),Contact_details.class);
+                    Intent i = new Intent(view.getContext(), page10.class);
                     i.putExtra("namee",rv.get(position).getName());
+                    i.putExtra("emaill",rv.get(position).getEmail());
+                    i.putExtra("photoo",rv.get(position).getPhoto());
                     view.getContext().startActivity(i);
                 }
             });
@@ -56,10 +60,12 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView textView;
         CardView cardView;
+        ImageView imageView;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
         textView = itemView.findViewById(R.id.textView1);
         cardView= itemView.findViewById(R.id.card_view);
+        imageView = itemView.findViewById(R.id.imagess);
         }
     }
 }
