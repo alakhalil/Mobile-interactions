@@ -10,6 +10,15 @@
     <color name="surface_calendar">#BFBFBF</color>
     <color name="surface_disabled">#9E9E9E</color>
     <color name="white">#FFFFFFFF</color>
+    #6EB2E5
+
+
+    <color name="mood1">#6EB2E5</color>
+    <color name="mood2">#FF6400</color>
+    <color name="mood3">#F0E11D</color>
+    <color name="mood4">#469C76</color>
+    <color name="mood5">#A810E0</color>
+
 
     <color name="Primary_light">#FFECF2F3</color>
     <color name="Primary">#FF378d93</color>
