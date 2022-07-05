@@ -89,13 +89,8 @@ public class FeelingsFragment extends BottomSheetDialogFragment {
         bottomSheetNormalFeelings.setContentView(R.layout.normal_feelings);
         bottomSheetNormalFeelings.getBehavior().setPeekHeight(1000);
         bottomSheetNormalFeelings.show();*/
-
-        Fragment fragment = new ReasonsFragment();
-        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.parent_layout, fragment);
-        fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.commit();
+        ReasonsFragment ReasonsBottomSheetDialog = new ReasonsFragment();
+        ReasonsBottomSheetDialog.show(getFragmentManager(), "tag");
     }
 
 }

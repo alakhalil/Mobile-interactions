@@ -27,11 +27,10 @@ public class ReasonRepository {
     }
 
     private void setReasons() {
-        int[] images_ids = {R.drawable.emoticon_sad_outline, R.drawable.emoticon_happy_outline
-                , R.drawable.emoticon_cry_outline, R.drawable.emoticon_outline,
-                R.drawable.emoticon_neutral_outline, R.drawable.emoticon_outline,
-                R.drawable.emoticon_neutral_outline};
-        String[] reasons_titles = {"Health", "Social", "Sleep", "Work", "Education", "Productivity", "Me time"};
+        int[] images_ids = {R.drawable.hospital, R.drawable.account_multiple
+                , R.drawable.bed, R.drawable.briefcase,
+                R.drawable.school, R.drawable.food_apple};
+        String[] reasons_titles = {"Health", "Social", "Sleep", "Work", "Education", "Food"};
         String [] sub_reasons = {"Family", "Partner","Children", "Relatives", "Friends", "Others"};
         for (int i = 0; i < reasons_titles.length; i++) {
             Reason reason = new Reason(reasons_titles[i], Arrays.asList(sub_reasons), images_ids[i]);
