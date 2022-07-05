@@ -15,10 +15,11 @@ import com.example.moodtracker.adapters.ReasonsListAdapter;
 import com.example.moodtracker.databinding.FragmentReasonsBinding;
 import com.example.moodtracker.models.Reason;
 import com.example.moodtracker.viewmodels.ReasonsViewModel;
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 import java.util.ArrayList;
 
-public class ReasonsFragment extends Fragment {
+public class ReasonsFragment extends BottomSheetDialogFragment {
 
 
     private ReasonsListAdapter listAdapter;
@@ -31,11 +32,15 @@ public class ReasonsFragment extends Fragment {
         binding = FragmentReasonsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
+
         reasonsViewModel = new ViewModelProvider(this).get(ReasonsViewModel.class);
         reasonsViewModel.init();
+
+        initListView();
+
         reasonsViewModel.getReasons().observe(getActivity(), new Observer<ArrayList<Reason>>() {
             @Override
-            public void onChanged(ArrayList<Reason> entries) {
+            public void onChanged(ArrayList<Reason> reasons) {
                 listAdapter.notifyDataSetChanged();
             }
         });
@@ -52,7 +57,7 @@ public class ReasonsFragment extends Fragment {
             }
         });
 
-        initListView();
+
 
         // To open the dialog
 /*        binding.fab.setOnClickListener(new View.OnClickListener() {

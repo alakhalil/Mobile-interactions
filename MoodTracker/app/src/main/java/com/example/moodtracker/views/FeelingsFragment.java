@@ -32,7 +32,6 @@ import java.util.Locale;
 public class FeelingsFragment extends BottomSheetDialogFragment {
 
     private FragmentFeelingsBinding binding;
-    private ReasonsFragment reasonsFragment;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -90,11 +89,13 @@ public class FeelingsFragment extends BottomSheetDialogFragment {
         bottomSheetNormalFeelings.setContentView(R.layout.normal_feelings);
         bottomSheetNormalFeelings.getBehavior().setPeekHeight(1000);
         bottomSheetNormalFeelings.show();*/
-        FragmentManager manager = getFragmentManager();
-        FragmentTransaction transaction = manager.beginTransaction();
-        transaction.add(R.id.container, reasonsFragment);
-        transaction.commit();
 
+        Fragment fragment = new ReasonsFragment();
+        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.parent_layout, fragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
     }
 
 }

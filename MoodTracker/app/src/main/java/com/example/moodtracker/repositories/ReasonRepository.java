@@ -29,6 +29,7 @@ public class ReasonRepository {
     private void setReasons() {
         int[] images_ids = {R.drawable.emoticon_sad_outline, R.drawable.emoticon_happy_outline
                 , R.drawable.emoticon_cry_outline, R.drawable.emoticon_outline,
+                R.drawable.emoticon_neutral_outline, R.drawable.emoticon_outline,
                 R.drawable.emoticon_neutral_outline};
         String[] reasons_titles = {"Health", "Social", "Sleep", "Work", "Education", "Productivity", "Me time"};
         String [] sub_reasons = {"Family", "Partner","Children", "Relatives", "Friends", "Others"};
