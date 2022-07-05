@@ -1,194 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".views.FeelingsFragment"
-    android:id="@+id/parent_layout">
+    tools:context=".views.FeelingsFragment">
 
-        <ImageButton
-            android:id="@+id/btnClose"
-            android:layout_width="34dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:background="@null"
-            android:src="@drawable/close" />
+    <ImageButton
+        android:id="@+id/btnClose"
+        android:layout_width="34dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:src="@drawable/close" />
+
+    <TextView
+        android:id="@+id/howDoYouFeel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_margin="3dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/calendar_date" />
 
         <TextView
-            android:id="@+id/howDoYouFeel"
+            android:id="@+id/todayDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="110dp"
-            android:textColor="@color/black"
-            android:textSize="16sp"/>
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:textColor="@color/Primary"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="287dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="200dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="130dp"
-            android:background="?android:attr/selectableItemBackground"
-            android:orientation="horizontal"
-            android:padding="8dp">
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
-            <ImageView
+
+            <ImageButton
+                android:id="@+id/cry_btn"
                 android:layout_width="wrap_content"
-                android:layout_height="24dp"
-                android:layout_margin="3dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
                 android:contentDescription="@string/todo"
-                android:src="@drawable/calendar_date" />
+                android:src="@drawable/emoticon_cry_btn" />
 
             <TextView
-                android:id="@+id/todayDate"
+                android:id="@+id/cry_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
+                android:layout_gravity="center"
                 android:padding="8dp"
+                android:text="Depressed"
                 android:textColor="@color/Primary"
                 android:textSize="12sp" />
-
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="287dp"
-            android:layout_height="92dp"
-            android:layout_marginTop="200dp"
-            android:background="?android:attr/selectableItemBackground"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
-            <LinearLayout
+            <ImageButton
+                android:id="@+id/sad_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
+                android:background="@null"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/emoticon_sad_btn" />
 
-
-                <ImageButton
-                    android:id="@+id/cry_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@null"
-                    android:contentDescription="@string/todo"
-                    android:src="@drawable/emoticon_cry_btn" />
-
-                <TextView
-                    android:id="@+id/cry_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:padding="8dp"
-                    android:text="Depressed"
-                    android:textColor="@color/Primary"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-            <LinearLayout
+            <TextView
+                android:id="@+id/sad_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
-
-                <ImageButton
-                    android:id="@+id/sad_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@null"
-                    android:contentDescription="@string/todo"
-                    android:src="@drawable/emoticon_sad_btn" />
-
-                <TextView
-                    android:id="@+id/sad_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:padding="8dp"
-                    android:text="Sad"
-                    android:textColor="#FF6400"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
-
-
-                <ImageButton
-                    android:id="@+id/neutral_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@null"
-                    android:contentDescription="@string/todo"
-                    android:src="@drawable/emoticon_neutral_btn" />
-
-
-                <TextView
-                    android:id="@+id/neutral_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:padding="8dp"
-                    android:text="Neutral"
-                    android:textColor="#F0E11D"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
-
-
-                <ImageButton
-                    android:id="@+id/happy_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@null"
-                    android:contentDescription="@string/todo"
-                    android:src="@drawable/emoticon_happy_btn" />
-
-                <TextView
-                    android:id="@+id/happy_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:padding="8dp"
-                    android:text="Happy"
-                    android:textColor="#469C76"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
-
-
-                <ImageButton
-                    android:id="@+id/great_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@null"
-                    android:contentDescription="@string/todo"
-                    android:src="@drawable/emoticon_great_btn" />
-
-
-                <TextView
-                    android:id="@+id/great_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:padding="8dp"
-                    android:text="Great"
-                    android:textColor="#A810E0"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Sad"
+                android:textColor="#FF6400"
+                android:textSize="12sp" />
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
-</FrameLayout>
+
+            <ImageButton
+                android:id="@+id/neutral_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/emoticon_neutral_btn" />
+
+
+            <TextView
+                android:id="@+id/neutral_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:text="Neutral"
+                android:textColor="#F0E11D"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <ImageButton
+                android:id="@+id/happy_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/emoticon_happy_btn" />
+
+            <TextView
+                android:id="@+id/happy_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:text="Happy"
+                android:textColor="#469C76"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <ImageButton
+                android:id="@+id/great_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/emoticon_great_btn" />
+
+
+            <TextView
+                android:id="@+id/great_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:text="Great"
+                android:textColor="#A810E0"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
