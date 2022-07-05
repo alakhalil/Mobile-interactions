@@ -25,6 +25,7 @@ public class ReasonsFragment extends BottomSheetDialogFragment {
     private ReasonsListAdapter listAdapter;
     private FragmentReasonsBinding binding;
     private ReasonsViewModel reasonsViewModel ;
+    public static String TAG = "ReasonsDialogFragment";
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {

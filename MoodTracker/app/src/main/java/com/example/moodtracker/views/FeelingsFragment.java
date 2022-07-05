@@ -32,6 +32,7 @@ import java.util.Locale;
 public class FeelingsFragment extends BottomSheetDialogFragment {
 
     private FragmentFeelingsBinding binding;
+    public static String TAG = "FeelingsBottomSheetDialogFragment";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -85,12 +86,7 @@ public class FeelingsFragment extends BottomSheetDialogFragment {
     }
 
     public void showBottomSheetDialogNormalFeelings() {
-/*        BottomSheetDialog bottomSheetNormalFeelings = new BottomSheetDialog(getActivity());
-        bottomSheetNormalFeelings.setContentView(R.layout.normal_feelings);
-        bottomSheetNormalFeelings.getBehavior().setPeekHeight(1000);
-        bottomSheetNormalFeelings.show();*/
-        ReasonsFragment ReasonsBottomSheetDialog = new ReasonsFragment();
-        ReasonsBottomSheetDialog.show(getFragmentManager(), "tag");
+        new ReasonsFragment().show(getChildFragmentManager(), ReasonsFragment.TAG);
     }
 
 }

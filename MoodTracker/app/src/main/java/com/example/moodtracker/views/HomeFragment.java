@@ -82,9 +82,7 @@ public class HomeFragment extends Fragment {
     }
 
     public void showBottomSheetDialog() {
-        FeelingsFragment feelingsBottomSheetDialog = new FeelingsFragment();
-        feelingsBottomSheetDialog.show(getFragmentManager(),"tag");
-
+        new FeelingsFragment().show(getChildFragmentManager(), FeelingsFragment.TAG);
     }
 
 
