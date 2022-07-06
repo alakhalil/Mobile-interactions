@@ -1,9 +1,17 @@
 package com.example.moodtracker.views;
 
+import android.annotation.SuppressLint;
+import android.app.Dialog;
 import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -13,11 +21,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.moodtracker.R;
 import com.example.moodtracker.databinding.FragmentFeelingsBinding;
 import com.example.moodtracker.viewmodels.HomeViewModel;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
@@ -33,6 +43,15 @@ public class FeelingsFragment extends BottomSheetDialogFragment {
 
     private FragmentFeelingsBinding binding;
     public static String TAG = "FeelingsBottomSheetDialogFragment";
+
+    @NonNull
+    @Override
+     public Dialog onCreateDialog(Bundle savedInstanceState){
+         BottomSheetDialog dialog = (BottomSheetDialog) super.onCreateDialog(savedInstanceState);
+         return dialog;
+     }
+
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -83,10 +102,24 @@ public class FeelingsFragment extends BottomSheetDialogFragment {
         bottomSheetStrongFeelings.setContentView(R.layout.strong_feelings_input);
         bottomSheetStrongFeelings.getBehavior().setPeekHeight(1000);
         bottomSheetStrongFeelings.show();
+
     }
 
     public void showBottomSheetDialogNormalFeelings() {
         new ReasonsFragment().show(getChildFragmentManager(), ReasonsFragment.TAG);
+
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        BottomSheetBehavior<View> bottomSheetBehaviour = BottomSheetBehavior.from((View) view.getParent());
+        bottomSheetBehaviour.setState(BottomSheetBehavior.STATE_EXPANDED);
+
+        RelativeLayout layout = getDialog().findViewById(R.id.parent_layout);
+        assert layout!=null;
+        layout.setMinimumHeight(Resources.getSystem().getDisplayMetrics().heightPixels);
     }
 
 }

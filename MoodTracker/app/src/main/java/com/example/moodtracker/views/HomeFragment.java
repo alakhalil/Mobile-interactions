@@ -18,6 +18,7 @@ import com.example.moodtracker.adapters.EntriesListAdapter;
 import com.example.moodtracker.databinding.FragmentHomeBinding;
 import com.example.moodtracker.models.Entry;
 import com.example.moodtracker.viewmodels.HomeViewModel;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
 import java.util.ArrayList;
 
@@ -83,6 +84,7 @@ public class HomeFragment extends Fragment {
 
     public void showBottomSheetDialog() {
         new FeelingsFragment().show(getChildFragmentManager(), FeelingsFragment.TAG);
+
     }
 
 
