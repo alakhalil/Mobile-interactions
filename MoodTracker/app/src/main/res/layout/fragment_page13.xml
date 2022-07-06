@@ -68,7 +68,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
                 android:src="@drawable/avatar15"
-                 />
+                />
 
             <TextView
                 android:id="@+id/textView1"

@@ -21,7 +21,7 @@
 
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/doctor"
             android:onClick="doctor"
             style="@style/Widget.Material3.Button.OutlinedButton.Icon"
             android:layout_width="match_parent"
@@ -37,7 +37,7 @@
             tools:ignore="HardcodedText"/>
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/family"
             android:onClick="family"
             style="@style/Widget.Material3.Button.OutlinedButton.Icon"
             android:layout_width="match_parent"
@@ -52,7 +52,7 @@
             app:strokeColor="@color/Primary_light" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/close_friends"
             android:onClick="close_friends"
             style="@style/Widget.Material3.Button.OutlinedButton.Icon"
             android:layout_width="match_parent"
@@ -67,7 +67,7 @@
             app:strokeColor="@color/Primary_light" />
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/friends"
             android:onClick="friends"
             style="@style/Widget.Material3.Button.OutlinedButton.Icon"
             android:layout_width="match_parent"
@@ -120,13 +120,13 @@
 
 
 
-        <EditText
-            android:id="@+id/edit_new"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:hint="Enter name"
-            android:textSize="20sp"
-            />
+            <EditText
+                android:id="@+id/edit_new"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter name"
+                android:textSize="20sp"
+                />
 
             <Button
                 android:id="@+id/add_new"

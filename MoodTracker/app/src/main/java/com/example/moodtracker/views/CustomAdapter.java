@@ -12,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 
 import androidx.cardview.widget.CardView;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 
@@ -48,6 +49,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
                     i.putExtra("emaill",rv.get(position).getEmail());
                     i.putExtra("photoo",rv.get(position).getPhoto());
                     view.getContext().startActivity(i);
+                  //  Navigation.findNavController(view).navigate(R.id);
                 }
             });
     }
