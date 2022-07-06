@@ -44,6 +44,8 @@ public class FeelingsFragment extends BottomSheetDialogFragment {
     private FragmentFeelingsBinding binding;
     public static String TAG = "FeelingsBottomSheetDialogFragment";
 
+
+    // for the dialog size
     @NonNull
     @Override
      public Dialog onCreateDialog(Bundle savedInstanceState){
@@ -51,7 +53,19 @@ public class FeelingsFragment extends BottomSheetDialogFragment {
          return dialog;
      }
 
+    // for the dialog size
 
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        BottomSheetBehavior<View> bottomSheetBehaviour = BottomSheetBehavior.from((View) view.getParent());
+        bottomSheetBehaviour.setState(BottomSheetBehavior.STATE_EXPANDED);
+
+        RelativeLayout layout = getDialog().findViewById(R.id.feelings_layout);
+        assert layout!=null;
+        layout.setMinimumHeight(Resources.getSystem().getDisplayMetrics().heightPixels);
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -107,19 +121,10 @@ public class FeelingsFragment extends BottomSheetDialogFragment {
 
     public void showBottomSheetDialogNormalFeelings() {
         new ReasonsFragment().show(getChildFragmentManager(), ReasonsFragment.TAG);
+        onDestroy();
 
     }
 
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
 
-        BottomSheetBehavior<View> bottomSheetBehaviour = BottomSheetBehavior.from((View) view.getParent());
-        bottomSheetBehaviour.setState(BottomSheetBehavior.STATE_EXPANDED);
-
-        RelativeLayout layout = getDialog().findViewById(R.id.parent_layout);
-        assert layout!=null;
-        layout.setMinimumHeight(Resources.getSystem().getDisplayMetrics().heightPixels);
-    }
 
 }
