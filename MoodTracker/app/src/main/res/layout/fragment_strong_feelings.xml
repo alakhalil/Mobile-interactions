@@ -50,7 +50,7 @@
             android:contentDescription="@string/todo" />
 
         <EditText
-            android:id="@+id/editTextTextMultiLine"
+            android:id="@+id/editTextReason"
             android:layout_width="260dp"
             android:layout_height="163dp"
             android:background="@drawable/my_border"
