@@ -35,7 +35,6 @@ public class StrongFeelingFragment extends BottomSheetDialogFragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     public static String TAG = "ReasonsDialogFragment";
     private FragmentStrongFeelingsBinding binding;
-    private HomeViewModel homeViewModel ;
 
 
     // for the dialog size
@@ -69,20 +68,13 @@ public class StrongFeelingFragment extends BottomSheetDialogFragment {
         ImageView image = (ImageView)root.findViewById(R.id.strong_feeling_icon);
         setFeelingsEmojis(image,feelingDescription);
 
-        homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
-        homeViewModel.init();
-
         EditText reasonText = binding.editTextReason;
         binding.doneBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                dismiss();
                 Log.d("Reason", feelingDescription ) ;
                 Log.d("Reason", reasonText.getText().toString()) ;
-                homeViewModel.addNewValue(
-                        new Entry(feelingDescription,
-                                reasonText.getText().toString(), "10:30",
-                                0, R.drawable.emoticon_sad_outline));
-
             }
         });
 
@@ -90,6 +82,11 @@ public class StrongFeelingFragment extends BottomSheetDialogFragment {
     }
 
 
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
+    }
     private void setFeelingsEmojis(ImageView image, String feeling_description) {
         if(feeling_description== "Great")
             image.setImageResource(R.drawable.emoticon_great_btn);
