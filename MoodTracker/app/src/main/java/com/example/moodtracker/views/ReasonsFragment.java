@@ -6,13 +6,14 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import com.example.moodtracker.R;
@@ -60,14 +61,15 @@ public class ReasonsFragment extends BottomSheetDialogFragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-
+        String feelingDescription = getArguments().getString("feeling_description");
+        Log.d("pass data", feelingDescription) ;
         binding = FragmentReasonsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-
 
         reasonsViewModel = new ViewModelProvider(this).get(ReasonsViewModel.class);
         reasonsViewModel.init();
 
+        setFeelingsEmojis(root,feelingDescription);
         initListView();
 
         reasonsViewModel.getReasons().observe(getActivity(), new Observer<ArrayList<Reason>>() {
@@ -104,6 +106,16 @@ public class ReasonsFragment extends BottomSheetDialogFragment {
         });*/
 
         return root;
+    }
+
+    private void setFeelingsEmojis(View root, String feelingDescription) {
+        ImageView image = (ImageView)root.findViewById(R.id.feeling_icon);
+        if(feelingDescription== "Happy")
+            image.setImageResource(R.drawable.emoticon_happy_btn);
+        else if (feelingDescription== "Sad")
+            image.setImageResource(R.drawable.emoticon_sad_btn);
+        else if (feelingDescription== "Okay")
+            image.setImageResource(R.drawable.emoticon_neutral_btn);
     }
 
     private void initListView() {

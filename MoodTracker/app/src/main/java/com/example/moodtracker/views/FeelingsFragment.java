@@ -101,11 +101,26 @@ public class FeelingsFragment extends BottomSheetDialogFragment {
             }
         });
 
+
         final ImageButton HappyBtn = binding.happyBtn;
         HappyBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showBottomSheetDialogNormalFeelings();
+                showBottomSheetDialogNormalFeelings("Happy");
+            }
+        });
+        final ImageButton sadBtn = binding.sadBtn;
+        sadBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showBottomSheetDialogNormalFeelings("Sad");
+            }
+        });
+        final ImageButton neutralBtn = binding.neutralBtn;
+        neutralBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showBottomSheetDialogNormalFeelings("Okay");
             }
         });
         return root;
@@ -119,9 +134,12 @@ public class FeelingsFragment extends BottomSheetDialogFragment {
 
     }
 
-    public void showBottomSheetDialogNormalFeelings() {
-        new ReasonsFragment().show(getChildFragmentManager(), ReasonsFragment.TAG);
-        onDestroy();
+    public void showBottomSheetDialogNormalFeelings(String feeling_description) {
+        Bundle bundle = new Bundle();
+        bundle.putString("feeling_description", feeling_description);
+        ReasonsFragment reasonsFragment = new ReasonsFragment();
+        reasonsFragment.setArguments(bundle);
+        reasonsFragment.show(getChildFragmentManager(), ReasonsFragment.TAG);
 
     }
 
