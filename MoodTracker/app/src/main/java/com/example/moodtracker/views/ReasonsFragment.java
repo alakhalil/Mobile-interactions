@@ -109,7 +109,7 @@ public class ReasonsFragment extends BottomSheetDialogFragment {
     }
 
     private void setFeelingsEmojis(View root, String feelingDescription) {
-        ImageView image = (ImageView)root.findViewById(R.id.feeling_icon);
+        ImageView image = (ImageView)root.findViewById(R.id.normal_feeling_icon);
         if(feelingDescription== "Happy")
             image.setImageResource(R.drawable.emoticon_happy_btn);
         else if (feelingDescription== "Sad")

@@ -97,11 +97,16 @@ public class FeelingsFragment extends BottomSheetDialogFragment {
         depressedBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showBottomSheetDialogStrongFeelings();
+                showBottomSheetDialogStrongFeelings("Depressed");
             }
         });
-
-
+        final ImageButton greatBtn = binding.greatBtn;
+        greatBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showBottomSheetDialogStrongFeelings("Great");
+            }
+        });
         final ImageButton HappyBtn = binding.happyBtn;
         HappyBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -126,11 +131,10 @@ public class FeelingsFragment extends BottomSheetDialogFragment {
         return root;
     }
 
-    public void showBottomSheetDialogStrongFeelings() {
-        BottomSheetDialog bottomSheetStrongFeelings = new BottomSheetDialog(getActivity());
-        bottomSheetStrongFeelings.setContentView(R.layout.strong_feelings_input);
-        bottomSheetStrongFeelings.getBehavior().setPeekHeight(1000);
-        bottomSheetStrongFeelings.show();
+    public void showBottomSheetDialogStrongFeelings(String feeling_description) {
+        StrongFeelingFragment strongFeelingFragment = new StrongFeelingFragment();
+        strongFeelingFragment.newInstance(feeling_description);
+        strongFeelingFragment.show(getChildFragmentManager(), strongFeelingFragment.TAG);
 
     }
 
@@ -140,7 +144,6 @@ public class FeelingsFragment extends BottomSheetDialogFragment {
         ReasonsFragment reasonsFragment = new ReasonsFragment();
         reasonsFragment.setArguments(bundle);
         reasonsFragment.show(getChildFragmentManager(), ReasonsFragment.TAG);
-
     }
 
 

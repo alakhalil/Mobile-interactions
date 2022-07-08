@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/strong_feeling_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.StrongFeelingFragment"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="TODO"
+                android:src="@drawable/chevron_left"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="159dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:text="Share your thought"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginStart="50dp"/>
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/strong_feeling_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:contentDescription="@string/todo" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine"
+            android:layout_width="260dp"
+            android:layout_height="163dp"
+            android:background="@drawable/my_border"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="  What made you feel so?"
+            android:inputType="textMultiLine"
+            android:textSize="14sp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="256dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/todo"
+                android:gravity="center"
+                android:src="@drawable/camera" />
+
+
+            <Button
+                android:id="@+id/upload_img_btn"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Upload an image"
+                android:textAllCaps="false" />
+
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/done_btn"
+        android:layout_width="72dp"
+        android:layout_height="39dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/Primary"
+        android:text="Done"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        tools:ignore="TouchTargetSizeCheck" />
+</LinearLayout>
