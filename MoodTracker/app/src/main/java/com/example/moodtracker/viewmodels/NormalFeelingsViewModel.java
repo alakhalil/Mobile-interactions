@@ -11,7 +11,7 @@ import com.example.moodtracker.repositories.ReasonRepository;
 
 import java.util.ArrayList;
 
-public class ReasonsViewModel extends ViewModel {
+public class NormalFeelingsViewModel extends androidx.lifecycle.ViewModel {
 
     private MutableLiveData<ArrayList<Reason>> reasons;
     private ReasonRepository reasonsRepo ;

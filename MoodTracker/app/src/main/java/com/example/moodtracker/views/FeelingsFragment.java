@@ -1,20 +1,12 @@
 package com.example.moodtracker.views;
 
-import android.annotation.SuppressLint;
 import android.app.Dialog;
-import android.content.Intent;
 import android.content.res.Resources;
-import android.graphics.Color;
-import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
 
 import android.view.LayoutInflater;
@@ -143,9 +135,9 @@ public class FeelingsFragment extends BottomSheetDialogFragment {
     public void showBottomSheetDialogNormalFeelings(String feeling_description) {
         Bundle bundle = new Bundle();
         bundle.putString("feeling_description", feeling_description);
-        ReasonsFragment reasonsFragment = new ReasonsFragment();
-        reasonsFragment.setArguments(bundle);
-        reasonsFragment.show(getChildFragmentManager(), ReasonsFragment.TAG);
+        NormalFeelingsFragment normalFeelingsFragment = new NormalFeelingsFragment();
+        normalFeelingsFragment.setArguments(bundle);
+        normalFeelingsFragment.show(getChildFragmentManager(), NormalFeelingsFragment.TAG);
     }
 
 

@@ -20,19 +20,19 @@ import com.example.moodtracker.R;
 import com.example.moodtracker.adapters.ReasonsListAdapter;
 import com.example.moodtracker.databinding.FragmentReasonsBinding;
 import com.example.moodtracker.models.Reason;
-import com.example.moodtracker.viewmodels.ReasonsViewModel;
+import com.example.moodtracker.viewmodels.NormalFeelingsViewModel;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 import java.util.ArrayList;
 
-public class ReasonsFragment extends BottomSheetDialogFragment {
+public class NormalFeelingsFragment extends BottomSheetDialogFragment {
 
 
     private ReasonsListAdapter listAdapter;
     private FragmentReasonsBinding binding;
-    private ReasonsViewModel reasonsViewModel ;
+    private NormalFeelingsViewModel normalFeelingsViewModel;
     public static String TAG = "ReasonsDialogFragment";
 
 
@@ -53,7 +53,7 @@ public class ReasonsFragment extends BottomSheetDialogFragment {
         BottomSheetBehavior<View> bottomSheetBehaviour = BottomSheetBehavior.from((View) view.getParent());
         bottomSheetBehaviour.setState(BottomSheetBehavior.STATE_EXPANDED);
 
-        RelativeLayout layout = getDialog().findViewById(R.id.reasons_layout);
+        RelativeLayout layout = getDialog().findViewById(R.id.normal_feelings_layout);
         assert layout!=null;
         layout.setMinimumHeight(Resources.getSystem().getDisplayMetrics().heightPixels);
     }
@@ -66,19 +66,19 @@ public class ReasonsFragment extends BottomSheetDialogFragment {
         binding = FragmentReasonsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        reasonsViewModel = new ViewModelProvider(this).get(ReasonsViewModel.class);
-        reasonsViewModel.init();
+        normalFeelingsViewModel = new ViewModelProvider(this).get(NormalFeelingsViewModel.class);
+        normalFeelingsViewModel.init();
 
         setFeelingsEmojis(root,feelingDescription);
         initListView();
 
-        reasonsViewModel.getReasons().observe(getActivity(), new Observer<ArrayList<Reason>>() {
+        normalFeelingsViewModel.getReasons().observe(getActivity(), new Observer<ArrayList<Reason>>() {
             @Override
             public void onChanged(ArrayList<Reason> reasons) {
                 listAdapter.notifyDataSetChanged();
             }
         });
-        reasonsViewModel.getIsUpdating().observe(getActivity(), new Observer<Boolean>() {
+        normalFeelingsViewModel.getIsUpdating().observe(getActivity(), new Observer<Boolean>() {
             @Override
             public void onChanged(Boolean aBoolean) {
                 if(aBoolean){
@@ -86,7 +86,7 @@ public class ReasonsFragment extends BottomSheetDialogFragment {
                 }
                 else{
                     hideProgressBar();
-                    binding.reasons.smoothScrollToPosition(reasonsViewModel.getReasons().getValue().size()-1);
+                    binding.reasons.smoothScrollToPosition(normalFeelingsViewModel.getReasons().getValue().size()-1);
                 }
             }
         });
@@ -119,7 +119,7 @@ public class ReasonsFragment extends BottomSheetDialogFragment {
     }
 
     private void initListView() {
-        listAdapter = new ReasonsListAdapter(getActivity(), reasonsViewModel.getReasons().getValue());
+        listAdapter = new ReasonsListAdapter(getActivity(), normalFeelingsViewModel.getReasons().getValue());
         binding.reasons.setAdapter(listAdapter);
     }
 
