@@ -6,69 +6,27 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.fragment.app.Fragment;
 
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 
 import com.example.moodtracker.R;
+import com.example.moodtracker.databinding.FragmentStrongFeelingsBinding;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link StrongFeelingFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class StrongFeelingFragment extends BottomSheetDialogFragment {
 
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String FEELINGS_DESCRIPTION = null;
     public static String TAG = "ReasonsDialogFragment";
+    private FragmentStrongFeelingsBinding binding;
 
-    private String feeling_description;
-
-    public StrongFeelingFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @return A new instance of fragment StrongFeelingsReasonsFragment.
-     */
-    public static StrongFeelingFragment newInstance(String param1) {
-        StrongFeelingFragment fragment = new StrongFeelingFragment();
-        Bundle args = new Bundle();
-        args.putString(FEELINGS_DESCRIPTION, param1);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            feeling_description = getArguments().getString(FEELINGS_DESCRIPTION);
-            Log.d("pass data", feeling_description) ;
-
-        }
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_strong_feelings, container, false);
-    }
 
     // for the dialog size
     @NonNull
@@ -77,7 +35,6 @@ public class StrongFeelingFragment extends BottomSheetDialogFragment {
         BottomSheetDialog dialog = (BottomSheetDialog) super.onCreateDialog(savedInstanceState);
         return dialog;
     }
-
     // for the dialog size
 
     @Override
@@ -91,4 +48,27 @@ public class StrongFeelingFragment extends BottomSheetDialogFragment {
         assert layout!=null;
         layout.setMinimumHeight(Resources.getSystem().getDisplayMetrics().heightPixels);
     }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        String feelingDescription = getArguments().getString("feeling_description");
+        Log.d("pass data", feelingDescription) ;
+        // Inflate the layout for this fragment
+        binding = FragmentStrongFeelingsBinding.inflate(inflater, container, false);
+        View root = binding.getRoot();
+        ImageView image = (ImageView)root.findViewById(R.id.strong_feeling_icon);
+        setFeelingsEmojis(image,feelingDescription);
+
+        return root;
+    }
+
+
+    private void setFeelingsEmojis(ImageView image, String feeling_description) {
+        if(feeling_description== "Great")
+            image.setImageResource(R.drawable.emoticon_great_btn);
+        else if (feeling_description== "Depressed")
+            image.setImageResource(R.drawable.emoticon_cry_btn);
+    }
+
 }

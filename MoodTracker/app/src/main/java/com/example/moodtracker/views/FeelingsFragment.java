@@ -132,8 +132,10 @@ public class FeelingsFragment extends BottomSheetDialogFragment {
     }
 
     public void showBottomSheetDialogStrongFeelings(String feeling_description) {
+        Bundle bundle = new Bundle();
+        bundle.putString("feeling_description", feeling_description);
         StrongFeelingFragment strongFeelingFragment = new StrongFeelingFragment();
-        strongFeelingFragment.newInstance(feeling_description);
+        strongFeelingFragment.setArguments(bundle);
         strongFeelingFragment.show(getChildFragmentManager(), strongFeelingFragment.TAG);
 
     }
