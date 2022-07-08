@@ -18,7 +18,7 @@ import android.widget.RelativeLayout;
 
 import com.example.moodtracker.R;
 import com.example.moodtracker.adapters.ReasonsListAdapter;
-import com.example.moodtracker.databinding.FragmentReasonsBinding;
+import com.example.moodtracker.databinding.FragmentNormalFeelingsBinding;
 import com.example.moodtracker.models.Reason;
 import com.example.moodtracker.viewmodels.NormalFeelingsViewModel;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
@@ -31,7 +31,7 @@ public class NormalFeelingsFragment extends BottomSheetDialogFragment {
 
 
     private ReasonsListAdapter listAdapter;
-    private FragmentReasonsBinding binding;
+    private FragmentNormalFeelingsBinding binding;
     private NormalFeelingsViewModel normalFeelingsViewModel;
     public static String TAG = "ReasonsDialogFragment";
 
@@ -63,7 +63,7 @@ public class NormalFeelingsFragment extends BottomSheetDialogFragment {
                              ViewGroup container, Bundle savedInstanceState) {
         String feelingDescription = getArguments().getString("feeling_description");
         Log.d("pass data", feelingDescription) ;
-        binding = FragmentReasonsBinding.inflate(inflater, container, false);
+        binding = FragmentNormalFeelingsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         normalFeelingsViewModel = new ViewModelProvider(this).get(NormalFeelingsViewModel.class);
