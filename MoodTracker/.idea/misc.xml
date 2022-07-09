@@ -46,6 +46,7 @@
         <entry key="app/src/main/res/layout/fragment_item_list.xml" value="0.23550724637681159" />
         <entry key="app/src/main/res/layout/fragment_item_list_dialog_list_dialog.xml" value="0.17426545086119555" />
         <entry key="app/src/main/res/layout/fragment_more.xml" value="0.23550724637681159" />
+        <entry key="app/src/main/res/layout/fragment_normal_feelings.xml" value="0.20878623188405798" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.23505434782608695" />
         <entry key="app/src/main/res/layout/fragment_reasons.xml" value="0.2265625" />
         <entry key="app/src/main/res/layout/fragment_select_feeling_dialog.xml" value="0.1721014492753623" />
@@ -53,6 +54,8 @@
         <entry key="app/src/main/res/layout/fragment_strong_feelings_reasons.xml" value="0.1" />
         <entry key="app/src/main/res/layout/normal_feelings.xml" value="0.21331521739130435" />
         <entry key="app/src/main/res/layout/reason_item.xml" value="0.22552083333333334" />
+        <entry key="app/src/main/res/layout/reasons_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/reasons_sublist.xml" value="0.20878623188405798" />
         <entry key="app/src/main/res/layout/select_feeling_dialog.xml" value="0.5" />
         <entry key="app/src/main/res/layout/strong_feelings_input.xml" value="0.22" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.2786458333333333" />

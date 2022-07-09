@@ -36,8 +36,8 @@
 
             <ImageView
                 android:id="@+id/normal_feeling_icon"
-                android:layout_width="36dp"
-                android:layout_height="match_parent"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
                 android:contentDescription="TODO">
