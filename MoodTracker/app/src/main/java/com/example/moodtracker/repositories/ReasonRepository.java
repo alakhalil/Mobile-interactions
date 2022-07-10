@@ -10,7 +10,7 @@ import java.util.Arrays;
 
 public class ReasonRepository {
     private static ReasonRepository instance;
-    private ArrayList<Reason> dataset = new ArrayList<>();
+    private ArrayList<Reason> dataset ;
 
     public static ReasonRepository getInstance(){
         if(instance== null){
@@ -32,6 +32,7 @@ public class ReasonRepository {
                 R.drawable.school, R.drawable.food_apple};
         String[] reasons_titles = {"Health", "Social", "Sleep", "Work", "Education", "Food"};
         String [] sub_reasons = {"Family", "Partner","Children", "Relatives", "Friends", "Others"};
+        dataset = new ArrayList<>();
         for (int i = 0; i < reasons_titles.length; i++) {
             Reason reason = new Reason(reasons_titles[i], Arrays.asList(sub_reasons), images_ids[i]);
             dataset.add(reason);
