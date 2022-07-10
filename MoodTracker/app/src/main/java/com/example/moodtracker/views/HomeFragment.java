@@ -34,7 +34,7 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
+        homeViewModel = new ViewModelProvider(requireActivity()).get(HomeViewModel.class);
         homeViewModel.init();
         homeViewModel.getEntries().observe(getActivity(), new Observer<ArrayList<Entry>>() {
             @Override
@@ -62,11 +62,8 @@ public class HomeFragment extends Fragment {
             @RequiresApi(api = Build.VERSION_CODES.N)
             @Override
             public void onClick(View view) {
-               // showBottomSheetDialog();
-                Navigation.findNavController(view).navigate(R.id.feelings_layout);
-
-                //TODO: move this function to the viewModel of feelingsFragment
-                homeViewModel.addNewValue(new Entry("feeling sad", "No idea what I am doing", "10:30", 0, R.drawable.emoticon_sad_outline));
+                showBottomSheetDialog();
+             //   Navigation.findNavController(view).navigate(R.id.feelings_layout);
             }
         });
 
