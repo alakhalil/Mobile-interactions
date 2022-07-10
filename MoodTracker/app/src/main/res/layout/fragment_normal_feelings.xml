@@ -60,10 +60,11 @@
         <ListView
             android:id="@+id/reasons"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginVertical="0dp"
+            android:layout_height="wrap_content"
             android:divider="@null"
-            tools:listitem="@layout/reason_item" />
+            tools:listitem="@layout/reason_item">
+
+        </ListView>
     </LinearLayout>
 
 </RelativeLayout>
