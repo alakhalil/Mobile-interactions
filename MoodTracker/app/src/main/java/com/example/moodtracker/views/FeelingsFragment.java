@@ -27,49 +27,18 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-/**
- * A simple {@link Fragment} subclass.
- * create an instance of this fragment.
- */
 public class FeelingsFragment extends BottomSheetDialogFragment {
 
     private FragmentFeelingsBinding binding;
     public static String TAG = "FeelingsBottomSheetDialogFragment";
 
-
-    // for the dialog size
-    @NonNull
-    @Override
-     public Dialog onCreateDialog(Bundle savedInstanceState){
-         BottomSheetDialog dialog = (BottomSheetDialog) super.onCreateDialog(savedInstanceState);
-         return dialog;
-     }
-
-    // for the dialog size
-
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
-        BottomSheetBehavior<View> bottomSheetBehaviour = BottomSheetBehavior.from((View) view.getParent());
-        bottomSheetBehaviour.setState(BottomSheetBehavior.STATE_EXPANDED);
-
-        RelativeLayout layout = getDialog().findViewById(R.id.feelings_layout);
-        assert layout!=null;
-        layout.setMinimumHeight(Resources.getSystem().getDisplayMetrics().heightPixels);
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
-
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        HomeViewModel homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+        // get the sharedViewModel with homeFragment
+        HomeViewModel homeViewModel = new ViewModelProvider(requireActivity()).get(HomeViewModel.class);
+
         binding = FragmentFeelingsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
         final TextView todayDate = binding.todayDate;
@@ -82,8 +51,8 @@ public class FeelingsFragment extends BottomSheetDialogFragment {
         todayDate.setText(date);
         feelingQuestion.setText("How do you feel?");
 
-        /*
-         Actions of the feelings btns
+        /**
+         * actions for the feelings btns
          */
         final ImageButton depressedBtn = binding.cryBtn;
         depressedBtn.setOnClickListener(new View.OnClickListener() {
@@ -141,5 +110,25 @@ public class FeelingsFragment extends BottomSheetDialogFragment {
     }
 
 
+    // for the dialog size
+    @Override
+    public Dialog onCreateDialog(Bundle savedInstanceState) {
+        BottomSheetDialog dialog = (BottomSheetDialog) super.onCreateDialog(savedInstanceState);
+        return dialog;
+    }
+
+    // for the dialog size
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        BottomSheetBehavior<View> bottomSheetBehaviour = BottomSheetBehavior.from((View) view.getParent());
+        bottomSheetBehaviour.setState(BottomSheetBehavior.STATE_EXPANDED);
+
+        RelativeLayout layout = getDialog().findViewById(R.id.feelings_layout);
+        assert layout != null;
+        layout.setMinimumHeight(Resources.getSystem().getDisplayMetrics().heightPixels);
+    }
 
 }

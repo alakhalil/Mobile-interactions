@@ -31,7 +31,7 @@ public class EntryRepository {
         int[] imageId = {R.drawable.emoticon_sad_outline, R.drawable.emoticon_happy_outline
                 , R.drawable.emoticon_cry_outline, R.drawable.emoticon_outline,
                 R.drawable.emoticon_neutral_outline};
-        int[] attachedImageId = {0, R.drawable.img, 0, 0, 0};
+        int[] attachedImageId = {0, R.drawable.entry_img, 0, 0, 0};
         String[] feeling_description = {"Feeling sad", "Feeling happy", "Feeling depressed", "Feeling great", "Feeling okay"};
         String[] feeling_reason = {"had problems with my family", "happy with my grades", "Stressed", "Will travel tonight", "Nothing special"};
         for (int i = 0; i < imageId.length; i++) {

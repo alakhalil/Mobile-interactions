@@ -1,25 +1,20 @@
 package com.example.moodtracker.views;
 
 
-import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.navigation.Navigation;
 
-import com.example.moodtracker.R;
 import com.example.moodtracker.adapters.EntriesListAdapter;
 import com.example.moodtracker.databinding.FragmentHomeBinding;
 import com.example.moodtracker.models.Entry;
 import com.example.moodtracker.viewmodels.HomeViewModel;
-import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
 import java.util.ArrayList;
 
@@ -33,15 +28,16 @@ public class HomeFragment extends Fragment {
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-
         homeViewModel = new ViewModelProvider(requireActivity()).get(HomeViewModel.class);
         homeViewModel.init();
+
         homeViewModel.getEntries().observe(getActivity(), new Observer<ArrayList<Entry>>() {
             @Override
             public void onChanged(ArrayList<Entry> entries) {
                 listAdapter.notifyDataSetChanged();
             }
         });
+
         homeViewModel.getIsUpdating().observe(getActivity(), new Observer<Boolean>() {
             @Override
             public void onChanged(Boolean aBoolean) {
@@ -59,7 +55,6 @@ public class HomeFragment extends Fragment {
 
         // To open the dialog
         binding.fab.setOnClickListener(new View.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.N)
             @Override
             public void onClick(View view) {
                 showBottomSheetDialog();
@@ -75,17 +70,9 @@ public class HomeFragment extends Fragment {
         binding.entries.setAdapter(listAdapter);
     }
 
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
-    }
-
     public void showBottomSheetDialog() {
         new FeelingsFragment().show(getChildFragmentManager(), FeelingsFragment.TAG);
     }
-
-
 
     public void showProgressBar(){
         binding.progressBar.setVisibility(View.VISIBLE);
@@ -94,4 +81,11 @@ public class HomeFragment extends Fragment {
     private void hideProgressBar() {
         binding.progressBar.setVisibility(View.GONE);
     }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
+    }
+
 }

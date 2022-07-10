@@ -35,7 +35,7 @@
         tools:layout="@layout/fragment_more" />
 
     <dialog
-        android:id="@+id/normal_feelings_layout"
+        android:id="@+id/normalFeelingsFragment"
         android:name="com.example.moodtracker.views.NormalFeelingsFragment"
         tools:layout="@layout/fragment_normal_feelings" >
         <action
