@@ -30,7 +30,7 @@ public class ReasonsListAdapter extends ArrayAdapter<Reason> {
         }
 
         ImageView reason_icon = convertView.findViewById(R.id.iconId);
-        TextView reason_title = convertView.findViewById(R.id.reason);
+        TextView reason_title = convertView.findViewById(R.id.reasonText);
 
         reason_icon.setImageResource(reason.iconId);
         reason_title.setText(reason.reason);

@@ -13,8 +13,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.moodtracker.R;
 import com.example.moodtracker.adapters.ReasonsListAdapter;
@@ -91,6 +94,17 @@ public class NormalFeelingsFragment extends BottomSheetDialogFragment {
             }
         });
 
+
+        binding.reasons.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
+                TextView textView = (TextView) view.findViewById(R.id.reasonText);
+                Log.d("Reason", textView.getText().toString());
+                Log.d("Feeling", feelingDescription);
+                dismiss();
+
+            }});
 
 
         // To open the dialog
