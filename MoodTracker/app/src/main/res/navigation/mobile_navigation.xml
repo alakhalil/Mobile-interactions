@@ -39,9 +39,9 @@
 
     <fragment
         android:id="@+id/page7Fragment"
-        android:name="com.example.moodtracker.views.Page7Fragment"
+        android:name="com.example.moodtracker.views.Groups"
         android:label="Groups"
-        tools:layout="@layout/fragment_page7" >
+        tools:layout="@layout/groups" >
         <action
             android:id="@+id/action_page7Fragment_to_page8Fragment"
             app:destination="@id/page8Fragment" />
@@ -49,7 +49,7 @@
 
     <fragment
         android:id="@+id/page8Fragment"
-        android:name="com.example.moodtracker.views.Page8Fragment"
+        android:name="com.example.moodtracker.views.Share"
         android:label="Group">
         <action
             android:id="@+id/action_page8Fragment_to_page9Fragment"
@@ -58,15 +58,15 @@
 
     <fragment
         android:id="@+id/page9Fragment"
-        android:name="com.example.moodtracker.views.Page9Fragment"
+        android:name="com.example.moodtracker.views.Members"
         android:label="Members"
-        tools:layout="@layout/fragment_page9" />
+        tools:layout="@layout/members" />
 
     <fragment
         android:id="@+id/page12Fragment"
-        android:name="com.example.moodtracker.views.Page12Fragment"
+        android:name="com.example.moodtracker.views.Connections"
         android:label="Connections"
-        tools:layout="@layout/fragment_page12" >
+        tools:layout="@layout/connections" >
         <action
             android:id="@+id/action_page12Fragment_to_page13Fragment"
             app:destination="@id/page13Fragment" />
@@ -74,8 +74,8 @@
 
     <fragment
         android:id="@+id/page13Fragment"
-        android:name="com.example.moodtracker.views.Page13Fragment"
+        android:name="com.example.moodtracker.views.Requests"
         android:label="Requests"
-        tools:layout="@layout/fragment_page13" />
+        tools:layout="@layout/requests" />
 
 </navigation>

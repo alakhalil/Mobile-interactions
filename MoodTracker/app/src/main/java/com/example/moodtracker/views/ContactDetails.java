@@ -12,12 +12,12 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.example.moodtracker.R;
 
-public class page10 extends AppCompatActivity {
+public class ContactDetails extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.page10);
+        setContentView(R.layout.contact_details);
         setTitle("Contact");
         String name = getIntent().getStringExtra("namee");
         int photo = getIntent().getIntExtra("photoo",0);

@@ -1,11 +1,11 @@
 package com.example.moodtracker.views;
 
-public class RV {
+public class RVMembersModel {
     String name;
     String email;
     int photo;
 
-    public RV(String name, int photo) {
+    public RVMembersModel(String name, int photo) {
         this.name = name;
         this.email = email;
         this.photo = photo;

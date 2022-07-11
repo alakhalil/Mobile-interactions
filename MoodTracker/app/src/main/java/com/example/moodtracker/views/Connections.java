@@ -10,17 +10,18 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.moodtracker.R;
-import com.example.moodtracker.databinding.FragmentPage12Binding;
-import com.example.moodtracker.databinding.FragmentPage9Binding;
+import com.example.moodtracker.databinding.ConnectionsBinding;
+import com.example.moodtracker.databinding.RequestsBinding;
+import com.example.moodtracker.databinding.MembersBinding;
 
-public class Page12Fragment extends Fragment {
+public class Connections extends Fragment {
 
-    private FragmentPage12Binding binding;
+    private ConnectionsBinding binding;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        binding = FragmentPage12Binding.inflate(inflater, container, false);
+        binding = ConnectionsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         binding.button.setOnClickListener(new View.OnClickListener() {

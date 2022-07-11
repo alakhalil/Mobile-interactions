@@ -12,7 +12,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 
 import androidx.cardview.widget.CardView;
-import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 
@@ -20,10 +19,10 @@ import java.util.ArrayList;
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder> {
     private Activity activity;
-    private ArrayList<RV> rv;
+    private ArrayList<RVMembersModel> rv;
 
 
-    public CustomAdapter(Activity activity, ArrayList<RV> rv) {
+    public CustomAdapter(Activity activity, ArrayList<RVMembersModel> rv) {
         this.activity = activity;
         this.rv = rv;
     }
@@ -32,7 +31,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = activity.getLayoutInflater();
-        View v = inflater.inflate(R.layout.rv_model, parent, false);
+        View v = inflater.inflate(R.layout.rv_members_model, parent, false);
         ViewHolder holder = new ViewHolder(v);
         return holder;
     }
@@ -44,7 +43,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
             holder.cardView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent i = new Intent(view.getContext(), page10.class);
+                    Intent i = new Intent(view.getContext(), ContactDetails.class);
                     i.putExtra("namee",rv.get(position).getName());
                     i.putExtra("emaill",rv.get(position).getEmail());
                     i.putExtra("photoo",rv.get(position).getPhoto());
