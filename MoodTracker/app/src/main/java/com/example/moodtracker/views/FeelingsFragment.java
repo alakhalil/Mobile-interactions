@@ -89,6 +89,15 @@ public class FeelingsFragment extends BottomSheetDialogFragment {
                 showBottomSheetDialogNormalFeelings("Okay");
             }
         });
+
+
+        // close btn
+        binding.btnClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dismiss();
+            }
+        });
         return root;
     }
 

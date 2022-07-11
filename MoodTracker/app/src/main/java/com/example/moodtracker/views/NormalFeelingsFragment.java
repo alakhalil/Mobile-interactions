@@ -75,6 +75,14 @@ public class NormalFeelingsFragment extends BottomSheetDialogFragment {
                         0,
                         feelingsIcon));
             }});
+
+        // bak btn
+        binding.backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dismiss();
+            }
+        });
         return root;
     }
 
