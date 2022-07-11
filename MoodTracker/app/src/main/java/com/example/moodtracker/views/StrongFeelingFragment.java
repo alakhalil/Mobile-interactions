@@ -53,6 +53,8 @@ public class StrongFeelingFragment extends BottomSheetDialogFragment {
             @Override
             public void onClick(View view) {
                 dismiss();
+                getParentFragment().onDestroyView();
+
                 homeViewModel.addNewValue(new Entry(
                         feelingDescription,
                         reasonText.getText().toString(),

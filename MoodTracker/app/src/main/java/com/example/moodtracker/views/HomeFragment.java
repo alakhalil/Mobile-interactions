@@ -10,7 +10,9 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.Navigation;
 
+import com.example.moodtracker.R;
 import com.example.moodtracker.adapters.EntriesListAdapter;
 import com.example.moodtracker.databinding.FragmentHomeBinding;
 import com.example.moodtracker.models.Entry;
@@ -57,8 +59,7 @@ public class HomeFragment extends Fragment {
         binding.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showBottomSheetDialog();
-             //   Navigation.findNavController(view).navigate(R.id.feelings_layout);
+                Navigation.findNavController(view).navigate(R.id.feelings_layout);
             }
         });
 
@@ -68,10 +69,6 @@ public class HomeFragment extends Fragment {
     private void initListView() {
         listAdapter = new EntriesListAdapter(getActivity(), homeViewModel.getEntries().getValue());
         binding.entries.setAdapter(listAdapter);
-    }
-
-    public void showBottomSheetDialog() {
-        new FeelingsFragment().show(getChildFragmentManager(), FeelingsFragment.TAG);
     }
 
     public void showProgressBar(){

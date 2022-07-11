@@ -68,7 +68,7 @@ public class NormalFeelingsFragment extends BottomSheetDialogFragment {
                 Log.d("Reason", textView.getText().toString());
                 Log.d("Feeling", feelingDescription);
                 dismiss();
-
+                getParentFragment().onDestroyView();
                 homeViewModel.addNewValue(new Entry(
                         feelingDescription,
                         textView.getText().toString(),
