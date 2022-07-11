@@ -7,7 +7,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.moodtracker"
-        minSdk 14
+        minSdk 19
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -37,6 +37,7 @@ android {
         dependencies {
             def nav_version = "2.5.0"
             classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
+
         }
     }
     dependencies {
@@ -60,5 +61,10 @@ android {
         implementation "androidx.navigation:navigation-fragment:$nav_version"
         implementation "androidx.navigation:navigation-ui:$nav_version"
 
+        // calendar
+        implementation 'org.naishadhparmar.zcustomcalendar:zcustomcalendar:1.0.1'
+
     }
+
+
 }

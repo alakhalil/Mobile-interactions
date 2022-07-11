@@ -32,9 +32,16 @@
         <entry key="app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/message_bulleted.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/my_border.xml" value="0.1" />
+        <entry key="app/src/main/res/layout-w600dp/reasons_list.xml" value="0.30335097001763667" />
+        <entry key="app/src/main/res/layout-w600dp/reasons_sublist.xml" value="0.30335097001763667" />
+        <entry key="app/src/main/res/layout/absent_view.xml" value="0.21510416666666668" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35833333333333334" />
         <entry key="app/src/main/res/layout/activity_reasons.xml" value="0.2265625" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.22327898550724637" />
+        <entry key="app/src/main/res/layout/current_view.xml" value="0.21510416666666668" />
+        <entry key="app/src/main/res/layout/default_view.xml" value="0.21510416666666668" />
+        <entry key="app/src/main/res/layout/elv_child_list_item.xml" value="0.3572916666666667" />
+        <entry key="app/src/main/res/layout/elv_group_list_item.xml" value="0.3572916666666667" />
         <entry key="app/src/main/res/layout/entries_recycler_views.xml" value="0.22552083333333334" />
         <entry key="app/src/main/res/layout/entry_item.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_analysis.xml" value="0.23505434782608695" />
@@ -53,6 +60,7 @@
         <entry key="app/src/main/res/layout/fragment_strong_feelings.xml" value="0.21195652173913043" />
         <entry key="app/src/main/res/layout/fragment_strong_feelings_reasons.xml" value="0.1" />
         <entry key="app/src/main/res/layout/normal_feelings.xml" value="0.21331521739130435" />
+        <entry key="app/src/main/res/layout/present_view.xml" value="0.21510416666666668" />
         <entry key="app/src/main/res/layout/reason_item.xml" value="0.22552083333333334" />
         <entry key="app/src/main/res/layout/reasons_list.xml" value="0.1" />
         <entry key="app/src/main/res/layout/reasons_sublist.xml" value="0.20878623188405798" />
