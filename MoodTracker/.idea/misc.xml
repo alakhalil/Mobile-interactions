@@ -16,6 +16,7 @@
         <entry key="app/src/main/res/drawable/bed.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/button_border.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/calendar.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/calendar_label.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/camera.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/chart_bar.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/chevron_left.xml" value="0.1" />
@@ -49,6 +50,7 @@
         <entry key="app/src/main/res/layout/entries_recycler_views.xml" value="0.22552083333333334" />
         <entry key="app/src/main/res/layout/entry_item.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_analysis.xml" value="0.23505434782608695" />
+        <entry key="app/src/main/res/layout/fragment_calendar.xml" value="0.2441123188405797" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.23505434782608695" />
         <entry key="app/src/main/res/layout/fragment_feelings.xml" value="0.16742654508611957" />
         <entry key="app/src/main/res/layout/fragment_feelings_selection.xml" value="0.17426545086119555" />

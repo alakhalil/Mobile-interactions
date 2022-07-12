@@ -11,6 +11,7 @@
     <string name="your_main_reason">Your main reason?</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="average_mood">Average mood</string>
 
 
 </resources>

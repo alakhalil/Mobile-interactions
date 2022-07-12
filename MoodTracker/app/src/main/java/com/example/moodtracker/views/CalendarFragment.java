@@ -1,11 +1,13 @@
 package com.example.moodtracker.views;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
@@ -24,8 +26,16 @@ public class CalendarFragment extends Fragment {
     private FragmentCalendarBinding binding;
     CustomCalendar customCalendar;
 
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Log.d("test", "on create");
+
+    }
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+        Log.d("test", "onCreateView");
         CalendarViewModel calendarViewModel =
                 new ViewModelProvider(this).get(CalendarViewModel.class);
         binding = FragmentCalendarBinding.inflate(inflater, container, false);
@@ -49,23 +59,36 @@ public class CalendarFragment extends Fragment {
         // Put object and property
         descHashMap.put("default",defaultProperty);
 
-        // for current date
-        Property currentProperty=new Property();
-        currentProperty.layoutResource=R.layout.calendar_great_view;
-        currentProperty.dateTextViewResource=R.id.text_view;
-        descHashMap.put("current",currentProperty);
+        // for great
+        Property greatProperty=new Property();
+        greatProperty.layoutResource=R.layout.calendar_great_view;
+        greatProperty.dateTextViewResource=R.id.text_view;
+        descHashMap.put("great",greatProperty);
 
-        // for present date
-        Property presentProperty=new Property();
-        presentProperty.layoutResource=R.layout.calendar_happy_view;
-        presentProperty.dateTextViewResource=R.id.text_view;
-        descHashMap.put("present",presentProperty);
+        // for happy
+        Property happyProperty=new Property();
+        happyProperty.layoutResource=R.layout.calendar_happy_view;
+        happyProperty.dateTextViewResource=R.id.text_view;
+        descHashMap.put("happy",happyProperty);
 
-        // For absent
-        Property absentProperty =new Property();
-        absentProperty.layoutResource=R.layout.calendar_depressed_view;
-        absentProperty.dateTextViewResource=R.id.text_view;
-        descHashMap.put("absent",absentProperty);
+        // For neutral
+        Property neutralProperty =new Property();
+        neutralProperty.layoutResource=R.layout.calendar_neutral_view;
+        neutralProperty.dateTextViewResource=R.id.text_view;
+        descHashMap.put("neutral",neutralProperty);
+
+
+        // for sad
+        Property sadProperty=new Property();
+        sadProperty.layoutResource=R.layout.calendar_sad_view;
+        sadProperty.dateTextViewResource=R.id.text_view;
+        descHashMap.put("sad",happyProperty);
+
+        // For depressed
+        Property depressedProperty =new Property();
+        depressedProperty.layoutResource=R.layout.calendar_depressed_view;
+        depressedProperty.dateTextViewResource=R.id.text_view;
+        descHashMap.put("depressed",depressedProperty);
 
         // set desc hashmap on custom calendar
         customCalendar.setMapDescToProp(descHashMap);
@@ -77,12 +100,18 @@ public class CalendarFragment extends Fragment {
         Calendar calendar=  Calendar.getInstance();
 
         // Put values
-        dateHashmap.put(1,"present");
-        dateHashmap.put(2,"absent");
-        dateHashmap.put(3,"present");
-        dateHashmap.put(4,"absent");
-        dateHashmap.put(20,"present");
-        dateHashmap.put(30,"absent");
+        dateHashmap.put(1,"happy");
+        dateHashmap.put(2,"depressed");
+        dateHashmap.put(3,"happy");
+        dateHashmap.put(4,"depressed");
+        dateHashmap.put(20,"happy");
+        dateHashmap.put(30,"depressed");
+        dateHashmap.put(7,"sad");
+        dateHashmap.put(8,"sad");
+        dateHashmap.put(9,"sad");
+        dateHashmap.put(26,"neutral");
+        dateHashmap.put(27,"neutral");
+        dateHashmap.put(28,"neutral");
 
         // set date
         customCalendar.setDate(calendar,dateHashmap);
