@@ -1,40 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_marginBottom="?android:attr/actionBarSize">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:layout_width="412dp"
-            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            android:nestedScrollingEnabled="false">
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button2"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="205dp"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
                 android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
                 android:text="@string/sent"
                 android:textAlignment="center"
                 android:textAllCaps="false"
-                android:textSize="16sp"
                 android:textColor="@color/black"
+                android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -42,40 +47,47 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button1"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="205dp"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:textAlignment="center"
-                android:text="@string/received"
+                android:layout_gravity="center"
+                android:layout_weight="1"
                 android:background="@color/surface_calendar"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/received"
+                android:textAlignment="center"
                 android:textAllCaps="false"
-                android:textSize="16sp"
                 android:textColor="@color/black"
+                android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="@id/button1" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="81dp"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:nestedScrollingEnabled="true">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/imageView1"
-                android:layout_width="31dp"
-                android:layout_height="63dp"
+                android:layout_width="70dp"
+                android:layout_height="65dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                android:src="@drawable/avatar15"
-                />
+                android:src="@drawable/avatar15" />
 
             <TextView
                 android:id="@+id/textView1"
                 android:layout_width="242dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_weight="1"
                 android:text="@string/andrew_kaiden"
@@ -86,16 +98,16 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="81dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:orientation="horizontal">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/imageView3"
-                android:layout_width="31dp"
-                android:layout_height="63dp"
+                android:layout_width="70dp"
+                android:layout_height="65dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="10dp"
                 android:layout_weight="1"
 
                 android:src="@drawable/avatar18" />
@@ -104,8 +116,8 @@
                 android:id="@+id/textView2"
                 android:layout_width="242dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_weight="1"
                 android:text="@string/brandon_elias"
@@ -116,16 +128,16 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="81dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:orientation="horizontal">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/imageView5"
-                android:layout_width="31dp"
-                android:layout_height="63dp"
+                android:layout_width="70dp"
+                android:layout_height="65dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="10dp"
                 android:layout_weight="1"
                 android:src="@drawable/avatar16" />
 
@@ -133,8 +145,8 @@
                 android:id="@+id/textView3"
                 android:layout_width="242dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_weight="1"
                 android:text="@string/emma_qing"
@@ -145,16 +157,16 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="81dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:orientation="horizontal">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/imageView7"
-                android:layout_width="31dp"
-                android:layout_height="63dp"
+                android:layout_width="70dp"
+                android:layout_height="65dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="10dp"
                 android:layout_weight="1"
                 android:src="@drawable/avatar17" />
 
@@ -162,8 +174,8 @@
                 android:id="@+id/textView4"
                 android:layout_width="242dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_weight="1"
                 android:text="@string/grace_hudson"
@@ -174,16 +186,16 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="81dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:orientation="horizontal">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/imageView9"
-                android:layout_width="31dp"
-                android:layout_height="63dp"
+                android:layout_width="70dp"
+                android:layout_height="65dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="10dp"
                 android:layout_weight="1"
                 android:src="@drawable/avatar19" />
 
@@ -191,8 +203,8 @@
                 android:id="@+id/textView5"
                 android:layout_width="242dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_weight="1"
                 android:text="@string/nicholas_dallas"
@@ -203,16 +215,16 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="81dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:orientation="horizontal">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/imageView11"
-                android:layout_width="31dp"
-                android:layout_height="63dp"
+                android:layout_width="70dp"
+                android:layout_height="65dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="10dp"
                 android:layout_weight="1"
                 android:src="@drawable/avatar20" />
 
@@ -220,8 +232,8 @@
                 android:id="@+id/textView6"
                 android:layout_width="242dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_weight="1"
                 android:text="@string/robert_thomas"
@@ -231,19 +243,18 @@
         </LinearLayout>
 
 
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="81dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:orientation="horizontal">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/imageView13"
-                android:layout_width="31dp"
-                android:layout_height="63dp"
+                android:layout_width="70dp"
+                android:layout_height="65dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="10dp"
                 android:layout_weight="1"
                 android:src="@drawable/avatar5" />
 
@@ -251,7 +262,7 @@
                 android:id="@+id/textView13"
                 android:layout_width="242dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="30dp"
                 android:layout_weight="1"
@@ -264,4 +275,4 @@
     </LinearLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
