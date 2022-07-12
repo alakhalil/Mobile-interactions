@@ -1,11 +1,11 @@
-package com.example.moodtracker.views;
+package com.example.moodtracker.models;
 
-public class RVMembersModel {
+public class Member {
     String name;
     String email;
     int photo;
 
-    public RVMembersModel(String name, int photo) {
+    public Member(String name, int photo) {
         this.name = name;
         this.email = email;
         this.photo = photo;

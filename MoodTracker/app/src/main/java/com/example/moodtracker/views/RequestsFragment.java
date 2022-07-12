@@ -12,7 +12,7 @@ import com.example.moodtracker.R;
 import com.example.moodtracker.databinding.ConnectionsBinding;
 import com.example.moodtracker.databinding.RequestsBinding;
 
-public class Requests extends Fragment {
+public class RequestsFragment extends Fragment {
 
     private RequestsBinding binding;
 

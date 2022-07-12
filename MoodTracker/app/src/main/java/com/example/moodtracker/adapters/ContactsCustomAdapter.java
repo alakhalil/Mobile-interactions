@@ -1,8 +1,11 @@
-package com.example.moodtracker.views;
+package com.example.moodtracker.adapters;
 
 import android.app.Activity;
 import android.content.Intent;
 import com.example.moodtracker.R;
+import com.example.moodtracker.views.ContactDetailsActivity;
+import com.example.moodtracker.models.Member;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,12 +20,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder> {
+public class ContactsCustomAdapter extends RecyclerView.Adapter<ContactsCustomAdapter.ViewHolder> {
     private Activity activity;
-    private ArrayList<RVMembersModel> rv;
+    private ArrayList<Member> rv;
 
 
-    public CustomAdapter(Activity activity, ArrayList<RVMembersModel> rv) {
+    public ContactsCustomAdapter(Activity activity, ArrayList<Member> rv) {
         this.activity = activity;
         this.rv = rv;
     }
@@ -43,7 +46,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
             holder.cardView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent i = new Intent(view.getContext(), ContactDetails.class);
+                    Intent i = new Intent(view.getContext(), ContactDetailsActivity.class);
                     i.putExtra("namee",rv.get(position).getName());
                     i.putExtra("emaill",rv.get(position).getEmail());
                     i.putExtra("photoo",rv.get(position).getPhoto());

@@ -17,7 +17,7 @@ import com.google.android.material.datepicker.MaterialDatePicker;
 import com.google.android.material.datepicker.MaterialPickerOnPositiveButtonClickListener;
 
 
-public class Share extends Fragment {
+public class ShareFragment extends Fragment {
 
     private ShareBinding binding;
 

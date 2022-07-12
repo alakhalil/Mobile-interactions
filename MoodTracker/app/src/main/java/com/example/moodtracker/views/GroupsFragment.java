@@ -15,7 +15,7 @@ import com.example.moodtracker.databinding.GroupsBinding;
 
 import java.util.Objects;
 
-public class Groups extends Fragment {
+public class GroupsFragment extends Fragment {
     private GroupsBinding binding;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

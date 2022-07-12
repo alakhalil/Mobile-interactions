@@ -14,9 +14,10 @@ import com.example.moodtracker.databinding.ConnectionsBinding;
 import com.example.moodtracker.databinding.RequestsBinding;
 import com.example.moodtracker.databinding.MembersBinding;
 
-public class Connections extends Fragment {
+public class ConnectionsFragment extends Fragment {
 
     private ConnectionsBinding binding;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
