@@ -54,7 +54,7 @@ android {
 
         // For emojis rounded images
         implementation 'de.hdodenhof:circleimageview:3.1.0'
-
+        plementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
         def nav_version = "2.5.0"
 
         // Java language implementation

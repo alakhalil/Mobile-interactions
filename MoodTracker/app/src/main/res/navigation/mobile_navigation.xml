@@ -15,25 +15,6 @@
             app:destination="@id/feelings_layout" />
     </fragment>
 
-    <fragment
-        android:id="@+id/navigation_analysis"
-        android:name="com.example.moodtracker.views.AnalysisFragment"
-        android:label="@string/title_analysis"
-        tools:layout="@layout/fragment_analysis" />
-
-
-    <fragment
-        android:id="@+id/navigation_calendar"
-        android:name="com.example.moodtracker.views.CalendarFragment"
-        android:label="@string/title_calendar"
-        tools:layout="@layout/fragment_calendar" />
-
-    <fragment
-        android:id="@+id/navigation_more"
-        android:name="com.example.moodtracker.views.MoreFragment"
-        android:label="@string/title_more"
-        tools:layout="@layout/fragment_more" />
-
     <dialog
         android:id="@+id/normalFeelingsFragment"
         android:name="com.example.moodtracker.views.NormalFeelingsFragment"
@@ -64,5 +45,71 @@
             android:id="@+id/action_strong_feeling_layout_to_navigation_home"
             app:destination="@id/navigation_home" />
     </dialog>
+    <fragment
+        android:id="@+id/navigation_analysis"
+        android:name="com.example.moodtracker.views.AnalysisFragment"
+        android:label="@string/title_analysis"
+        tools:layout="@layout/fragment_analysis" />
+
+
+    <fragment
+        android:id="@+id/navigation_calendar"
+        android:name="com.example.moodtracker.views.CalendarFragment"
+        android:label="@string/title_calendar"
+        tools:layout="@layout/fragment_calendar" />
+
+    <fragment
+        android:id="@+id/navigation_more"
+        android:name="com.example.moodtracker.views.MoreFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_more" >
+        <action
+            android:id="@+id/action_navigation_more_to_page7Fragment"
+            app:destination="@id/page7Fragment" />
+        <action
+            android:id="@+id/action_navigation_more_to_page12Fragment"
+            app:destination="@id/page12Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/page7Fragment"
+        android:name="com.example.moodtracker.views.GroupsFragment"
+        android:label="Groups"
+        tools:layout="@layout/groups" >
+        <action
+            android:id="@+id/action_page7Fragment_to_page8Fragment"
+            app:destination="@id/page8Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/page8Fragment"
+        android:name="com.example.moodtracker.views.ShareFragment"
+        android:label="Group">
+        <action
+            android:id="@+id/action_page8Fragment_to_page9Fragment"
+            app:destination="@id/page9Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/page9Fragment"
+        android:name="com.example.moodtracker.views.MembersFragment"
+        android:label="Members"
+        tools:layout="@layout/members" />
+
+    <fragment
+        android:id="@+id/page12Fragment"
+        android:name="com.example.moodtracker.views.ConnectionsFragment"
+        android:label="Connections"
+        tools:layout="@layout/connections" >
+        <action
+            android:id="@+id/action_page12Fragment_to_page13Fragment"
+            app:destination="@id/page13Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/page13Fragment"
+        android:name="com.example.moodtracker.views.RequestsFragment"
+        android:label="Requests"
+        tools:layout="@layout/requests" />
 
 </navigation>
