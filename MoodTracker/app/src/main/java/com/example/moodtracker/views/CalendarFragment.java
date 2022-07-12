@@ -16,12 +16,14 @@ import com.example.moodtracker.databinding.FragmentCalendarBinding;
 import com.example.moodtracker.viewmodels.CalendarViewModel;
 
 import org.naishadhparmar.zcustomcalendar.CustomCalendar;
+import org.naishadhparmar.zcustomcalendar.OnNavigationButtonClickedListener;
 import org.naishadhparmar.zcustomcalendar.Property;
 
 import java.util.Calendar;
 import java.util.HashMap;
+import java.util.Map;
 
-public class CalendarFragment extends Fragment {
+public class CalendarFragment extends Fragment implements OnNavigationButtonClickedListener {
 
     private FragmentCalendarBinding binding;
     CustomCalendar customCalendar;
@@ -115,9 +117,12 @@ public class CalendarFragment extends Fragment {
 
         // set date
         customCalendar.setDate(calendar,dateHashmap);
-
+        customCalendar.setOnNavigationButtonClickedListener(CustomCalendar.PREVIOUS, this);
+        customCalendar.setOnNavigationButtonClickedListener(CustomCalendar.NEXT, this);
         return root;
     }
+
+
 
 
     @Override
@@ -125,4 +130,42 @@ public class CalendarFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
+
+    @Override
+    public Map<Integer, Object>[] onNavigationButtonClicked(int whichButton, Calendar newMonth) {
+        Map<Integer, Object>[] arr = new Map[2];
+        switch(newMonth.get(Calendar.MONTH)) {
+            case Calendar.JULY:
+                arr[0] = new HashMap<>(); //This is the map linking a date to its description
+                arr[0].put(1,"happy");
+                arr[0].put(2,"depressed");
+                arr[0].put(3,"happy");
+                arr[0].put(4,"depressed");
+                arr[0].put(20,"happy");
+                arr[0].put(30,"depressed");
+                arr[0].put(7,"sad");
+                arr[0].put(8,"sad");
+                arr[0].put(9,"sad");
+                arr[0].put(26,"neutral");
+                arr[0].put(27,"neutral");
+                arr[0].put(28,"neutral");
+                arr[1] = null; //Optional: This is the map linking a date to its tag.
+                break;
+            case Calendar.AUGUST:
+                arr[0] = new HashMap<>(); //This is the map linking a date to its description
+                arr[0].put(4,"depressed");
+                arr[0].put(20,"happy");
+                arr[0].put(30,"depressed");
+                arr[0].put(7,"sad");
+                arr[0].put(8,"sad");
+                arr[1] = null; //Optional: This is the map linking a date to its tag.
+                break;
+            case Calendar.JUNE:
+                arr[0] = new HashMap<>();
+                arr[0].put(8,"sad");
+                arr[0].put(9,"sad");
+                arr[0].put(10,"sad");
+                break;
+        }
+        return arr;    }
 }
