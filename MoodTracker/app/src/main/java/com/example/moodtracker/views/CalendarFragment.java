@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -15,7 +14,6 @@ import com.example.moodtracker.databinding.FragmentCalendarBinding;
 import com.example.moodtracker.viewmodels.CalendarViewModel;
 
 import org.naishadhparmar.zcustomcalendar.CustomCalendar;
-import org.naishadhparmar.zcustomcalendar.OnDateSelectedListener;
 import org.naishadhparmar.zcustomcalendar.Property;
 
 import java.util.Calendar;
@@ -53,19 +51,19 @@ public class CalendarFragment extends Fragment {
 
         // for current date
         Property currentProperty=new Property();
-        currentProperty.layoutResource=R.layout.current_view;
+        currentProperty.layoutResource=R.layout.calendar_great_view;
         currentProperty.dateTextViewResource=R.id.text_view;
         descHashMap.put("current",currentProperty);
 
         // for present date
         Property presentProperty=new Property();
-        presentProperty.layoutResource=R.layout.present_view;
+        presentProperty.layoutResource=R.layout.calendar_happy_view;
         presentProperty.dateTextViewResource=R.id.text_view;
         descHashMap.put("present",presentProperty);
 
         // For absent
         Property absentProperty =new Property();
-        absentProperty.layoutResource=R.layout.absent_view;
+        absentProperty.layoutResource=R.layout.calendar_depressed_view;
         absentProperty.dateTextViewResource=R.id.text_view;
         descHashMap.put("absent",absentProperty);
 
@@ -79,7 +77,6 @@ public class CalendarFragment extends Fragment {
         Calendar calendar=  Calendar.getInstance();
 
         // Put values
-        dateHashmap.put(calendar.get(Calendar.DAY_OF_MONTH),"current");
         dateHashmap.put(1,"present");
         dateHashmap.put(2,"absent");
         dateHashmap.put(3,"present");
@@ -90,18 +87,6 @@ public class CalendarFragment extends Fragment {
         // set date
         customCalendar.setDate(calendar,dateHashmap);
 
-        customCalendar.setOnDateSelectedListener(new OnDateSelectedListener() {
-            @Override
-            public void onDateSelected(View view, Calendar selectedDate, Object desc) {
-                // get string date
-                String sDate=selectedDate.get(Calendar.DAY_OF_MONTH)
-                        +"/" +(selectedDate.get(Calendar.MONTH)+1)
-                        +"/" + selectedDate.get(Calendar.YEAR);
-
-                // display date in toast
-                Toast.makeText(getContext(),sDate, Toast.LENGTH_SHORT).show();
-            }
-        });
         return root;
     }
 

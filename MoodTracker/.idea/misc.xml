@@ -37,6 +37,10 @@
         <entry key="app/src/main/res/layout/absent_view.xml" value="0.21510416666666668" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35833333333333334" />
         <entry key="app/src/main/res/layout/activity_reasons.xml" value="0.2265625" />
+        <entry key="app/src/main/res/layout/calendar_depressed_view.xml" value="0.2441123188405797" />
+        <entry key="app/src/main/res/layout/calendar_great_view.xml" value="0.2441123188405797" />
+        <entry key="app/src/main/res/layout/calendar_happy_view.xml" value="0.2441123188405797" />
+        <entry key="app/src/main/res/layout/calendar_sad_view.xml" value="0.2441123188405797" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.22327898550724637" />
         <entry key="app/src/main/res/layout/current_view.xml" value="0.21510416666666668" />
         <entry key="app/src/main/res/layout/default_view.xml" value="0.21510416666666668" />
@@ -59,11 +63,13 @@
         <entry key="app/src/main/res/layout/fragment_select_feeling_dialog.xml" value="0.1721014492753623" />
         <entry key="app/src/main/res/layout/fragment_strong_feelings.xml" value="0.21195652173913043" />
         <entry key="app/src/main/res/layout/fragment_strong_feelings_reasons.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/neutral_view.xml" value="0.2441123188405797" />
         <entry key="app/src/main/res/layout/normal_feelings.xml" value="0.21331521739130435" />
         <entry key="app/src/main/res/layout/present_view.xml" value="0.21510416666666668" />
         <entry key="app/src/main/res/layout/reason_item.xml" value="0.22552083333333334" />
         <entry key="app/src/main/res/layout/reasons_list.xml" value="0.1" />
         <entry key="app/src/main/res/layout/reasons_sublist.xml" value="0.20878623188405798" />
+        <entry key="app/src/main/res/layout/sad_view.xml" value="0.2441123188405797" />
         <entry key="app/src/main/res/layout/select_feeling_dialog.xml" value="0.5" />
         <entry key="app/src/main/res/layout/strong_feelings_input.xml" value="0.22" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.2786458333333333" />
