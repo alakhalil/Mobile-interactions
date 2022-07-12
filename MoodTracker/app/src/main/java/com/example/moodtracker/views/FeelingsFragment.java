@@ -1,16 +1,19 @@
 package com.example.moodtracker.views;
 
+import android.app.Dialog;
+import android.content.res.Resources;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.moodtracker.R;
@@ -24,25 +27,18 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-/**
- * A simple {@link Fragment} subclass.
- * create an instance of this fragment.
- */
 public class FeelingsFragment extends BottomSheetDialogFragment {
 
     private FragmentFeelingsBinding binding;
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
+    public static String TAG = "FeelingsBottomSheetDialogFragment";
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        HomeViewModel homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+        // get the sharedViewModel with homeFragment
+        HomeViewModel homeViewModel = new ViewModelProvider(requireActivity()).get(HomeViewModel.class);
+
         binding = FragmentFeelingsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
         final TextView todayDate = binding.todayDate;
@@ -55,39 +51,97 @@ public class FeelingsFragment extends BottomSheetDialogFragment {
         todayDate.setText(date);
         feelingQuestion.setText("How do you feel?");
 
-        /*
-         Actions of the feelings btns
+        /**
+         * actions for the feelings btns
          */
         final ImageButton depressedBtn = binding.cryBtn;
         depressedBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showBottomSheetDialogStrongFeelings();
+                showBottomSheetDialogStrongFeelings("Depressed");
             }
         });
-
+        final ImageButton greatBtn = binding.greatBtn;
+        greatBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showBottomSheetDialogStrongFeelings("Great");
+            }
+        });
         final ImageButton HappyBtn = binding.happyBtn;
         HappyBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showBottomSheetDialogNormalFeelings();
+                showBottomSheetDialogNormalFeelings("Happy");
+            }
+        });
+        final ImageButton sadBtn = binding.sadBtn;
+        sadBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showBottomSheetDialogNormalFeelings("Sad");
+            }
+        });
+        final ImageButton neutralBtn = binding.neutralBtn;
+        neutralBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showBottomSheetDialogNormalFeelings("Okay");
+            }
+        });
+
+
+        // close btn
+        binding.btnClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dismiss();
             }
         });
         return root;
     }
 
-    public void showBottomSheetDialogStrongFeelings() {
-        BottomSheetDialog bottomSheetStrongFeelings = new BottomSheetDialog(getActivity());
-        bottomSheetStrongFeelings.setContentView(R.layout.strong_feelings_input);
-        bottomSheetStrongFeelings.getBehavior().setPeekHeight(1000);
-        bottomSheetStrongFeelings.show();
+    public void showBottomSheetDialogStrongFeelings(String feeling_description) {
+        Bundle bundle = new Bundle();
+        bundle.putString("feeling_description", feeling_description);
+        StrongFeelingFragment strongFeelingFragment = new StrongFeelingFragment();
+        strongFeelingFragment.setArguments(bundle);
+        strongFeelingFragment.show(getChildFragmentManager(), strongFeelingFragment.TAG);
+
     }
 
-    public void showBottomSheetDialogNormalFeelings() {
-        BottomSheetDialog bottomSheetNormalFeelings = new BottomSheetDialog(getActivity());
-        bottomSheetNormalFeelings.setContentView(R.layout.normal_feelings);
-        bottomSheetNormalFeelings.getBehavior().setPeekHeight(1000);
-        bottomSheetNormalFeelings.show();
+    public void showBottomSheetDialogNormalFeelings(String feeling_description) {
+        Bundle bundle = new Bundle();
+        bundle.putString("feeling_description", feeling_description);
+        NormalFeelingsFragment normalFeelingsFragment = new NormalFeelingsFragment();
+        normalFeelingsFragment.setArguments(bundle);
+        normalFeelingsFragment.show(getChildFragmentManager(), NormalFeelingsFragment.TAG);
     }
 
+
+    // for the dialog size
+    @Override
+    public Dialog onCreateDialog(Bundle savedInstanceState) {
+        BottomSheetDialog dialog = (BottomSheetDialog) super.onCreateDialog(savedInstanceState);
+        return dialog;
+    }
+
+    // for the dialog size
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        BottomSheetBehavior<View> bottomSheetBehaviour = BottomSheetBehavior.from((View) view.getParent());
+        bottomSheetBehaviour.setState(BottomSheetBehavior.STATE_EXPANDED);
+
+        RelativeLayout layout = getDialog().findViewById(R.id.feelings_layout);
+        assert layout != null;
+        layout.setMinimumHeight(Resources.getSystem().getDisplayMetrics().heightPixels);
+    }
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
+    }
 }

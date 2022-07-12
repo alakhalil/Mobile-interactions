@@ -9,8 +9,42 @@
         android:id="@+id/navigation_home"
         android:name="com.example.moodtracker.views.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_feelings_layout"
+            app:destination="@id/feelings_layout" />
+    </fragment>
 
+    <dialog
+        android:id="@+id/normalFeelingsFragment"
+        android:name="com.example.moodtracker.views.NormalFeelingsFragment"
+        tools:layout="@layout/fragment_normal_feelings" >
+        <action
+            android:id="@+id/action_normal_feelings_layout_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </dialog>
+
+
+    <dialog
+        android:id="@+id/feelings_layout"
+        android:name="com.example.moodtracker.views.FeelingsFragment"
+        tools:layout="@layout/fragment_feelings" >
+        <action
+            android:id="@+id/action_feelings_layout_to_reasons_layout"
+            app:destination="@id/normal_feelings_layout" />
+        <action
+            android:id="@+id/action_feelings_layout_to_strong_feeling_layout"
+            app:destination="@id/strong_feeling_layout" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/strong_feeling_layout"
+        android:name="com.example.moodtracker.views.StrongFeelingFragment"
+        tools:layout="@layout/fragment_strong_feelings" >
+        <action
+            android:id="@+id/action_strong_feeling_layout_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </dialog>
     <fragment
         android:id="@+id/navigation_analysis"
         android:name="com.example.moodtracker.views.AnalysisFragment"
