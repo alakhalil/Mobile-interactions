@@ -7,7 +7,7 @@
     android:background="@color/Primary_medium">
 
     <LinearLayout
-        android:layout_width="368dp"
+        android:layout_width="match_parent"
         android:layout_height="620dp"
         android:layout_marginStart="21dp"
         android:layout_marginTop="26dp"
