@@ -52,7 +52,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="287dp"
+        android:layout_width="match_parent"
         android:layout_height="92dp"
         android:layout_marginTop="200dp"
         android:background="?android:attr/selectableItemBackground"
@@ -68,7 +68,7 @@
 
 
             <ImageButton
-                android:id="@+id/cry_btn"
+                android:id="@+id/depressed_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@null"
@@ -93,6 +93,95 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/dysthymiaBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/emoticon_dysthymia_btn" />
+
+            <TextView
+                android:id="@+id/dysthymia_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/dysthymia"
+                android:textColor="@color/dysthymia"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <ImageButton
+                android:id="@+id/energetic_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/emoticon_energetic_btn" />
+
+
+            <TextView
+                android:id="@+id/energetic_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:text="@string/energetic"
+                android:textColor="@color/energetic"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <ImageButton
+                android:id="@+id/hyperactive_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/emoticon_hyperactive_btn" />
+
+            <TextView
+                android:id="@+id/hyperactive_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:text="@string/hyperactive"
+                android:textColor="@color/hyperactive"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_marginTop="300dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageButton
                 android:id="@+id/sad_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -107,7 +196,7 @@
                 android:gravity="center"
                 android:padding="8dp"
                 android:text="@string/sad"
-                android:textColor="#FF6400"
+                android:textColor="@color/sad"
                 android:textSize="12sp" />
         </LinearLayout>
 
@@ -134,7 +223,7 @@
                 android:layout_gravity="center"
                 android:padding="8dp"
                 android:text="@string/neutral"
-                android:textColor="#F0E11D"
+                android:textColor="@color/neutral"
                 android:textSize="12sp" />
         </LinearLayout>
 
@@ -160,38 +249,10 @@
                 android:layout_gravity="center"
                 android:padding="8dp"
                 android:text="@string/happy"
-                android:textColor="#469C76"
-                android:textSize="12sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:orientation="vertical">
-
-
-            <ImageButton
-                android:id="@+id/hyperactive_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@null"
-                android:contentDescription="@string/todo"
-                android:src="@drawable/emoticon_hyperactive_btn" />
-
-
-            <TextView
-                android:id="@+id/hyperactive_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:padding="8dp"
-                android:text="@string/hyperactive"
-                android:textColor="#A810E0"
+                android:textColor="@color/happy"
                 android:textSize="12sp" />
         </LinearLayout>
 
     </LinearLayout>
-
 
 </RelativeLayout>

@@ -29,7 +29,7 @@ public class EntryRepository {
 
     private void setEntries() {
         int[] imageId = {R.drawable.emoticon_sad_btn, R.drawable.emoticon_happy_btn
-                , R.drawable.emoticon_depressed_btn, R.drawable.emoticon_hyperactive_btn,
+                , R.drawable.emoticon_depressed_btn, R.drawable.emoticon_energetic_btn,
                 R.drawable.emoticon_neutral_btn};
         int[] attachedImageId = {0, R.drawable.entry_img, 0, 0, 0};
         String[] feeling_description = {"Feeling sad", "Feeling happy", "Feeling depressed", "Feeling hyperactive", "Feeling neutral"};

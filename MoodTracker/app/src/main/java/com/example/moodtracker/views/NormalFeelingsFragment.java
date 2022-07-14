@@ -69,7 +69,7 @@ public class NormalFeelingsFragment extends BottomSheetDialogFragment {
                 getParentFragment().onDestroyView();
                 homeViewModel.addNewValue(new Entry(
                         feelingDescription,
-                        "Main reason was "+ textView.getText().toString(),
+                        "Main reason is related to "+ textView.getText().toString().toLowerCase(),
                         0,
                         feelingsIcon));
             }});

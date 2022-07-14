@@ -13,11 +13,13 @@
     #6EB2E5
 
 
-    <color name="mood1">#6EB2E5</color>
-    <color name="mood2">#FF6400</color>
-    <color name="mood3">#F0E11D</color>
-    <color name="mood4">#469C76</color>
-    <color name="mood5">#A810E0</color>
+    <color name="depressed">#6EB2E5</color>
+    <color name="dysthymia">#FF6400</color>
+    <color name="sad">#F0E11D</color>
+    <color name="neutral">#F0E11D</color>
+    <color name="happy">#F0E11D</color>
+    <color name="energetic">#469C76</color>
+    <color name="hyperactive">#A810E0</color>
 
 
     <color name="Primary_light">#FFECF2F3</color>

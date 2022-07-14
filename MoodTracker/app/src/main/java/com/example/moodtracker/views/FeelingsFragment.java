@@ -54,7 +54,7 @@ public class FeelingsFragment extends BottomSheetDialogFragment {
         /**
          * actions for the feelings btns
          */
-        final ImageButton depressedBtn = binding.cryBtn;
+        final ImageButton depressedBtn = binding.depressedBtn;
         depressedBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -87,6 +87,21 @@ public class FeelingsFragment extends BottomSheetDialogFragment {
             @Override
             public void onClick(View view) {
                 showBottomSheetDialogNormalFeelings("Neutral");
+            }
+        });
+
+        final ImageButton dysthymiaBtn = binding.dysthymiaBtn;
+        dysthymiaBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showBottomSheetDialogStrongFeelings("Dysthymia");
+            }
+        });
+        final ImageButton energeticBtn = binding.energeticBtn;
+        energeticBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showBottomSheetDialogStrongFeelings("Energetic");
             }
         });
 

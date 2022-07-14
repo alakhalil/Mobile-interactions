@@ -75,7 +75,7 @@
                     android:layout_margin="3dp"
                     android:layout_weight="1"
                     android:text="@string/depressed"
-                    android:textColor="@color/mood1"
+                    android:textColor="@color/depressed"
                     android:textSize="12sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -92,7 +92,7 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/emoticon_sad_btn" />
+                    android:src="@drawable/emoticon_dysthymia_btn" />
 
                 <TextView
                     android:id="@+id/textView22"
@@ -101,7 +101,7 @@
                     android:layout_gravity="center"
                     android:layout_margin="3dp"
                     android:text="@string/dysthymia"
-                    android:textColor="@color/mood2"
+                    android:textColor="@color/dysthymia"
                     android:textSize="12sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -127,7 +127,7 @@
                     android:layout_gravity="center"
                     android:layout_margin="3dp"
                     android:text="@string/neutral"
-                    android:textColor="@color/mood3"
+                    android:textColor="@color/neutral"
                     android:textSize="12sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -144,7 +144,7 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/emoticon_happy_btn" />
+                    android:src="@drawable/emoticon_energetic_btn" />
 
                 <TextView
                     android:id="@+id/textView13"
@@ -153,7 +153,7 @@
                     android:layout_gravity="center"
                     android:layout_margin="3dp"
                     android:text="@string/energetic"
-                    android:textColor="@color/mood4"
+                    android:textColor="@color/energetic"
                     android:textSize="12sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -179,7 +179,7 @@
                     android:layout_gravity="center"
                     android:layout_margin="3dp"
                     android:text="@string/hyperactive"
-                    android:textColor="@color/mood5"
+                    android:textColor="@color/hyperactive"
                     android:textSize="12sp"
                     android:textStyle="bold" />
             </LinearLayout>
