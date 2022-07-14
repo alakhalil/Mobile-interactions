@@ -1,16 +1,28 @@
 <resources>
+
+    <!-- Tabs  -->
     <string name="app_name">MoodTracker</string>
     <string name="title_home">Log</string>
     <string name="title_calendar">Calendar</string>
     <string name="title_analysis">Analysis</string>
     <string name="title_more">More</string>
+
     <string name="add_entry">add entry</string>
     <string name="attached_image">attached_image</string>
     <string name="todo">TODO</string>
     <string name="sad_btn">sad_btn</string>
     <string name="your_main_reason">Your main reason?</string>
 
+    <!-- moods descriptions  -->
+    <string name="depressed">Depressed</string>
+    <string name="dysthymia">Dysthymia</string>
+    <string name="sad">Sad</string>
+    <string name="neutral">Neutral</string>
+    <string name="happy">Happy</string>
+    <string name="energetic">Energetic</string>
+    <string name="hyperactive">Hyperactive</string>
 
+    <!-- groups and analysis -->
     <string name="_318_entries">318 entries</string>
     <string name="john_doe">John Doe</string>
     <string name="notifications">Notifications</string>
@@ -68,5 +80,6 @@
     <string name="grace_hudson">Grace Hudson</string>
     <string name="yosef_trevor">Yosef Trevor</string>
     <string name="weekly_report">Weekly Report</string>
+
 
 </resources>

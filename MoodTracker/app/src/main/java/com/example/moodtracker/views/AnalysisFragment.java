@@ -62,7 +62,7 @@ public class AnalysisFragment extends Fragment {
         BarDataSet dataset4 = new BarDataSet(entries4, "Happy");
         dataset4.setColor(Color.parseColor("#469C76"));
         bars.add(dataset4);
-        BarDataSet dataset5 = new BarDataSet(entries5, "Great");
+        BarDataSet dataset5 = new BarDataSet(entries5, "Hyperactive");
         dataset5.setColor(Color.parseColor("#A810E0"));
         bars.add(dataset5);
         BarData data = new BarData(bars);

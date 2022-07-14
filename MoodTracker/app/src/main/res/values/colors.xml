@@ -26,11 +26,11 @@
     <color name="Primary_medium">#95B6B8</color>
 
 
-    <color name="calendar_depressed">#A3CACD</color>
-    <color name="calendar_sad">#cee1e3</color>
-    <color name="calendar_neutral">#7CB4B8</color>
-    <color name="calendar_happy">#378D93</color>
-    <color name="calendar_great">#008791</color>
+    <color name="calendar_depressed">#3C4A48</color>
+    <color name="calendar_dysthymia">#2B645E</color>
+    <color name="calendar_neutral">#52958F</color>
+    <color name="calendar_energetic">#92CBC1</color>
+    <color name="calendar_hyperactive">#CEE9E5</color>
 
 
 </resources>

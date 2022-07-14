@@ -73,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:background="@null"
                 android:contentDescription="@string/todo"
-                android:src="@drawable/emoticon_cry_btn" />
+                android:src="@drawable/emoticon_depressed_btn" />
 
             <TextView
                 android:id="@+id/cry_text"
@@ -81,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="8dp"
-                android:text="Depressed"
+                android:text="@string/depressed"
                 android:textColor="@color/Primary"
                 android:textSize="12sp" />
         </LinearLayout>
@@ -106,7 +106,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="8dp"
-                android:text="Sad"
+                android:text="@string/sad"
                 android:textColor="#FF6400"
                 android:textSize="12sp" />
         </LinearLayout>
@@ -133,7 +133,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="8dp"
-                android:text="Neutral"
+                android:text="@string/neutral"
                 android:textColor="#F0E11D"
                 android:textSize="12sp" />
         </LinearLayout>
@@ -159,7 +159,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="8dp"
-                android:text="Happy"
+                android:text="@string/happy"
                 android:textColor="#469C76"
                 android:textSize="12sp" />
         </LinearLayout>
@@ -172,21 +172,21 @@
 
 
             <ImageButton
-                android:id="@+id/great_btn"
+                android:id="@+id/hyperactive_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@null"
                 android:contentDescription="@string/todo"
-                android:src="@drawable/emoticon_great_btn" />
+                android:src="@drawable/emoticon_hyperactive_btn" />
 
 
             <TextView
-                android:id="@+id/great_text"
+                android:id="@+id/hyperactive_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="8dp"
-                android:text="Great"
+                android:text="@string/hyperactive"
                 android:textColor="#A810E0"
                 android:textSize="12sp" />
         </LinearLayout>

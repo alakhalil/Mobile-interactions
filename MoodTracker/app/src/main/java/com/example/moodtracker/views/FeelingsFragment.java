@@ -61,11 +61,11 @@ public class FeelingsFragment extends BottomSheetDialogFragment {
                 showBottomSheetDialogStrongFeelings("Depressed");
             }
         });
-        final ImageButton greatBtn = binding.greatBtn;
-        greatBtn.setOnClickListener(new View.OnClickListener() {
+        final ImageButton hyperactiveBtn = binding.hyperactiveBtn;
+        hyperactiveBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showBottomSheetDialogStrongFeelings("Great");
+                showBottomSheetDialogStrongFeelings("Hyperactive");
             }
         });
         final ImageButton HappyBtn = binding.happyBtn;
@@ -86,7 +86,7 @@ public class FeelingsFragment extends BottomSheetDialogFragment {
         neutralBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showBottomSheetDialogNormalFeelings("Okay");
+                showBottomSheetDialogNormalFeelings("Neutral");
             }
         });
 
