@@ -28,29 +28,20 @@
             <ImageButton
                 android:id="@+id/backBtn"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:layout_marginStart="3dp"
+                android:layout_marginLeft="4dp"
                 android:background="@null"
-                android:src="@drawable/chevron_left"
-                android:contentDescription="TODO" />
+                android:contentDescription="TODO"
+                android:src="@drawable/chevron_left" />
 
-            <ImageView
-                android:id="@+id/normal_feeling_icon"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="5dp"
-                android:contentDescription="TODO">
-
-            </ImageView>
 
             <TextView
                 android:id="@+id/yourMainReason"
-                android:layout_width="146dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="50dp"
+                android:gravity="center_vertical|center_horizontal"
                 android:text="Your main reason?"
                 android:textColor="@color/black"
                 android:textSize="16sp"
@@ -58,11 +49,19 @@
 
         </LinearLayout>
 
+        <ImageView
+            android:id="@+id/normal_feeling_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="TODO">
+
+        </ImageView>
+
         <ListView
             android:id="@+id/reasons"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:divider="@null"
             tools:listitem="@layout/reason_item">
 
         </ListView>
