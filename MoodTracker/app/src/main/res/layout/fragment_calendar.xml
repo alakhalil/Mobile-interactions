@@ -101,7 +101,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="2dp"
-                android:text="@string/neutral"
+                android:text="@string/normal"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
         </LinearLayout>

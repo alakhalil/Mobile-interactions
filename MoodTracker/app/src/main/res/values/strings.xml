@@ -21,6 +21,10 @@
     <string name="energetic">Energetic</string>
     <string name="hyperactive">Hyperactive</string>
 
+    <!-- mood used in analysis and calendar  -->
+    <string name="normal">Normal</string>
+
+
     <!-- groups and analysis -->
     <string name="_318_entries">318 entries</string>
     <string name="john_doe">John Doe</string>
