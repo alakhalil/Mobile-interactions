@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -19,9 +18,7 @@ import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
-import com.example.moodtracker.R;
 import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
-import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -53,13 +50,13 @@ public class AnalysisFragment extends Fragment {
         BarDataSet dataset = new BarDataSet(entries, "Depressed");
         dataset.setColor(Color.parseColor("#6EB2E5"));
         bars.add(dataset);
-        BarDataSet dataset2 = new BarDataSet(entries2, "Sad");
+        BarDataSet dataset2 = new BarDataSet(entries2, "Dysthymia");
         dataset2.setColor(Color.parseColor("#FF6400"));
         bars.add(dataset2);
         BarDataSet dataset3 = new BarDataSet(entries3, "Neutral");
         dataset3.setColor(Color.parseColor("#F0E11D"));
         bars.add(dataset3);
-        BarDataSet dataset4 = new BarDataSet(entries4, "Happy");
+        BarDataSet dataset4 = new BarDataSet(entries4, "Energetic");
         dataset4.setColor(Color.parseColor("#469C76"));
         bars.add(dataset4);
         BarDataSet dataset5 = new BarDataSet(entries5, "Hyperactive");
