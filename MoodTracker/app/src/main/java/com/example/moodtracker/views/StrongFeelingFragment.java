@@ -55,7 +55,7 @@ public class StrongFeelingFragment extends BottomSheetDialogFragment {
                 dismiss();
                 getParentFragment().onDestroyView();
                 homeViewModel.addNewValue(new Entry(
-                        "Feeling" + feelingDescription.toLowerCase(),
+                        "Feeling " + feelingDescription.toLowerCase(),
                         reasonText.getText().toString(),
                         0,
                         feelingsIcon));
