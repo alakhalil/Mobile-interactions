@@ -77,10 +77,13 @@
 
             <Button
                 android:id="@+id/upload_img_btn"
+                android:layout_marginLeft="5dp"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Upload an image"
+                android:enabled="false"
+                android:drawableLeft="@drawable/block"
                 android:textAllCaps="false" />
         </LinearLayout>
 
