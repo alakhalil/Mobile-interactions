@@ -83,6 +83,7 @@
     <string name="grace_hudson">Grace Hudson</string>
     <string name="yosef_trevor">Yosef Trevor</string>
     <string name="weekly_report">Weekly Report</string>
+    <string name="the_log_is_empty">The log is empty!</string>
 
 
 </resources>
