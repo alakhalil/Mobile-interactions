@@ -48,12 +48,12 @@
                 android:background="@color/calendar_depressed" />
 
             <TextView
-                android:id="@+id/depressed_text"
+                android:id="@+id/depressed_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="2dp"
-                android:text="Depressed"
+                android:text="@string/depressed"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
         </LinearLayout>
@@ -69,7 +69,7 @@
                 android:layout_width="50dp"
                 android:layout_height="20dp"
                 android:layout_margin="10dp"
-                android:background="@color/calendar_sad" />
+                android:background="@color/calendar_dysthymia" />
 
             <TextView
                 android:id="@+id/sad_text"
@@ -77,7 +77,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="2dp"
-                android:text="Sad"
+                android:text="@string/dysthymia"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
         </LinearLayout>
@@ -101,7 +101,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="2dp"
-                android:text="Neutral"
+                android:text="@string/normal"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
         </LinearLayout>
@@ -118,7 +118,7 @@
                 android:layout_width="50dp"
                 android:layout_height="20dp"
                 android:layout_margin="10dp"
-                android:background="@color/calendar_happy" />
+                android:background="@color/calendar_energetic" />
 
             <TextView
                 android:id="@+id/happy_text"
@@ -126,7 +126,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="2dp"
-                android:text="Happy"
+                android:text="@string/energetic"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
         </LinearLayout>
@@ -140,19 +140,19 @@
 
 
             <View
-                android:id="@+id/label_great"
+                android:id="@+id/label_hyperactive"
                 android:layout_width="50dp"
                 android:layout_height="20dp"
                 android:layout_margin="10dp"
-                android:background="@color/calendar_great" />
+                android:background="@color/calendar_hyperactive" />
 
             <TextView
-                android:id="@+id/great_text"
+                android:id="@+id/hyperactive_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="2dp"
-                android:text="Great"
+                android:text="@string/hyperactive"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
         </LinearLayout>

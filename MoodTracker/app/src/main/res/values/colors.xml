@@ -13,11 +13,13 @@
     #6EB2E5
 
 
-    <color name="mood1">#6EB2E5</color>
-    <color name="mood2">#FF6400</color>
-    <color name="mood3">#F0E11D</color>
-    <color name="mood4">#469C76</color>
-    <color name="mood5">#A810E0</color>
+    <color name="depressed">#6EB2E5</color>
+    <color name="dysthymia">#FF6400</color>
+    <color name="sad">#F0E11D</color>
+    <color name="neutral">#F0E11D</color>
+    <color name="happy">#F0E11D</color>
+    <color name="energetic">#469C76</color>
+    <color name="hyperactive">#A810E0</color>
 
 
     <color name="Primary_light">#FFECF2F3</color>
@@ -26,11 +28,11 @@
     <color name="Primary_medium">#95B6B8</color>
 
 
-    <color name="calendar_depressed">#A3CACD</color>
-    <color name="calendar_sad">#cee1e3</color>
-    <color name="calendar_neutral">#7CB4B8</color>
-    <color name="calendar_happy">#378D93</color>
-    <color name="calendar_great">#008791</color>
+    <color name="calendar_depressed">#3C4A48</color>
+    <color name="calendar_dysthymia">#2B645E</color>
+    <color name="calendar_neutral">#52958F</color>
+    <color name="calendar_energetic">#92CBC1</color>
+    <color name="calendar_hyperactive">#CEE9E5</color>
 
 
 </resources>

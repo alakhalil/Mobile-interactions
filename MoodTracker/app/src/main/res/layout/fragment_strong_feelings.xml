@@ -13,30 +13,30 @@
             android:layout_width="match_parent"
             android:layout_height="41dp"
             android:layout_marginTop="4dp"
-            android:gravity="center_vertical"
             android:orientation="horizontal">
 
 
             <ImageButton
                 android:id="@+id/back_btn"
                 android:layout_width="44dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_vertical"
+                android:background="@null"
                 android:src="@drawable/chevron_left"
                 app:layout_constraintStart_toStartOf="parent"
-                android:background="@null"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="159dp"
-                android:layout_height="20dp"
-                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="44dp"
+                android:gravity="center_horizontal|center_vertical"
                 android:text="Share your thought"
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                android:textStyle="bold"
-                android:layout_marginStart="50dp"/>
+                android:textStyle="bold" />
 
 
         </LinearLayout>
@@ -77,25 +77,26 @@
 
             <Button
                 android:id="@+id/upload_img_btn"
+                android:layout_marginLeft="5dp"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Upload an image"
+                android:enabled="false"
+                android:drawableLeft="@drawable/block"
                 android:textAllCaps="false" />
-
-
         </LinearLayout>
 
     <Button
         android:id="@+id/done_btn"
         android:layout_width="72dp"
         android:layout_height="39dp"
-        android:layout_gravity="end|bottom"
-        android:layout_marginEnd="20dp"
+        android:layout_gravity="center"
         android:layout_marginTop="50dp"
         android:backgroundTint="@color/Primary"
         android:text="Done"
         android:textAllCaps="false"
         android:textColor="@color/white"
         tools:ignore="TouchTargetSizeCheck" />
+
 </LinearLayout>

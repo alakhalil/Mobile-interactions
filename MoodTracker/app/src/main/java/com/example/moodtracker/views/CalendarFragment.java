@@ -61,17 +61,17 @@ public class CalendarFragment extends Fragment implements OnNavigationButtonClic
         // Put object and property
         descHashMap.put("default",defaultProperty);
 
-        // for great
-        Property greatProperty=new Property();
-        greatProperty.layoutResource=R.layout.calendar_great_view;
-        greatProperty.dateTextViewResource=R.id.text_view;
-        descHashMap.put("great",greatProperty);
+        // for Hyperactive
+        Property hyperactiveProperty=new Property();
+        hyperactiveProperty.layoutResource=R.layout.calendar_hyperactive_view;
+        hyperactiveProperty.dateTextViewResource=R.id.text_view;
+        descHashMap.put("hyperactive",hyperactiveProperty);
 
-        // for happy
-        Property happyProperty=new Property();
-        happyProperty.layoutResource=R.layout.calendar_happy_view;
-        happyProperty.dateTextViewResource=R.id.text_view;
-        descHashMap.put("happy",happyProperty);
+        // for energetic
+        Property energeticProperty=new Property();
+        energeticProperty.layoutResource=R.layout.calendar_energetic_view;
+        energeticProperty.dateTextViewResource=R.id.text_view;
+        descHashMap.put("energetic",energeticProperty);
 
         // For neutral
         Property neutralProperty =new Property();
@@ -80,11 +80,11 @@ public class CalendarFragment extends Fragment implements OnNavigationButtonClic
         descHashMap.put("neutral",neutralProperty);
 
 
-        // for sad
-        Property sadProperty=new Property();
-        sadProperty.layoutResource=R.layout.calendar_sad_view;
-        sadProperty.dateTextViewResource=R.id.text_view;
-        descHashMap.put("sad",happyProperty);
+        // for dysthymia
+        Property dysthymiaProperty=new Property();
+        dysthymiaProperty.layoutResource=R.layout.calendar_dysthymia_view;
+        dysthymiaProperty.dateTextViewResource=R.id.text_view;
+        descHashMap.put("dysthymia",energeticProperty);
 
         // For depressed
         Property depressedProperty =new Property();
@@ -102,15 +102,15 @@ public class CalendarFragment extends Fragment implements OnNavigationButtonClic
         Calendar calendar=  Calendar.getInstance();
 
         // Put values
-        dateHashmap.put(1,"happy");
+        dateHashmap.put(1,"energetic");
         dateHashmap.put(2,"depressed");
-        dateHashmap.put(3,"happy");
+        dateHashmap.put(3,"energetic");
         dateHashmap.put(4,"depressed");
-        dateHashmap.put(20,"happy");
+        dateHashmap.put(20,"energetic");
         dateHashmap.put(30,"depressed");
-        dateHashmap.put(7,"sad");
-        dateHashmap.put(8,"sad");
-        dateHashmap.put(9,"sad");
+        dateHashmap.put(7,"dysthymia");
+        dateHashmap.put(8,"dysthymia");
+        dateHashmap.put(9,"dysthymia");
         dateHashmap.put(26,"neutral");
         dateHashmap.put(27,"neutral");
         dateHashmap.put(28,"neutral");
@@ -137,15 +137,15 @@ public class CalendarFragment extends Fragment implements OnNavigationButtonClic
         switch(newMonth.get(Calendar.MONTH)) {
             case Calendar.JULY:
                 arr[0] = new HashMap<>(); //This is the map linking a date to its description
-                arr[0].put(1,"happy");
+                arr[0].put(1,"energetic");
                 arr[0].put(2,"depressed");
-                arr[0].put(3,"happy");
+                arr[0].put(3,"energetic");
                 arr[0].put(4,"depressed");
-                arr[0].put(20,"happy");
+                arr[0].put(20,"energetic");
                 arr[0].put(30,"depressed");
-                arr[0].put(7,"sad");
-                arr[0].put(8,"sad");
-                arr[0].put(9,"sad");
+                arr[0].put(7,"dysthymia");
+                arr[0].put(8,"dysthymia");
+                arr[0].put(9,"dysthymia");
                 arr[0].put(26,"neutral");
                 arr[0].put(27,"neutral");
                 arr[0].put(28,"neutral");
@@ -154,17 +154,17 @@ public class CalendarFragment extends Fragment implements OnNavigationButtonClic
             case Calendar.AUGUST:
                 arr[0] = new HashMap<>(); //This is the map linking a date to its description
                 arr[0].put(4,"depressed");
-                arr[0].put(20,"happy");
+                arr[0].put(20,"energetic");
                 arr[0].put(30,"depressed");
-                arr[0].put(7,"sad");
-                arr[0].put(8,"sad");
+                arr[0].put(7,"dysthymia");
+                arr[0].put(8,"dysthymia");
                 arr[1] = null; //Optional: This is the map linking a date to its tag.
                 break;
             case Calendar.JUNE:
                 arr[0] = new HashMap<>();
-                arr[0].put(8,"sad");
-                arr[0].put(9,"sad");
-                arr[0].put(10,"sad");
+                arr[0].put(8,"dysthymia");
+                arr[0].put(9,"dysthymia");
+                arr[0].put(10,"dysthymia");
                 break;
         }
         return arr;    }

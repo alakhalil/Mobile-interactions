@@ -2,6 +2,7 @@ package com.example.moodtracker.views;
 
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,6 +37,10 @@ public class HomeFragment extends Fragment {
         homeViewModel.getEntries().observe(getActivity(), new Observer<ArrayList<Entry>>() {
             @Override
             public void onChanged(ArrayList<Entry> entries) {
+
+                 if (homeViewModel.getEntries().getValue().size()!=0) {
+                    binding.emptyLog.setVisibility(View.GONE);
+                }
                 listAdapter.notifyDataSetChanged();
             }
         });
@@ -62,6 +67,11 @@ public class HomeFragment extends Fragment {
                 Navigation.findNavController(view).navigate(R.id.feelings_layout);
             }
         });
+        Log.d("test", String.valueOf(homeViewModel.getEntries().getValue().size()));
+        if(homeViewModel.getEntries().getValue().size()==0) {
+            binding.emptyLog.setVisibility(View.VISIBLE);
+        }
+
 
         return root;
     }

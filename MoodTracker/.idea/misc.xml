@@ -3,51 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../../../../../../../../layout/custom_preview.xml" value="0.10071942446043165" />
         <entry key="../../../../../../../../../layout/custom_preview.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/account_group.xml" value="0.1015" />
         <entry key="app/src/main/res/drawable-v24/account_group_outline.xml" value="0.1015" />
-        <entry key="app/src/main/res/drawable-v24/chevron_right.xml" value="0.1225" />
-        <entry key="app/src/main/res/drawable/chevron_left.xml" value="0.1015" />
-        <entry key="app/src/main/res/drawable/chevron_right.xml" value="0.1015" />
-        <entry key="app/src/main/res/drawable/message.xml" value="0.1015" />
-        <entry key="app/src/main/res/drawable/message_reply.xml" value="0.1015" />
-        <entry key="app/src/main/res/layout/activity_connections.xml" value="0.25072631835937503" />
-        <entry key="app/src/main/res/layout/activity_contact_details.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_edit_groups.xml" value="0.1141438802083333" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_more24.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_pending.xml" value="0.13012847900390623" />
-        <entry key="app/src/main/res/layout/activity_test.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/connections.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/contact_details.xml" value="0.192481884057971" />
-        <entry key="app/src/main/res/layout/entry_item.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_analysis.xml" value="0.29102630615234376" />
-        <entry key="app/src/main/res/layout/fragment_calendar.xml" value="0.11145833333333334" />
-        <entry key="app/src/main/res/layout/fragment_feelings.xml" value="0.11145833333333334" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.11145833333333334" />
-        <entry key="app/src/main/res/layout/fragment_more.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/groups.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/members.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/normal_feelings.xml" value="0.11145833333333334" />
-        <entry key="app/src/main/res/layout/page10.xml" value="0.1699249267578125" />
-        <entry key="app/src/main/res/layout/page12.xml" value="0.29871645274212366" />
-        <entry key="app/src/main/res/layout/page13.xml" value="0.5149572649572649" />
-        <entry key="app/src/main/res/layout/page7.xml" value="0.22387084960937503" />
-        <entry key="app/src/main/res/layout/page8.xml" value="0.29586029052734375" />
-        <entry key="app/src/main/res/layout/page9.xml" value="0.1710387585209865" />
-        <entry key="app/src/main/res/layout/requests.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/rv_members_model.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/rv_model.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/share.xml" value="0.1" />
-        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.12777777777777777" />
-        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.15" />
-        <entry key="../../../../../../../../../../../layout/custom_preview.xml" value="0.10071942446043165" />
+        <entry key="app/src/main/res/drawable-v24/block.xml" value="0.1065" />
         <entry key="app/src/main/res/drawable-v24/calendar-date.xml" value="0.1725" />
         <entry key="app/src/main/res/drawable-v24/calendar_date.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/chevron_right.xml" value="0.1225" />
         <entry key="app/src/main/res/drawable-v24/emoticon_cry_btn.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/emoticon_depressed_btn.xml" value="0.265" />
+        <entry key="app/src/main/res/drawable-v24/emoticon_dysthymia_btn.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable-v24/emoticon_energetic_btn.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable-v24/emoticon_excited_outline.xml" value="0.141" />
         <entry key="app/src/main/res/drawable-v24/emoticon_great_btn.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/emoticon_happy_btn.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/emoticon_happy_outline.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/emoticon_hyperactive_btn.xml" value="0.141" />
         <entry key="app/src/main/res/drawable-v24/emoticon_neutral_btn.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/emoticon_outline&gt;btn.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/emoticon_sad_btn.xml" value="0.1" />
@@ -58,6 +30,7 @@
         <entry key="app/src/main/res/drawable/camera.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/chart_bar.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/chevron_left.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/chevron_right.xml" value="0.1015" />
         <entry key="app/src/main/res/drawable/close.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/dots_horizontal.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/emoticon_cry_outline.xml" value="0.1" />
@@ -69,17 +42,29 @@
         <entry key="app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/message.xml" value="0.1015" />
         <entry key="app/src/main/res/drawable/message_bulleted.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/message_reply.xml" value="0.1015" />
         <entry key="app/src/main/res/drawable/my_border.xml" value="0.1" />
         <entry key="app/src/main/res/layout-w600dp/reasons_list.xml" value="0.30335097001763667" />
         <entry key="app/src/main/res/layout-w600dp/reasons_sublist.xml" value="0.30335097001763667" />
         <entry key="app/src/main/res/layout/absent_view.xml" value="0.21510416666666668" />
+        <entry key="app/src/main/res/layout/activity_connections.xml" value="0.25072631835937503" />
+        <entry key="app/src/main/res/layout/activity_contact_details.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_edit_groups.xml" value="0.1141438802083333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35833333333333334" />
+        <entry key="app/src/main/res/layout/activity_more24.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_pending.xml" value="0.13012847900390623" />
         <entry key="app/src/main/res/layout/activity_reasons.xml" value="0.2265625" />
+        <entry key="app/src/main/res/layout/activity_test.xml" value="0.1" />
         <entry key="app/src/main/res/layout/calendar_depressed_view.xml" value="0.2441123188405797" />
+        <entry key="app/src/main/res/layout/calendar_energetic_view.xml" value="0.2368659420289855" />
         <entry key="app/src/main/res/layout/calendar_great_view.xml" value="0.2441123188405797" />
         <entry key="app/src/main/res/layout/calendar_happy_view.xml" value="0.2441123188405797" />
+        <entry key="app/src/main/res/layout/calendar_hyperactive_view.xml" value="0.35833333333333334" />
         <entry key="app/src/main/res/layout/calendar_sad_view.xml" value="0.2441123188405797" />
+        <entry key="app/src/main/res/layout/connections.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/contact_details.xml" value="0.192481884057971" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.22327898550724637" />
         <entry key="app/src/main/res/layout/current_view.xml" value="0.21510416666666668" />
         <entry key="app/src/main/res/layout/default_view.xml" value="0.21510416666666668" />
@@ -88,9 +73,9 @@
         <entry key="app/src/main/res/layout/entries_recycler_views.xml" value="0.22552083333333334" />
         <entry key="app/src/main/res/layout/entry_item.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_analysis.xml" value="0.23505434782608695" />
-        <entry key="app/src/main/res/layout/fragment_calendar.xml" value="0.2441123188405797" />
+        <entry key="app/src/main/res/layout/fragment_calendar.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.23505434782608695" />
-        <entry key="app/src/main/res/layout/fragment_feelings.xml" value="0.16742654508611957" />
+        <entry key="app/src/main/res/layout/fragment_feelings.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_feelings_selection.xml" value="0.17426545086119555" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.18" />
         <entry key="app/src/main/res/layout/fragment_item.xml" value="0.23550724637681159" />
@@ -101,16 +86,28 @@
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.23505434782608695" />
         <entry key="app/src/main/res/layout/fragment_reasons.xml" value="0.2265625" />
         <entry key="app/src/main/res/layout/fragment_select_feeling_dialog.xml" value="0.1721014492753623" />
-        <entry key="app/src/main/res/layout/fragment_strong_feelings.xml" value="0.21195652173913043" />
+        <entry key="app/src/main/res/layout/fragment_strong_feelings.xml" value="0.3541666666666667" />
         <entry key="app/src/main/res/layout/fragment_strong_feelings_reasons.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/groups.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/members.xml" value="0.1" />
         <entry key="app/src/main/res/layout/neutral_view.xml" value="0.2441123188405797" />
         <entry key="app/src/main/res/layout/normal_feelings.xml" value="0.21331521739130435" />
+        <entry key="app/src/main/res/layout/page10.xml" value="0.1699249267578125" />
+        <entry key="app/src/main/res/layout/page12.xml" value="0.29871645274212366" />
+        <entry key="app/src/main/res/layout/page13.xml" value="0.5149572649572649" />
+        <entry key="app/src/main/res/layout/page7.xml" value="0.22387084960937503" />
+        <entry key="app/src/main/res/layout/page8.xml" value="0.29586029052734375" />
+        <entry key="app/src/main/res/layout/page9.xml" value="0.1710387585209865" />
         <entry key="app/src/main/res/layout/present_view.xml" value="0.21510416666666668" />
         <entry key="app/src/main/res/layout/reason_item.xml" value="0.22552083333333334" />
         <entry key="app/src/main/res/layout/reasons_list.xml" value="0.1" />
         <entry key="app/src/main/res/layout/reasons_sublist.xml" value="0.20878623188405798" />
+        <entry key="app/src/main/res/layout/requests.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/rv_members_model.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/rv_model.xml" value="0.1" />
         <entry key="app/src/main/res/layout/sad_view.xml" value="0.2441123188405797" />
         <entry key="app/src/main/res/layout/select_feeling_dialog.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/share.xml" value="0.1" />
         <entry key="app/src/main/res/layout/strong_feelings_input.xml" value="0.22" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.2786458333333333" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />

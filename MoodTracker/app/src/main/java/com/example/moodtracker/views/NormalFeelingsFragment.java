@@ -69,7 +69,7 @@ public class NormalFeelingsFragment extends BottomSheetDialogFragment {
                 getParentFragment().onDestroyView();
                 homeViewModel.addNewValue(new Entry(
                         feelingDescription,
-                        "Main reason was "+ textView.getText().toString(),
+                        "Main reason is related to "+ textView.getText().toString().toLowerCase(),
                         0,
                         feelingsIcon));
             }});
@@ -95,7 +95,7 @@ public class NormalFeelingsFragment extends BottomSheetDialogFragment {
             return  R.drawable.emoticon_sad_btn;
 
         }
-        else if (feelingDescription== "Okay") {
+        else if (feelingDescription== "Neutral") {
             image.setImageResource(R.drawable.emoticon_neutral_btn);
             return  R.drawable.emoticon_neutral_btn;
         }
