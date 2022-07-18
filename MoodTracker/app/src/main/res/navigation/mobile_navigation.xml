@@ -75,7 +75,7 @@
         android:id="@+id/page7Fragment"
         android:name="com.example.moodtracker.views.GroupsFragment"
         android:label="Groups"
-        tools:layout="@layout/groups" >
+        tools:layout="@layout/more_groups" >
         <action
             android:id="@+id/action_page7Fragment_to_page8Fragment"
             app:destination="@id/page8Fragment" />
@@ -94,13 +94,13 @@
         android:id="@+id/page9Fragment"
         android:name="com.example.moodtracker.views.MembersFragment"
         android:label="Members"
-        tools:layout="@layout/members" />
+        tools:layout="@layout/more_members" />
 
     <fragment
         android:id="@+id/page12Fragment"
         android:name="com.example.moodtracker.views.ConnectionsFragment"
         android:label="Connections"
-        tools:layout="@layout/connections" >
+        tools:layout="@layout/more_connections" >
         <action
             android:id="@+id/action_page12Fragment_to_page13Fragment"
             app:destination="@id/page13Fragment" />
@@ -110,6 +110,6 @@
         android:id="@+id/page13Fragment"
         android:name="com.example.moodtracker.views.RequestsFragment"
         android:label="Requests"
-        tools:layout="@layout/requests" />
+        tools:layout="@layout/more_requests" />
 
 </navigation>

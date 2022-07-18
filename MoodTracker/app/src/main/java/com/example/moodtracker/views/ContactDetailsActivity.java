@@ -17,7 +17,7 @@ public class ContactDetailsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.contact_details);
+        setContentView(R.layout.more_contact_details);
         setTitle("Contact");
         String name = getIntent().getStringExtra("namee");
         int photo = getIntent().getIntExtra("photoo",0);
