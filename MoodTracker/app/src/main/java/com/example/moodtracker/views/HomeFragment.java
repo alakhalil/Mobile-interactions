@@ -64,7 +64,7 @@ public class HomeFragment extends Fragment {
         binding.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Navigation.findNavController(view).navigate(R.id.feelings_layout);
+                Navigation.findNavController(view).navigate(R.id.navigation_feelings);
             }
         });
         Log.d("test", String.valueOf(homeViewModel.getEntries().getValue().size()));

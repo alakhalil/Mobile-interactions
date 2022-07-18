@@ -1,8 +1,6 @@
 package com.example.moodtracker;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
 
 import com.example.moodtracker.views.MoreFragment;

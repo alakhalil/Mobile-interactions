@@ -61,6 +61,7 @@
         <entry key="app/src/main/res/layout/activity_reasons.xml" value="0.2265625" />
         <entry key="app/src/main/res/layout/activity_test.xml" value="0.1" />
         <entry key="app/src/main/res/layout/calendar_depressed_view.xml" value="0.2441123188405797" />
+        <entry key="app/src/main/res/layout/calendar_dysthymia_view.xml" value="0.25104166666666666" />
         <entry key="app/src/main/res/layout/calendar_energetic_view.xml" value="0.2368659420289855" />
         <entry key="app/src/main/res/layout/calendar_great_view.xml" value="0.2441123188405797" />
         <entry key="app/src/main/res/layout/calendar_happy_view.xml" value="0.2441123188405797" />
@@ -94,6 +95,7 @@
         <entry key="app/src/main/res/layout/groups.xml" value="0.1" />
         <entry key="app/src/main/res/layout/members.xml" value="0.1" />
         <entry key="app/src/main/res/layout/more_connections.xml" value="0.25104166666666666" />
+        <entry key="app/src/main/res/layout/more_groups.xml" value="0.25104166666666666" />
         <entry key="app/src/main/res/layout/more_members.xml" value="0.25104166666666666" />
         <entry key="app/src/main/res/layout/more_requests.xml" value="0.12208713272543059" />
         <entry key="app/src/main/res/layout/neutral_view.xml" value="0.2441123188405797" />

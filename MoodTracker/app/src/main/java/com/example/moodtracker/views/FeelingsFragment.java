@@ -6,7 +6,6 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import android.view.LayoutInflater;
@@ -150,7 +149,7 @@ public class FeelingsFragment extends BottomSheetDialogFragment {
         BottomSheetBehavior<View> bottomSheetBehaviour = BottomSheetBehavior.from((View) view.getParent());
         bottomSheetBehaviour.setState(BottomSheetBehavior.STATE_EXPANDED);
 
-        RelativeLayout layout = getDialog().findViewById(R.id.feelings_layout);
+        RelativeLayout layout = getDialog().findViewById(R.id.navigation_feelings);
         assert layout != null;
         layout.setMinimumHeight(Resources.getSystem().getDisplayMetrics().heightPixels);
     }

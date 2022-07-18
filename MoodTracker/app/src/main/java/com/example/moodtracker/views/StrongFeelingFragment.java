@@ -113,7 +113,7 @@ public class StrongFeelingFragment extends BottomSheetDialogFragment {
         super.onViewCreated(view, savedInstanceState);
         BottomSheetBehavior<View> bottomSheetBehaviour = BottomSheetBehavior.from((View) view.getParent());
         bottomSheetBehaviour.setState(BottomSheetBehavior.STATE_EXPANDED);
-        LinearLayout layout = getDialog().findViewById(R.id.strong_feeling_layout);
+        LinearLayout layout = getDialog().findViewById(R.id.navigation_strong_feelings);
         assert layout != null;
         layout.setMinimumHeight(Resources.getSystem().getDisplayMetrics().heightPixels);
     }

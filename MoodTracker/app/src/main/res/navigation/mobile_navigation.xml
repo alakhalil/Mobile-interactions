@@ -12,11 +12,11 @@
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_navigation_home_to_feelings_layout"
-            app:destination="@id/feelings_layout" />
+            app:destination="@id/navigation_feelings" />
     </fragment>
 
     <dialog
-        android:id="@+id/normalFeelingsFragment"
+        android:id="@+id/navigation_normal_feelings"
         android:name="com.example.moodtracker.views.NormalFeelingsFragment"
         tools:layout="@layout/fragment_normal_feelings" >
         <action
@@ -26,7 +26,7 @@
 
 
     <dialog
-        android:id="@+id/feelings_layout"
+        android:id="@+id/navigation_feelings"
         android:name="com.example.moodtracker.views.FeelingsFragment"
         tools:layout="@layout/fragment_feelings" >
         <action
@@ -34,11 +34,11 @@
             app:destination="@id/normal_feelings_layout" />
         <action
             android:id="@+id/action_feelings_layout_to_strong_feeling_layout"
-            app:destination="@id/strong_feeling_layout" />
+            app:destination="@id/navigation_strong_feelings" />
     </dialog>
 
     <dialog
-        android:id="@+id/strong_feeling_layout"
+        android:id="@+id/navigation_strong_feelings"
         android:name="com.example.moodtracker.views.StrongFeelingFragment"
         tools:layout="@layout/fragment_strong_feelings" >
         <action
@@ -65,49 +65,49 @@
         tools:layout="@layout/fragment_more" >
         <action
             android:id="@+id/action_navigation_more_to_page7Fragment"
-            app:destination="@id/page7Fragment" />
+            app:destination="@id/navigation_groups" />
         <action
             android:id="@+id/action_navigation_more_to_page12Fragment"
-            app:destination="@id/page12Fragment" />
+            app:destination="@id/navigation_connections" />
     </fragment>
 
     <fragment
-        android:id="@+id/page7Fragment"
+        android:id="@+id/navigation_groups"
         android:name="com.example.moodtracker.views.GroupsFragment"
         android:label="Groups"
         tools:layout="@layout/more_groups" >
         <action
             android:id="@+id/action_page7Fragment_to_page8Fragment"
-            app:destination="@id/page8Fragment" />
+            app:destination="@id/navigation_share" />
     </fragment>
 
     <fragment
-        android:id="@+id/page8Fragment"
+        android:id="@+id/navigation_share"
         android:name="com.example.moodtracker.views.ShareFragment"
-        android:label="Group">
+        android:label="Share">
         <action
             android:id="@+id/action_page8Fragment_to_page9Fragment"
-            app:destination="@id/page9Fragment" />
+            app:destination="@id/navigation_members" />
     </fragment>
 
     <fragment
-        android:id="@+id/page9Fragment"
+        android:id="@+id/navigation_members"
         android:name="com.example.moodtracker.views.MembersFragment"
         android:label="Members"
         tools:layout="@layout/more_members" />
 
     <fragment
-        android:id="@+id/page12Fragment"
+        android:id="@+id/navigation_connections"
         android:name="com.example.moodtracker.views.ConnectionsFragment"
         android:label="Connections"
         tools:layout="@layout/more_connections" >
         <action
             android:id="@+id/action_page12Fragment_to_page13Fragment"
-            app:destination="@id/page13Fragment" />
+            app:destination="@id/navigation_requests" />
     </fragment>
 
     <fragment
-        android:id="@+id/page13Fragment"
+        android:id="@+id/navigation_requests"
         android:name="com.example.moodtracker.views.RequestsFragment"
         android:label="Requests"
         tools:layout="@layout/more_requests" />

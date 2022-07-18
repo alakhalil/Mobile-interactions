@@ -16,7 +16,7 @@
         <activity
             android:name=".views.ContactDetailsActivity"
             android:exported="true"
-            android:parentActivityName=".views.page9"/>
+            android:parentActivityName=".views.MembersFragment"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
