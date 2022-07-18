@@ -11,21 +11,21 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.moodtracker.R;
-import com.example.moodtracker.databinding.GroupsBinding;
-import com.example.moodtracker.databinding.ShareBinding;
+import com.example.moodtracker.databinding.MoreGroupsBinding;
+import com.example.moodtracker.databinding.MoreShareBinding;
 import com.google.android.material.datepicker.MaterialDatePicker;
 import com.google.android.material.datepicker.MaterialPickerOnPositiveButtonClickListener;
 
 
 public class ShareFragment extends Fragment {
 
-    private ShareBinding binding;
+    private MoreShareBinding binding;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        binding = ShareBinding.inflate(inflater, container, false);
+        binding = MoreShareBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         binding.button1.setOnClickListener(new View.OnClickListener() {

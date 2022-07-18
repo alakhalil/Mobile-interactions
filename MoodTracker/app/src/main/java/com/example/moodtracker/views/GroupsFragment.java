@@ -11,17 +11,16 @@ import android.view.ViewGroup;
 
 import com.example.moodtracker.R;
 import com.example.moodtracker.databinding.FragmentMoreBinding;
-import com.example.moodtracker.databinding.GroupsBinding;
-
+import com.example.moodtracker.databinding.MoreGroupsBinding;
 import java.util.Objects;
 
 public class GroupsFragment extends Fragment {
-    private GroupsBinding binding;
+    private MoreGroupsBinding binding;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        binding = GroupsBinding.inflate(inflater, container, false);
+        binding = MoreGroupsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
 

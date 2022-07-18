@@ -10,19 +10,19 @@ import android.view.ViewGroup;
 
 import com.example.moodtracker.R;
 import com.example.moodtracker.adapters.ContactsCustomAdapter;
-import com.example.moodtracker.databinding.MembersBinding;
+import com.example.moodtracker.databinding.MoreMembersBinding;
 import com.example.moodtracker.models.Member;
 
 import java.util.ArrayList;
 
 public class MembersFragment extends Fragment {
-    private MembersBinding binding;
+    private MoreMembersBinding binding;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        binding = MembersBinding.inflate(inflater, container, false);
+        binding = MoreMembersBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         ArrayList<Member> arrayList = new ArrayList<Member>();

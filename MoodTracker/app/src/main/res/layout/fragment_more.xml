@@ -76,7 +76,7 @@
                 android:layout_height="60dp"
                 android:gravity="start|center_vertical"
                 android:text="@string/dark_mode"
-                android:textColor="@color/black"
+                android:textColor="@color/surface_disabled"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -88,7 +88,8 @@
                 android:id="@+id/switch3"
                 android:layout_width="365dp"
                 android:layout_height="match_parent"
-                android:layout_marginRight="8dp" />
+                android:layout_marginRight="8dp"
+                android:allowClickWhenDisabled="false" />
 
         </FrameLayout>
 
@@ -130,10 +131,9 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:drawableLeft="@drawable/help_circle"
-            android:drawableRight="@drawable/chevron_right"
             android:gravity="start|center_vertical"
             android:text="@string/edit_reasons"
-            android:textColor="@color/black"
+            android:textColor="@color/surface_disabled"
             android:textSize="16sp"
             android:textStyle="bold"
             app:strokeColor="@color/Primary_light" />
@@ -144,10 +144,9 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:drawableLeft="@drawable/forum"
-            android:drawableRight="@drawable/chevron_right"
             android:gravity="start|center_vertical"
             android:text="@string/notifications"
-            android:textColor="@color/black"
+            android:textColor="@color/surface_disabled"
             android:textSize="16sp"
             android:textStyle="bold"
             app:strokeColor="@color/Primary_light" />
@@ -158,10 +157,9 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:drawableLeft="@drawable/palette"
-            android:drawableRight="@drawable/chevron_right"
             android:gravity="start|center_vertical"
             android:text="@string/change_colors"
-            android:textColor="@color/black"
+            android:textColor="@color/surface_disabled"
             android:textSize="16sp"
             android:textStyle="bold"
             app:strokeColor="@color/Primary_light" />
