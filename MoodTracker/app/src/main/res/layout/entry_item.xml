@@ -36,7 +36,8 @@
                 android:id="@+id/feeling_reason"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp" />
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black" />
 
             <ImageView
                 android:id="@+id/attached_image"
@@ -54,7 +55,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:padding="15dp" />
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
 
 </RelativeLayout>
 

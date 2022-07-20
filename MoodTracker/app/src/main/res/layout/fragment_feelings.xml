@@ -83,7 +83,8 @@
                 android:padding="8dp"
                 android:text="@string/depressed"
                 android:textColor="@color/Primary"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:textStyle="bold"  />
         </LinearLayout>
 
         <LinearLayout
@@ -108,7 +109,8 @@
                 android:padding="8dp"
                 android:text="@string/gloomy"
                 android:textColor="@color/dysthymia"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:textStyle="bold"  />
         </LinearLayout>
 
         <LinearLayout
@@ -135,7 +137,8 @@
                 android:padding="8dp"
                 android:text="@string/energetic"
                 android:textColor="@color/energetic"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:textStyle="bold"  />
         </LinearLayout>
 
         <LinearLayout
@@ -161,7 +164,8 @@
                 android:padding="8dp"
                 android:text="@string/hyperactive"
                 android:textColor="@color/hyperactive"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:textStyle="bold"  />
         </LinearLayout>
 
 
@@ -197,7 +201,8 @@
                 android:padding="8dp"
                 android:text="@string/sad"
                 android:textColor="@color/sad"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:textStyle="bold"  />
         </LinearLayout>
 
         <LinearLayout
@@ -224,7 +229,8 @@
                 android:padding="8dp"
                 android:text="@string/neutral"
                 android:textColor="@color/neutral"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -250,7 +256,8 @@
                 android:padding="8dp"
                 android:text="@string/happy"
                 android:textColor="@color/happy"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:textStyle="bold"  />
         </LinearLayout>
 
     </LinearLayout>

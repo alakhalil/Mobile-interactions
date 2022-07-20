@@ -33,7 +33,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginRight="44dp"
                 android:gravity="center_horizontal|center_vertical"
-                android:text="Share your thought"
+                android:text="Share your thoughts"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -83,7 +83,8 @@
                 android:layout_height="match_parent"
                 android:text="Upload an image"
                 android:enabled="false"
-                android:textSize="16sp"
+                android:textSize="14sp"
+                android:gravity="start|center_vertical"
                 android:textAllCaps="false" />
         </LinearLayout>
 
