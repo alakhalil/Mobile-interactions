@@ -69,7 +69,7 @@
                 android:layout_width="50dp"
                 android:layout_height="20dp"
                 android:layout_margin="10dp"
-                android:background="@color/calendar_dysthymia" />
+                android:background="@color/calendar_gloomy" />
 
             <TextView
                 android:id="@+id/sad_text"

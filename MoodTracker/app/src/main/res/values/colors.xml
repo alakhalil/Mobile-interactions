@@ -14,7 +14,7 @@
 
 
     <color name="depressed">#6EB2E5</color>
-    <color name="dysthymia">#FF6400</color>
+    <color name="gloomy">#FF6400</color>
     <color name="sad">#F0E11D</color>
     <color name="neutral">#F0E11D</color>
     <color name="happy">#F0E11D</color>
@@ -29,7 +29,7 @@
 
 
     <color name="calendar_depressed">#3C4A48</color>
-    <color name="calendar_dysthymia">#2B645E</color>
+    <color name="calendar_gloomy">#2B645E</color>
     <color name="calendar_neutral">#52958F</color>
     <color name="calendar_energetic">#92CBC1</color>
     <color name="calendar_hyperactive">#CEE9E5</color>

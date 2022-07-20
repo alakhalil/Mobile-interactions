@@ -101,7 +101,7 @@
                     android:layout_gravity="center"
                     android:layout_margin="3dp"
                     android:text="@string/gloomy"
-                    android:textColor="@color/dysthymia"
+                    android:textColor="@color/gloomy"
                     android:textSize="12sp"
                     android:textStyle="bold" />
             </LinearLayout>
