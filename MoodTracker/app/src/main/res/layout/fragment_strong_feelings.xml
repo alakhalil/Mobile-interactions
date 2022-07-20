@@ -82,6 +82,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Upload an image"
+                android:textAlignment="center"
                 android:enabled="false"
                 android:textSize="14sp"
                 android:gravity="start|center_vertical"
