@@ -2,22 +2,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_home"
+        android:id="@+id/home_layout"
         android:icon="@drawable/message"
         android:title="@string/title_home" />
 
     <item
-        android:id="@+id/navigation_analysis"
+        android:id="@+id/analysis_layout"
         android:icon="@drawable/chart_bar"
         android:title="@string/title_analysis" />
 
     <item
-        android:id="@+id/navigation_calendar"
+        android:id="@+id/calendar_layout"
         android:icon="@drawable/calendar"
         android:title="@string/title_calendar" />
 
     <item
-        android:id="@+id/navigation_more"
+        android:id="@+id/settings_layout"
         android:icon="@drawable/dots_horizontal"
         android:title="@string/title_more" />
 

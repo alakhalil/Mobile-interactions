@@ -14,7 +14,7 @@
 
     <!-- moods descriptions  -->
     <string name="depressed">Depressed</string>
-    <string name="dysthymia">Dysthymia</string>
+    <string name="gloomy">Gloomy</string>
     <string name="sad">Sad</string>
     <string name="neutral">Neutral</string>
     <string name="happy">Happy</string>

@@ -13,9 +13,10 @@
         <entry key="app/src/main/res/drawable-v24/chevron_right.xml" value="0.1225" />
         <entry key="app/src/main/res/drawable-v24/emoticon_cry_btn.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/emoticon_depressed_btn.xml" value="0.265" />
-        <entry key="app/src/main/res/drawable-v24/emoticon_dysthymia_btn.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable-v24/emoticon_dysthymia_btn.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/emoticon_energetic_btn.xml" value="0.141" />
         <entry key="app/src/main/res/drawable-v24/emoticon_excited_outline.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable-v24/emoticon_gloomy_btn.xml" value="0.131" />
         <entry key="app/src/main/res/drawable-v24/emoticon_great_btn.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/emoticon_happy_btn.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/emoticon_happy_outline.xml" value="0.1" />

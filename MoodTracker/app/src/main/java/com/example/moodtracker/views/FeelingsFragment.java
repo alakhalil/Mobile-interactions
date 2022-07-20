@@ -6,7 +6,6 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import android.view.LayoutInflater;
@@ -94,7 +93,7 @@ public class FeelingsFragment extends BottomSheetDialogFragment {
         dysthymiaBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showBottomSheetDialogStrongFeelings("Dysthymia");
+                showBottomSheetDialogStrongFeelings("Gloomy");
             }
         });
         final ImageButton energeticBtn = binding.energeticBtn;

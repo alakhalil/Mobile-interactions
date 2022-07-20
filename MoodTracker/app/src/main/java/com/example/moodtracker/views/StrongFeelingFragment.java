@@ -55,7 +55,7 @@ public class StrongFeelingFragment extends BottomSheetDialogFragment {
                 dismiss();
                 getParentFragment().onDestroyView();
                 homeViewModel.addNewValue(new Entry(
-                        "Feeling " + feelingDescription.toLowerCase(),
+                        feelingDescription,
                         reasonText.getText().toString(),
                         0,
                         feelingsIcon));
@@ -92,9 +92,9 @@ public class StrongFeelingFragment extends BottomSheetDialogFragment {
             image.setImageResource(R.drawable.emoticon_energetic_btn);
             return R.drawable.emoticon_energetic_btn;
         }
-        else if (feeling_description == "Dysthymia") {
-            image.setImageResource(R.drawable.emoticon_dysthymia_btn);
-            return R.drawable.emoticon_dysthymia_btn;
+        else if (feeling_description == "Gloomy") {
+            image.setImageResource(R.drawable.emoticon_gloomy_btn);
+            return R.drawable.emoticon_gloomy_btn;
         }
         return 0;
     }
