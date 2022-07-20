@@ -149,7 +149,7 @@ public class FeelingsFragment extends BottomSheetDialogFragment {
         BottomSheetBehavior<View> bottomSheetBehaviour = BottomSheetBehavior.from((View) view.getParent());
         bottomSheetBehaviour.setState(BottomSheetBehavior.STATE_EXPANDED);
 
-        RelativeLayout layout = getDialog().findViewById(R.id.navigation_feelings);
+        RelativeLayout layout = getDialog().findViewById(R.id.feelings_layout);
         assert layout != null;
         layout.setMinimumHeight(Resources.getSystem().getDisplayMetrics().heightPixels);
     }
