@@ -27,6 +27,9 @@ public class ShareFragment extends Fragment {
         // Inflate the layout for this fragment
         binding = MoreShareBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+        binding.switch2.setEnabled(false);
+        binding.switch4.setEnabled(false);
+
 
         binding.button1.setOnClickListener(new View.OnClickListener() {
             @Override
