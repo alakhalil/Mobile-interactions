@@ -100,7 +100,7 @@
                     android:layout_height="20dp"
                     android:layout_gravity="center"
                     android:layout_margin="3dp"
-                    android:text="@string/dysthymia"
+                    android:text="@string/gloomy"
                     android:textColor="@color/dysthymia"
                     android:textSize="12sp"
                     android:textStyle="bold" />

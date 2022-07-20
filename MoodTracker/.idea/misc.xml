@@ -55,6 +55,7 @@
         <entry key="app/src/main/res/layout/activity_connections.xml" value="0.25072631835937503" />
         <entry key="app/src/main/res/layout/activity_contact_details.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_edit_groups.xml" value="0.1141438802083333" />
+        <entry key="app/src/main/res/layout/activity_horizontal_barchar.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35833333333333334" />
         <entry key="app/src/main/res/layout/activity_more24.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_pending.xml" value="0.13012847900390623" />
@@ -66,6 +67,7 @@
         <entry key="app/src/main/res/layout/calendar_great_view.xml" value="0.2441123188405797" />
         <entry key="app/src/main/res/layout/calendar_happy_view.xml" value="0.2441123188405797" />
         <entry key="app/src/main/res/layout/calendar_hyperactive_view.xml" value="0.35833333333333334" />
+        <entry key="app/src/main/res/layout/calendar_neutral_view.xml" value="0.11145833333333334" />
         <entry key="app/src/main/res/layout/calendar_sad_view.xml" value="0.2441123188405797" />
         <entry key="app/src/main/res/layout/connections.xml" value="0.1" />
         <entry key="app/src/main/res/layout/contact_details.xml" value="0.192481884057971" />
@@ -95,6 +97,7 @@
         <entry key="app/src/main/res/layout/groups.xml" value="0.1" />
         <entry key="app/src/main/res/layout/members.xml" value="0.1" />
         <entry key="app/src/main/res/layout/more_connections.xml" value="0.25104166666666666" />
+        <entry key="app/src/main/res/layout/more_contact_details.xml" value="0.25104166666666666" />
         <entry key="app/src/main/res/layout/more_groups.xml" value="0.25104166666666666" />
         <entry key="app/src/main/res/layout/more_members.xml" value="0.25104166666666666" />
         <entry key="app/src/main/res/layout/more_requests.xml" value="0.12208713272543059" />

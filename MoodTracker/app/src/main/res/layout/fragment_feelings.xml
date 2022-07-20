@@ -106,7 +106,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="8dp"
-                android:text="@string/dysthymia"
+                android:text="@string/gloomy"
                 android:textColor="@color/dysthymia"
                 android:textSize="12sp" />
         </LinearLayout>
