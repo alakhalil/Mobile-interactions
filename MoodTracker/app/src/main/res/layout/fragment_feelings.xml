@@ -98,7 +98,7 @@
                 android:layout_height="40dp"
                 android:background="@null"
                 android:contentDescription="@string/todo"
-                android:src="@drawable/emoticon_dysthymia_btn" />
+                android:src="@drawable/emoticon_gloomy_btn" />
 
             <TextView
                 android:id="@+id/dysthymia_text"

@@ -82,7 +82,7 @@ public class CalendarFragment extends Fragment implements OnNavigationButtonClic
 
         // for dysthymia
         Property dysthymiaProperty=new Property();
-        dysthymiaProperty.layoutResource=R.layout.calendar_dysthymia_view;
+        dysthymiaProperty.layoutResource=R.layout.calendar_gloomy_view;
         dysthymiaProperty.dateTextViewResource=R.id.text_view;
         descHashMap.put("dysthymia",energeticProperty);
 

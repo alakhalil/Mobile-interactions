@@ -93,7 +93,7 @@ public class FeelingsFragment extends BottomSheetDialogFragment {
         dysthymiaBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showBottomSheetDialogStrongFeelings("Dysthymia");
+                showBottomSheetDialogStrongFeelings("Gloomy");
             }
         });
         final ImageButton energeticBtn = binding.energeticBtn;
